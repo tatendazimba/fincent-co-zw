@@ -1,0 +1,177 @@
+
+input {
+    height: 56px !important;
+}
+
+/*BUTTON*/
+
+button, .btn, .label, .btn-large {
+    color: #ffffff;
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+button.primary, .btn.primary, .btn-large.primary, .outline.black {
+    background-color: #171745 !important;
+    border-color: #171745 !important;
+
+    transition: background-color .5s ease;
+}
+
+button.secondary, .btn.secondary, .btn-large.secondary {
+    background: #f36e21 !important;
+    color: white !important;
+
+    transition: background-color .5s ease;
+}
+
+button.white, .btn.white, .btn-large.white {
+    background: white !important;
+    color: #171745 !important;
+}
+
+button[disabled]{
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    overflow: hidden;
+    background: transparent !important;
+    border: 1px solid #cacbcd !important;
+    color: #cacbcd !important;
+}
+
+
+.btn-large {
+    position: relative;
+    height: 56px !important;
+    line-height: 56px !important;
+}
+
+.btn-large .text {
+    margin-right: 40px;
+}
+
+.btn-large .circle {
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.circle-btn {
+    height: 80px !important;
+    width: 80px !important;
+    text-align: center !important;
+    display: inline-flex !important;
+    margin: auto 0 !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    background: rgba(182,182,182,0.98);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.circle-btn i {
+    font-size: 60px !important;
+    font-weight: 100;
+}
+
+.circle-btn img {
+    height: 60px !important;
+}
+
+.grey.outline {
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    border: 1px solid #72738e !important;
+    color: #72738e !important;
+    background-color: transparent !important;
+}
+
+.grey.outline:hover {
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    color: #ffffff !important;
+    background-color: #72738e !important;
+}
+
+.small-btn .btn {
+    height: 24px !important;
+    line-height: 24px !important;
+    font-size: .7rem;
+    font-weight: bold !important;
+}
+
+.small-btn i {
+    font-size: .7rem !important;
+}
+
+.outline-btn {
+    box-shadow: none !important;
+    border: 1px solid white !important;
+    background: transparent !important;
+}
+
+.outline-btn.blue {
+    box-shadow: none !important;
+    border: 1px solid #2196f3 !important;
+    background: transparent !important;
+    color: #2196f3 !important;
+}
+
+.outline-btn.primary {
+    box-shadow: none !important;
+    border: 1px solid #763568 !important;
+    background: transparent !important;
+    color: #763568 !important;
+}
+
+.outline-btn.yellow {
+    box-shadow: none !important;
+    border: 1px solid #FDED11 !important;
+    background: transparent !important;
+    color: #FDED11 !important;
+}
+
+/*JOINED BUTTONS*/
+
+.joined-btns {
+    border-radius: 25px;
+    width: fit-content !important;
+    vertical-align: middle;
+}
+
+.joined-btns .btn {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #003162 !important;
+    color: #003162 !important;
+    padding: 0 .7rem !important;
+}
+
+.joined-btns .left-outer {
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+
+.joined-btns .right-outer {
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
