@@ -53,4 +53,7 @@ Route::get('/view/your/transactions/', ViewController::class);
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    return "";
+};
+Route::get('/73be8ebe83csvnsjs419gd', 'HomeController@index')->name('home');
