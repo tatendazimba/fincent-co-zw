@@ -10161,7 +10161,7 @@ nav ul li.active {
 }
 
 .secondary-font{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 /*CIRCLE*/
@@ -10454,7 +10454,6 @@ label {
 
 .primary {
     background: #003162 !important;
-    opacity: .8;
     color: #ffffff !important;
 }
 

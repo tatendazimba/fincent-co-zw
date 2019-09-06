@@ -14,6 +14,7 @@
 use App\Http\Middleware\PinAuth;
 
 Route::get('/contact', 'ContactController@edit');
+Route::get('/team', 'TeamController@index');
 
 Route::post('/admin/register', "Auth\RegisterController@register")->name("register.store");
 Route::get('/admin/register', "Auth\RegisterController@index");

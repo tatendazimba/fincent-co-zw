@@ -26,8 +26,16 @@ Vue.component('divisions-component', require('./components/DivisionsComponent').
 Vue.component('intro-component', require('./components/IntroComponent').default);
 Vue.component('newsletter-component', require('./components/NewsletterComponent').default);
 Vue.component('contact-component', require('./components/ContactComponent').default);
+
 Vue.component('member-component', require('./components/MemberComponent').default);
+Vue.component('team-member-component', require('./components/TeamMemberComponent').default);
+
 Vue.component('blog-component', require('./components/BlogComponent').default);
+Vue.component('nav-component', require('./components/NavComponent').default);
+
+Vue.component('footer-component', require('./components/FooterComponent').default);
+
+Vue.component('blogs-component', require('./components/BlogsComponent').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

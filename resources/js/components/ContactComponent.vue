@@ -1,13 +1,15 @@
 <template>
     <div class="transparent">
 
+        <nav-component></nav-component>
+
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
 
         <div class="flex row container">
             <div class="col s12 no-pad">
-                <div style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center; background-size: cover; height: 600px;">
+                <div style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center; background-size: cover; height: 400px;">
                 </div>
             </div>
         </div>

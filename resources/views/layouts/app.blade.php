@@ -24,6 +24,7 @@
         <main class="">
             @yield('content')
         </main>
+        <footer-component></footer-component>
     </div>
 
 {{--    <script src="{{ asset('js/boot.js') }} "></script>--}}
