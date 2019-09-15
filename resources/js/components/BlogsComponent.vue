@@ -25,7 +25,7 @@
                         We equip our people across the organisation to manage diversity effectively and promote an inclusive culture that creates business value...
                     </p>
 
-                    <button class="btn secondary">FULL ARTICLE</button>
+                    <a href="/blog" class="btn secondary">FULL ARTICLE</a>
 
                     <p>&nbsp;</p>
                 </div>

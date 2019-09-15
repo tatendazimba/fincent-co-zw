@@ -1,34 +1,27 @@
 <template>
-    <div class="transparent">
+    <div class="secondary">
+        <div class="container">
+            <div class="flex row no-margin">
+                <div class="col s12 m8 valign-wrapper">
+                    <div class="full-width">
 
-        <div class="flex row no-margin">
-            <div class="col s12 m6 no-pad">
-                <div style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat left center; background-size: cover; height: 600px;">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+                        <h2 class="no-margin white-text">Subscribe to Our Newsletter</h2>
+
+                        <h5 class="no-margin white-text thin primary-text">
+                            Get our latest research about Zimbabwean markets.
+                        </h5>
+
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+                    </div>
                 </div>
-            </div>
-            <div class="col s12 m6 valign-wrapper secondary no-pad">
-                <div class="center-align container" style="position: relative;">
-
-                    <div style="posistion: absolute; top: 0; left: -400px;">
-                        <h3>Subscribe to Our Newsletter</h3>
-                    </div>
-
-                    <div>
-                        Get insights into market movements
-                    </div>
-
-                    <p>&nbsp;</p>
-
-                    <div class="flex row">
-                        <div class="col s4 overflow-visible">
-                            <input class="bordered full-width center-align" type="text" placeholder="NAME">
-                        </div>
-                        <div class="col s4">
-                            <input class="bordered full-width center-align no-margin" type="text" placeholder="EMAIL">
-                        </div>
-                        <div class="col s4">
-                            <button class="primary btn-large full-width" type="submit">SIGN UP</button>
-                        </div>
+                <div class="col s12 m4 valign-wrapper">
+                    <div class="full-width">
+                        <a href="/register" class="primary btn-large full-width" type="submit">Subscribe Today</a>
                     </div>
                 </div>
             </div>

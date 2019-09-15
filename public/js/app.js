@@ -2663,13 +2663,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "NewsletterComponent"
 });
@@ -52921,7 +52914,9 @@ var staticRenderFns = [
         )
       ]),
       _vm._v(" "),
-      _c("button", { staticClass: "btn secondary" }, [_vm._v("FULL ARTICLE")]),
+      _c("a", { staticClass: "btn secondary", attrs: { href: "/blog" } }, [
+        _vm._v("FULL ARTICLE")
+      ]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")])
     ])
@@ -54382,80 +54377,48 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "transparent" }, [
-      _c("div", { staticClass: "flex row no-margin" }, [
-        _c("div", { staticClass: "col s12 m6 no-pad" }, [
-          _c("div", {
-            staticStyle: {
-              background:
-                "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat left center",
-              "background-size": "cover",
-              height: "600px"
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col s12 m6 valign-wrapper secondary no-pad" },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "center-align container",
-                staticStyle: { position: "relative" }
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticStyle: {
-                      posistion: "absolute",
-                      top: "0",
-                      left: "-400px"
-                    }
-                  },
-                  [_c("h3", [_vm._v("Subscribe to Our Newsletter")])]
-                ),
-                _vm._v(" "),
-                _c("div", [
+    return _c("div", { staticClass: "secondary" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "flex row no-margin" }, [
+          _c("div", { staticClass: "col s12 m8 valign-wrapper" }, [
+            _c("div", { staticClass: "full-width" }, [
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "no-margin white-text" }, [
+                _vm._v("Subscribe to Our Newsletter")
+              ]),
+              _vm._v(" "),
+              _c(
+                "h5",
+                { staticClass: "no-margin white-text thin primary-text" },
+                [
                   _vm._v(
-                    "\n                    Get insights into market movements\n                "
+                    "\n                        Get our latest research about Zimbabwean markets.\n                    "
                   )
-                ]),
-                _vm._v(" "),
-                _c("p", [_vm._v(" ")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex row" }, [
-                  _c("div", { staticClass: "col s4 overflow-visible" }, [
-                    _c("input", {
-                      staticClass: "bordered full-width center-align",
-                      attrs: { type: "text", placeholder: "NAME" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col s4" }, [
-                    _c("input", {
-                      staticClass: "bordered full-width center-align no-margin",
-                      attrs: { type: "text", placeholder: "EMAIL" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col s4" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "primary btn-large full-width",
-                        attrs: { type: "submit" }
-                      },
-                      [_vm._v("SIGN UP")]
-                    )
-                  ])
-                ])
-              ]
-            )
-          ]
-        )
+                ]
+              ),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col s12 m4 valign-wrapper" }, [
+            _c("div", { staticClass: "full-width" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "primary btn-large full-width",
+                  attrs: { href: "/register", type: "submit" }
+                },
+                [_vm._v("Subscribe Today")]
+              )
+            ])
+          ])
+        ])
       ])
     ])
   }
