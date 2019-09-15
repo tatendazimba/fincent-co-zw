@@ -221,6 +221,12 @@ nav {
     border-bottom: 6px solid #f36e21;
 }
 
+/*OVERLAY*/
+
+.sidenav-overlay {
+    display: none !important;
+}
+
 /*SQUARE*/
 
 .square {

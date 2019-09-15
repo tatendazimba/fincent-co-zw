@@ -13,23 +13,18 @@
 
                 <ul class="right hide-on-med-and-down overflow-visible">
                     <li class="">
-                        <a href="/trading" class="cursor-click valign-wrapper white-text">
-                            SECURITIES
+                        <a href="/" class="cursor-click valign-wrapper white-text">
+                            HOME
                         </a>
                     </li>
                     <li class="">
-                        <a href="/micro-finance" class="cursor-click valign-wrapper white-text">
-                            MICROFINANCE
+                        <a href="/#services" class="cursor-click valign-wrapper white-text">
+                            SERVICES
                         </a>
                     </li>
                     <li class="">
-                        <a href="/corporate-services" class="cursor-click valign-wrapper white-text">
-                            CORPORATE SERVICES
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="/exchange" class="cursor-click valign-wrapper white-text">
-                            BUREAU DE CHANGE
+                        <a href="/contact" class="cursor-click valign-wrapper white-text">
+                            CONTACT
                         </a>
                     </li>
                     <li class="valign-wrapper">
@@ -41,64 +36,8 @@
             </div>
         </nav>
 
-        <div id="slide-out" class="sidenav primary valign-wrapper center-align" style="width: 100%;">
+        <side-nav-component></side-nav-component>
 
-            <a href="#" class="sidenav-close" style="position: absolute; top: 10px; right: 20px;">
-                <h1>
-                    <i class="material-icons white-text">close</i>
-                </h1>
-            </a>
-            <ul class="full-width">
-                <li class="">
-                    <a href="/" class="cursor-click valign-wrapper white-text">
-                        HOME
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/trading" class="cursor-click valign-wrapper white-text">
-                        SECURITIES
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/micro-finance" class="cursor-click valign-wrapper white-text">
-                        MICROFINANCE
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/corporate-services" class="cursor-click valign-wrapper white-text">
-                        CORPORATE SERVICES
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/exchange" class="cursor-click valign-wrapper white-text">
-                        BUREAU DE CHANGE
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/leadership" class="cursor-click valign-wrapper white-text">
-                        LEADERSHIP
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/about" class="cursor-click valign-wrapper white-text">
-                        ABOUT US
-                    </a>
-                </li>
-                <li class="">
-                    <a href="/contacut" class="cursor-click valign-wrapper white-text">
-                        CONTACT US
-                    </a>
-                </li>
-
-                <li class="center-align valign-wrapper">
-                    <div class="full-width">
-                        <button class="white outline btn-large" style="width: auto;">
-                            Exchange Rate
-                        </button>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </div>
 </template>
 

@@ -17,13 +17,13 @@
 
                         <h4 class="white-text thin uppercase">
                             <span>
-                                Listed Equity
+                                PayDay Loans
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Treasury Bills
+                                Script-Based Credit Instruments
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Bonds
+                                Cash-Backed Lending
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Derivative Instruments
+                                Structured Credit Products
                             </span>
                         </h4>
 

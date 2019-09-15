@@ -1,5 +1,5 @@
 <template>
-    <div class="grey lighten-2 no-margin">
+    <div class="no-margin" style="background: #ebecee;">
 
         <p>&nbsp;</p>
         <p>&nbsp;</p>
@@ -25,7 +25,6 @@
                 <div class="full-height"  v-bind:style="{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, .12), rgba(42, 35, 76, .735)), url(' + category.url + ')  no-repeat center center', backgroundSize: 'cover', backgroundColor: '#cacbcd' }" style="position: relative; background-size: cover; height: 400px;">
                     <div class="container">
 
-                        <p>&nbsp;</p>
                         <p>&nbsp;</p>
 
                         <h3 class="white-text">
@@ -74,8 +73,43 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
 
+        <div class="flex row no-margin" style="background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('/images/people/whiteboard.jpg') no-repeat top left; background-size: contain;">
+            <div class="col s12 m4 shadow valign-wrapper">
+            </div>
+            <div class="col s12 m8 shadow valign-wrapper">
+                <div class="full-height">
+                    <div class="container">
+
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+                        <h3 class="">
+                            <strong>A Credit Product That Perfectly Fits Your Needs.</strong>
+                        </h3>
+
+                        <p class="justifed">
+                            If you have unique needs and require a custom loan product, get in touch with our credit team so they design terms that work for you.
+                        </p>
+
+                        <p>&nbsp;</p>
+
+                        <a class="btn-large secondary" href="/contact">
+                            Contact Credit Team
+                        </a>
+
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

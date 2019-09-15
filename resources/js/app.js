@@ -39,6 +39,7 @@ Vue.component('blog-component', require('./components/BlogComponent').default);
 
 Vue.component('nav-component', require('./components/NavComponent').default);
 Vue.component('transparent-nav-component', require('./components/TransparentNavComponent').default);
+Vue.component('side-nav-component', require('./components/SideNavComponent').default);
 
 Vue.component('footer-component', require('./components/FooterComponent').default);
 
