@@ -1,7 +1,7 @@
 <template>
-    <div class="navbar-fixed transparent" style="position: fixed; left: 0; right: 0;">
+    <div class="navbar-fixed white" style="position: fixed; left: 0; right: 0;">
         <nav class="transparent">
-            <div class="transparent container navbar-wrapper overflow-visible">
+            <div class="white container navbar-wrapper overflow-visible">
 
                 <a href="/" class="brand-logo valign-wrapper full-height">
                     <img class="ignore" src="/images/fincent.svg" style="height: 64px !important;">
@@ -13,22 +13,22 @@
 
                 <ul class="right hide-on-med-and-down overflow-visible">
                     <li class="">
-                        <a href="/" class="cursor-click valign-wrapper white-text">
+                        <a href="/" class="cursor-click valign-wrapper primary-text">
                             HOME
                         </a>
                     </li>
                     <li class="">
-                        <a href="" class="cursor-click valign-wrapper white-text">
+                        <a href="" class="cursor-click valign-wrapper primary-text">
                             SERVICES
                         </a>
                     </li>
                     <li class="">
-                        <a href="/team" class="cursor-click valign-wrapper white-text">
+                        <a href="/team" class="cursor-click valign-wrapper primary-text">
                             LEADERSHIP
                         </a>
                     </li>
                     <li class="">
-                        <a href="/contact" class="cursor-click valign-wrapper white-text">
+                        <a href="/contact" class="cursor-click valign-wrapper primary-text">
                             CONTACT
                         </a>
                     </li>

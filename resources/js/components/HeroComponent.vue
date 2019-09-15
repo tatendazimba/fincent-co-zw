@@ -1,30 +1,36 @@
 <template>
     <div style="overflow: visible;">
-        <nav-component></nav-component>
-        <div class="" style="height: 700px; overflow: visible;">
-            <div class="no-margin valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/totem/elephant.jpg') no-repeat center center; background-size: cover; height: 900px;">
-                <div id="" class="container">
-                    <div class="center-align container">
-                        <h2 class="white-text secondary-font">
-                            <strong>At the Centre of Finance.</strong>
-                        </h2>
+        <transparent-nav-component></transparent-nav-component>
+        <div class="hoverable" style="">
+            <div class="no-margin valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/city/towers.jpg') no-repeat center center; background-size: cover; height: 900px;">
+                <div id="" class="row container">
+                    <div class="col s12 m8">
+                        <h1 class="white-text animated slideInLeft jumbo-text">
+                            <span>Making Sense of Finance.</span>
+                        </h1>
 
-                        <hr>
+                        <p>&nbsp;</p>
 
-                        <h5 class="white-text">
-                            <span>At the Centre of Finance.</span>
+                        <div class="divide secondary animated slideInLeft" style="width: 15%;"></div>
+
+                        <p>&nbsp;</p>
+
+                        <h5 class="white-text thin justified">
+                                Fincent Capital is a diversified one-stop financial services group adopting technology to drive innovative provider of research, stockbroking, micro-finance, bureau de change and corporate finance services.
                         </h5>
 
-                        <div class="center-align top-margin">
-                            <button class="white btn-large right-small-margin">
-                                View Our Services
-                            </button>
+                        <p>&nbsp;</p>
+
+                        <div class="top-margin">
+                            <a href="/about" class="white btn-large right-small-margin">
+                                Learn More
+                            </a>
 
                             &nbsp;&nbsp;&nbsp;
 
-                            <button class="secondary btn-large left-small-margin">
+                            <a href="#services" class="secondary btn-large left-small-margin">
                                 View Our Services
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

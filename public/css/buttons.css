@@ -1,6 +1,7 @@
 
-input {
+input, select {
     height: 56px !important;
+    margin: 0 !important;
 }
 
 /*BUTTON*/
@@ -9,8 +10,7 @@ button, .btn, .label, .btn-large {
     color: #ffffff;
     border-radius: 0 !important;
     text-transform: uppercase !important;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
+    font-weight: 700 !important;
     box-shadow: none !important;
     border: 0 !important;
 }
@@ -32,6 +32,12 @@ button.secondary, .btn.secondary, .btn-large.secondary {
 button.white, .btn.white, .btn-large.white {
     background: white !important;
     color: #171745 !important;
+}
+
+button.white.outline, .btn.white.outline, .btn-large.white.outline {
+    background: transparent !important;
+    color: white !important;
+    border: 3px solid white !important;
 }
 
 button[disabled]{

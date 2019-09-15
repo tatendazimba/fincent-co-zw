@@ -1,60 +1,146 @@
 <template>
-    <div class="flex row dark">
-        <div class="col s12 m1 valign-wrapper center-align">
-            <div class="full-width center-align">
-                <div class="darker full-height menu-column row centered">
-                    <div v-for="menu in [1, 1, 1, 1, 1]" class="col s12 center-align valign-wrapper" style="height: 150px;">
-                        <img class="full-width" src="/svg/icons/home.svg">
+    <div  style="background: linear-gradient(rgba(255, 255, 255, .981), rgba(255, 255, 255, .94395)), url('/images/icon.svg') no-repeat center center; background-size: cover;">
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <div class="row container">
+            <div class="col s12 no-pad">
+                <h5 class="no-margin primary-font secondary-text">
+                    <strong>STAY UP TO DATE</strong>
+                </h5>
+                <h1 class="no-margin primary-text jumbo-text">EXCHANGE RATES</h1>
+            </div>
+        </div>
+
+        <div class="row container bordered">
+            <div class="col s12 no-pad">
+                <div class="mobile-flex flex row no-margin primary" style="border-bottom: 1px solid #cacbcd;">
+                    <div class="col s1">
+                        <img class="full-width" :src="'/images/flags/ZWL.svg'">
+                    </div>
+                    <div class="col s1 no-pad valign-wrapper">
+                        <div class="full-width center-align">
+                            <strong class="flow-text">
+                                ZWL
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="col s5 no-pad center-align valign-wrapper">
+                        <div class="full-width center-align">
+                            <strong class="flow-text">
+                                BUY
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="col s5 no-pad center-align valign-wrapper">
+                        <div class="full-width center-align">
+                            <strong class="flow-text">
+                                SELL
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div v-for="currency in currencies" class="mobile-flex flex row no-margin" style="border-bottom: 1px solid #cacbcd;">
+                    <div class="col s1">
+                        <img class="full-width" :src="'/images/flags/' + currency.name + '.svg'">
+                    </div>
+                    <div class="col s1 no-pad valign-wrapper">
+                        <div class="full-width center-align">
+                            <strong class="flow-text">
+                                {{ currency.name }}
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="col s5 no-pad center-align valign-wrapper">
+                        <div class="full-width center-align">
+                            <strong class="flow-text">
+                                <i class="material-icons red-text">call_received</i>
+                                {{ currency.sell }}
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="col s5 no-pad center-align valign-wrapper">
+                        <div class="full-width center-align">
+                            <strong class="flow-text">
+                                <i class="material-icons green-text">call_made</i>
+                                {{ currency.sell }}
+                            </strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col s12 m4">
-            <h3 class="white-text">Exchange Rates</h3>
 
-            <p>&nbsp;</p>
+<!--            <div class="col s12 m7 valign-wrapper">-->
+<!--                <div class="rounded white with-margin with-padding full-width">-->
+<!--                    <h2>EURO - USD</h2>-->
+<!--                    <h4 class="inline-block">-->
+<!--                        1.11433-->
+<!--                        <i class="material-icons red-text">call_received</i>-->
+<!--                    </h4>-->
+<!--                    <strong>-->
+<!--                        -0.000000434-->
+<!--                    </strong>-->
 
-            <div v-for="rate in [1, 1, 1, 1, 1]">
-                <div class="flex row darker rounded with-small-padding">
-                    <div class="col s2">
-                        <div class="square no-margin dusk rounded"></div>
-                    </div>
-                    <div class="col s10 valign-wrapper">
-                        <h5 class="white-text no-margin full-width">
-                            <strong>EURO - USD</strong>
-                            <i class="material-icons green-text right">call_made</i>
-                        </h5>
-                    </div>
-                </div>
-            </div>
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                    <p>&nbsp;</p>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
-        <div class="col s12 m7 valign-wrapper">
-            <div class="rounded white with-margin with-padding full-width">
-                <h2>EURO - USD</h2>
-                <h4 class="inline-block">
-                    1.11433
-                    <i class="material-icons red-text">call_received</i>
-                </h4>
-                <strong>
-                    -0.000000434
-                </strong>
 
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-            </div>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <div class="container">
+            <a href="/exchange" class="btn-large secondary">
+                Go To Bureau De Change
+            </a>
         </div>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
     </div>
 </template>
 
 <script>
     export default {
-        name: "XRatesComponent"
+        name: "XRatesComponent",
+        data: function () {
+            return {
+                currencies: [
+                    {
+                        name: "USD",
+                        buy: 12.4,
+                        sell: 12.4,
+                    },
+                    {
+                        name: "BWP",
+                        buy: 12.4,
+                        sell: 12.4,
+                    },
+                    {
+                        name: "EUR",
+                        buy: 12.4,
+                        sell: 12.4,
+                    },
+                    {
+                        name: "ZAR",
+                        buy: 12.4,
+                        sell: 12.4,
+                    },
+                ]
+            }
+        }
     }
 </script>
 

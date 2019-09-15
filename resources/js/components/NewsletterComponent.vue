@@ -2,11 +2,11 @@
     <div class="transparent">
 
         <div class="flex row no-margin">
-            <div class="col s12 m7 l7 no-pad">
-                <div style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center; background-size: cover; height: 600px;">
+            <div class="col s12 m6 no-pad">
+                <div style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat left center; background-size: cover; height: 600px;">
                 </div>
             </div>
-            <div class="col s12 m5 l5 valign-wrapper secondary no-pad">
+            <div class="col s12 m6 valign-wrapper secondary no-pad">
                 <div class="center-align container" style="position: relative;">
 
                     <div style="posistion: absolute; top: 0; left: -400px;">
@@ -14,7 +14,7 @@
                     </div>
 
                     <div>
-                        Subscribe to receive freebies, news & promos directly in your inbox
+                        Get insights into market movements
                     </div>
 
                     <p>&nbsp;</p>

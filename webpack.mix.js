@@ -19,6 +19,7 @@ mix.js("node_modules/bootstrap/dist/js/bootstrap.bundle.js", 'public/js/boot.js'
     .js("resources/js/app.js", 'public/js/app.js')
     .styles([
         "node_modules/materialize-css/dist/css/materialize.css",
+        "node_modules/animate.css/animate.min.css",
         "resources/css/slick-theme.css",
         "public/css/styles.css",
         "public/css/colours.css",

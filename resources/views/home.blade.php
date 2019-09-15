@@ -4,7 +4,8 @@
 <div class="">
     <hero-component></hero-component>
     <divisions-component></divisions-component>
-    <intro-component></intro-component>
+    <trading-component></trading-component>
+    <xrate-component></xrate-component>
     <blogs-component></blogs-component>
     <newsletter-component></newsletter-component>
 </div>

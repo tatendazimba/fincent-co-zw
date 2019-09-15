@@ -15,6 +15,10 @@ use App\Http\Middleware\PinAuth;
 
 Route::get('/contact', 'ContactController@edit');
 Route::get('/team', 'TeamController@index');
+Route::get('/trading', 'TradingController@index')->name("trading.index");
+Route::get('/exchange', 'ExchangeController@index')->name("exchange.index");
+Route::get('/micro-finance', 'MicrofinanceController@index')->name("microfinance.index");
+Route::get('/corporate-services', 'CorporateController@index')->name("corporate.index");
 
 Route::post('/admin/register', "Auth\RegisterController@register")->name("register.store");
 Route::get('/admin/register', "Auth\RegisterController@index");
@@ -56,4 +60,4 @@ Auth::routes();
 Route::get('/', function () {
     return "";
 });
-Route::get('/73be8ebe83csvnsjs419gd', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 203.71499 253.9"
+   xml:space="preserve"
+   width="203.715"
+   height="253.89999"><metadata
+   id="metadata39"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs37" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#161341;}
+	.st1{fill:#F47522;}
+	.st2{fill:#FFF200;}
+	.st3{fill:#ED1C24;}
+	.st4{fill:#58595B;}
+	.st5{fill:#F7941D;}
+	.st6{fill:none;stroke:#006838;stroke-miterlimit:10;}
+	.st7{fill:#F15A29;}
+	.st8{fill:#00AEEF;}
+	.st9{fill:#4E4F51;}
+	.st10{fill:#EC008C;}
+	.st11{fill:#030202;}
+	.st12{fill:#010101;}
+	.st13{fill:none;stroke:#EC008C;stroke-width:2;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#00AEEF;stroke-width:2;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#00A14B;stroke-width:2;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st17{fill:#1B75BC;}
+	.st18{fill:#BCBEC0;}
+	.st19{font-family:'ATOSalutino';}
+	.st20{font-size:59.1678px;}
+	.st21{fill:#FFFFFF;}
+</style>
+
+
+
+
+
+<g
+   id="g32"
+   transform="translate(-79.6625,-166.21)">
+	<g
+   id="g28">
+		<path
+   class="st0"
+   d="m 176.68,223.28 -36.22,37.02 c -17.87,18.27 -17.87,47.46 0,65.73 l 36.22,37.02 v 50.34 c 0.04,1.73 -0.6,3.48 -1.92,4.8 -2.56,2.55 -6.71,2.54 -9.26,-0.02 l -57.81,-57.55 c -37.37,-37.21 -37.37,-97.71 0,-134.92 l 57.69,-57.45 c 1.19,-1.26 2.88,-2.04 4.75,-2.04 3.62,0 6.55,2.93 6.55,6.55 z"
+   id="path24"
+   style="fill:#161341" />
+		<path
+   class="st1"
+   d="m 186.36,363.04 36.22,-37.02 c 17.87,-18.27 17.87,-47.46 0,-65.73 l -36.22,-37.02 v -50.34 c -0.04,-1.73 0.6,-3.48 1.92,-4.8 2.56,-2.55 6.71,-2.54 9.26,0.02 l 57.81,57.55 c 37.37,37.21 37.37,97.71 0,134.92 l -57.69,57.45 c -1.19,1.26 -2.88,2.04 -4.75,2.04 -3.62,0 -6.55,-2.93 -6.55,-6.55 z"
+   id="path26"
+   style="fill:#f47522" />
+	</g>
+	<path
+   class="st0"
+   d="m 151.4,295.02 c -7.8,7.8 -7.8,20.46 0,28.26 7.8,7.8 20.46,7.8 28.26,0 l 31.98,-31.98 c 7.8,-7.8 7.8,-20.46 0,-28.26 -7.8,-7.8 -20.46,-7.8 -28.26,0 z"
+   id="path30"
+   style="fill:#161341" />
+</g>
+</svg>
