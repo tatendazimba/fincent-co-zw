@@ -3163,66 +3163,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "WhyTradeComponent"
+  name: "WhyTradeComponent",
+  data: function data() {
+    return {
+      reasons: [{
+        title: "Technology",
+        description: "Our stockbroking unit has the best in-country research team which uses a technology driven research platform to predict stock movements and offer insightful tips to our clients."
+      }, {
+        title: "Research & Newsletters",
+        description: "We also provide custom reports of specific sectors of the economy, specific counters or financial instruments that investors are looking at investing in. We have a database of financial data from 2009 which we can manipulate for detailed analysis of various scenarios, ratios and other reports upon request. We circulate daily bulletins to our clients on the activities in the financial markets and offer tips on stock pickings and profitable trades."
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -55276,166 +55229,77 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    {
+      staticStyle: {
+        background:
+          "linear-gradient(rgba(255, 255, 255, .981), rgba(255, 255, 255, .94395)), url('/images/icon.svg') no-repeat center center",
+        "background-size": "cover"
+      }
+    },
+    [
+      _c("div", { staticClass: "transparent" }, [
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row container" },
+          [
+            _c("h2", { staticClass: "no-margin" }, [_vm._v("Why Trade With")]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("p", [_vm._v(" ")]),
+            _vm._v(" "),
+            _vm._l(_vm.reasons, function(reason) {
+              return _c("div", { staticClass: "col s12" }, [
+                _c("div", { staticClass: "flex row" }, [
+                  _c("div", { staticClass: "col s12 m5" }, [
+                    _c("h5", [_c("span", [_vm._v(_vm._s(reason.title))])])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col s12 m7" }, [
+                    _c("p", { staticClass: "justified" }, [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(reason.description) +
+                          "\n                        "
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            })
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")]),
+        _vm._v(" "),
+        _c("p", [_vm._v(" ")])
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticStyle: {
-          background:
-            "linear-gradient(rgba(255, 255, 255, .981), rgba(255, 255, 255, .94395)), url('/images/icon.svg') no-repeat center center",
-          "background-size": "cover"
-        }
-      },
-      [
-        _c("div", { staticClass: "transparent" }, [
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "flex row container" }, [
-            _c("div", { staticClass: "col s12 valign-wrapper" }, [
-              _c("div", {}, [
-                _c("h2", { staticClass: "no-margin" }, [
-                  _vm._v("Why Trade With")
-                ]),
-                _vm._v(" "),
-                _c("h2", { staticClass: "secondary-text no-margin" }, [
-                  _c("strong", [_vm._v("Fincent")])
-                ]),
-                _vm._v(" "),
-                _c("p", [_vm._v(" ")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col s12 m6" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col s12" }, [
-                        _c("strong", { staticClass: "secondary-font" }, [
-                          _vm._v("Technology")
-                        ]),
-                        _vm._v(" "),
-                        _c("strong", { staticClass: "right" }, [
-                          _c(
-                            "i",
-                            { staticClass: "material-icons secondary-text" },
-                            [_vm._v("dns")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "justified" }, [
-                          _vm._v(
-                            "We use an intelligent platform to predict stock movement & offer insightful tips to our clients."
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col s12 m6" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col s12" }, [
-                        _c("strong", { staticClass: "secondary-font" }, [
-                          _vm._v("Research")
-                        ]),
-                        _vm._v(" "),
-                        _c("strong", { staticClass: "right" }, [
-                          _c(
-                            "i",
-                            { staticClass: "material-icons secondary-text" },
-                            [_vm._v("dns")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "justified" }, [
-                          _vm._v(
-                            "We use an intelligent platform to predict stock movement & offer insightful tips to our clients."
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col s12 m6" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col s12" }, [
-                        _c("strong", { staticClass: "secondary-font" }, [
-                          _vm._v("Archives")
-                        ]),
-                        _vm._v(" "),
-                        _c("strong", { staticClass: "right" }, [
-                          _c(
-                            "i",
-                            { staticClass: "material-icons secondary-text" },
-                            [_vm._v("dns")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "justified" }, [
-                          _vm._v(
-                            "We use an intelligent platform to predict stock movement & offer insightful tips to our clients."
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col s12 m6" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col s12" }, [
-                        _c("strong", { staticClass: "secondary-font" }, [
-                          _vm._v("Newsletter")
-                        ]),
-                        _vm._v(" "),
-                        _c("strong", { staticClass: "right" }, [
-                          _c(
-                            "i",
-                            { staticClass: "material-icons secondary-text" },
-                            [_vm._v("dns")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "justified" }, [
-                          _vm._v(
-                            "We use an intelligent platform to predict stock movement & offer insightful tips to our clients."
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("p", [_vm._v(" ")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")]),
-          _vm._v(" "),
-          _c("p", [_vm._v(" ")])
-        ])
-      ]
-    )
+    return _c("h2", { staticClass: "secondary-text no-margin" }, [
+      _c("strong", [_vm._v("Fincent")])
+    ])
   }
 ]
 render._withStripped = true

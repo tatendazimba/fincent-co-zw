@@ -6,87 +6,29 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
 
-            <div class="flex row container" style="">
-                <div class="col s12 valign-wrapper">
-                    <div class="">
+            <div class="row container" style="">
 
-                        <h2 class="no-margin">Why Trade With</h2>
-                        <h2 class="secondary-text no-margin">
-                            <strong>Fincent</strong>
-                        </h2>
+                <h2 class="no-margin">Why Trade With</h2>
+                <h2 class="secondary-text no-margin">
+                    <strong>Fincent</strong>
+                </h2>
 
-                        <p>&nbsp;</p>
+                <p>&nbsp;</p>
 
-                        <div class="row">
-                            <div class="col s12 m6">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <strong class="secondary-font">Technology</strong>
-
-                                        <strong class="right">
-                                            <i class="material-icons secondary-text">dns</i>
-                                        </strong>
-                                        <br>
-
-                                        <p class="justified">We use an intelligent platform to predict stock movement & offer insightful tips to our clients.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col s12 m6">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <strong class="secondary-font">Research</strong>
-
-                                        <strong class="right">
-                                            <i class="material-icons secondary-text">dns</i>
-                                        </strong>
-                                        <br>
-
-                                        <p class="justified">We use an intelligent platform to predict stock movement & offer insightful tips to our clients.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col s12 m6">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <strong class="secondary-font">Archives</strong>
-
-                                        <strong class="right">
-                                            <i class="material-icons secondary-text">dns</i>
-                                        </strong>
-                                        <br>
-
-                                        <p class="justified">We use an intelligent platform to predict stock movement & offer insightful tips to our clients.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col s12 m6">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <strong class="secondary-font">Newsletter</strong>
-
-                                        <strong class="right">
-                                            <i class="material-icons secondary-text">dns</i>
-                                        </strong>
-                                        <br>
-
-                                        <p class="justified">We use an intelligent platform to predict stock movement & offer insightful tips to our clients.</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div v-for="reason in reasons" class="col s12">
+                    <div class="flex row">
+                        <div class="col s12 m5">
+                            <h5>
+                                <span>{{ reason.title }}</span>
+                            </h5>
                         </div>
-
-                        <p>&nbsp;</p>
-
+                        <div class="col s12 m7">
+                            <p class="justified">
+                                {{ reason.description     }}
+                            </p>
+                        </div>
                     </div>
                 </div>
-<!--                <div class="col s12 m4">-->
-<!--                    <div style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/stock/beauty.jpg') no-repeat center center; background-size: cover; height: 600px;">-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
 
             <p>&nbsp;</p>
@@ -101,7 +43,21 @@
 
 <script>
     export default {
-        name: "WhyTradeComponent"
+        name: "WhyTradeComponent",
+        data() {
+            return {
+                reasons: [
+                    {
+                        title: "Technology",
+                        description: "Our stockbroking unit has the best in-country research team which uses a technology driven research platform to predict stock movements and offer insightful tips to our clients.",
+                    },
+                    {
+                        title: "Research & Newsletters",
+                        description: "We also provide custom reports of specific sectors of the economy, specific counters or financial instruments that investors are looking at investing in. We have a database of financial data from 2009 which we can manipulate for detailed analysis of various scenarios, ratios and other reports upon request. We circulate daily bulletins to our clients on the activities in the financial markets and offer tips on stock pickings and profitable trades.",
+                    },
+                ]
+            }
+        }
     }
 </script>
 
