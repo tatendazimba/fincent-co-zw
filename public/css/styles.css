@@ -221,6 +221,12 @@ nav {
     border-bottom: 6px solid #f36e21;
 }
 
+@media only screen and (min-width: 1000000px) {
+    nav a.sidenav-trigger {
+        display: none !important;
+    }
+}
+
 /*OVERLAY*/
 
 .sidenav-overlay {
