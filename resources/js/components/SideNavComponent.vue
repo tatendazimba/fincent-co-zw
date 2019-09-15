@@ -32,16 +32,16 @@
                     BUREAU DE CHANGE
                 </a>
             </li>
-            <li class="">
-                <a href="/leadership" class="cursor-click valign-wrapper white-text">
-                    LEADERSHIP
-                </a>
-            </li>
-            <li class="">
-                <a href="/about" class="cursor-click valign-wrapper white-text">
-                    ABOUT US
-                </a>
-            </li>
+<!--            <li class="">-->
+<!--                <a href="/leadership" class="cursor-click valign-wrapper white-text">-->
+<!--                    LEADERSHIP-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="">-->
+<!--                <a href="/about" class="cursor-click valign-wrapper white-text">-->
+<!--                    ABOUT US-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="">
                 <a href="/contact" class="cursor-click valign-wrapper white-text">
                     CONTACT US

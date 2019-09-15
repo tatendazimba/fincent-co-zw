@@ -53339,14 +53339,14 @@ var staticRenderFns = [
                         attrs: { src: "/svg/social/facebook.svg" }
                       }),
                       _vm._v(
-                        "\n\n                                 \n                                 \n\n                                "
+                        "\n\n                                     \n                                     \n\n                                    "
                       ),
                       _c("img", {
                         staticStyle: { height: "32px" },
                         attrs: { src: "/svg/social/whatsapp.svg" }
                       }),
                       _vm._v(
-                        "\n\n                                 \n                                 \n\n                                "
+                        "\n\n                                     \n                                     \n\n                                    "
                       ),
                       _c("img", {
                         staticStyle: { height: "32px" },
@@ -53413,28 +53413,6 @@ var staticRenderFns = [
                           attrs: { href: "/bureau-de-change" }
                         },
                         [_vm._v("Bureau De Change")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "white-text",
-                          attrs: { href: "/leadership" }
-                        },
-                        [_vm._v("Leadership")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "white-text",
-                          attrs: { href: "/leadership" }
-                        },
-                        [_vm._v("About Us")]
                       )
                     ]),
                     _vm._v(" "),
@@ -54483,7 +54461,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/" }
               },
-              [_vm._v("\n                HOME\n            ")]
+              [_vm._v("\n                    HOME\n                ")]
             )
           ]),
           _vm._v(" "),
@@ -54494,7 +54472,11 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/trading" }
               },
-              [_vm._v("\n                SECURITIES TRADING\n            ")]
+              [
+                _vm._v(
+                  "\n                    SECURITIES TRADING\n                "
+                )
+              ]
             )
           ]),
           _vm._v(" "),
@@ -54505,7 +54487,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/micro-finance" }
               },
-              [_vm._v("\n                MICROFINANCE\n            ")]
+              [_vm._v("\n                    MICROFINANCE\n                ")]
             )
           ]),
           _vm._v(" "),
@@ -54516,7 +54498,11 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/corporate-services" }
               },
-              [_vm._v("\n                CORPORATE SERVICES\n            ")]
+              [
+                _vm._v(
+                  "\n                    CORPORATE SERVICES\n                "
+                )
+              ]
             )
           ]),
           _vm._v(" "),
@@ -54527,29 +54513,11 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/exchange" }
               },
-              [_vm._v("\n                BUREAU DE CHANGE\n            ")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", {}, [
-            _c(
-              "a",
-              {
-                staticClass: "cursor-click valign-wrapper white-text",
-                attrs: { href: "/leadership" }
-              },
-              [_vm._v("\n                LEADERSHIP\n            ")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("li", {}, [
-            _c(
-              "a",
-              {
-                staticClass: "cursor-click valign-wrapper white-text",
-                attrs: { href: "/about" }
-              },
-              [_vm._v("\n                ABOUT US\n            ")]
+              [
+                _vm._v(
+                  "\n                    BUREAU DE CHANGE\n                "
+                )
+              ]
             )
           ]),
           _vm._v(" "),
@@ -54560,7 +54528,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/contact" }
               },
-              [_vm._v("\n                CONTACT US\n            ")]
+              [_vm._v("\n                    CONTACT US\n                ")]
             )
           ]),
           _vm._v(" "),
@@ -54574,7 +54542,7 @@ var staticRenderFns = [
                 },
                 [
                   _vm._v(
-                    "\n                    Exchange Rate\n                "
+                    "\n                        Exchange Rate\n                    "
                   )
                 ]
               )

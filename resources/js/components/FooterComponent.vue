@@ -56,12 +56,12 @@
                                     <p>
                                         <a class="white-text" href="/bureau-de-change">Bureau De Change</a>
                                     </p>
-                                    <p>
-                                        <a class="white-text" href="/leadership">Leadership</a>
-                                    </p>
-                                    <p>
-                                        <a class="white-text" href="/leadership">About Us</a>
-                                    </p>
+<!--                                    <p>-->
+<!--                                        <a class="white-text" href="/leadership">Leadership</a>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        <a class="white-text" href="/leadership">About Us</a>-->
+<!--                                    </p>-->
                                     <p>
                                         <a class="white-text" href="/contact">Contact Us</a>
                                     </p>
