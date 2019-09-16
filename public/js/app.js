@@ -1966,6 +1966,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ContactComponent"
 });
@@ -3451,26 +3456,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "XRatesComponent",
   data: function data() {
     return {
       currencies: [{
         name: "USD",
-        buy: 12.4,
-        sell: 12.4
+        buy: 13.167558,
+        sell: 14.2648545
       }, {
         name: "BWP",
-        buy: 12.4,
-        sell: 12.4
+        buy: 1.216023981,
+        sell: 1.317359313
       }, {
         name: "EUR",
-        buy: 12.4,
-        sell: 12.4
+        buy: 14.60018831,
+        sell: 15.81687067
       }, {
         name: "ZAR",
-        buy: 12.4,
-        sell: 12.4
+        buy: 14.1961,
+        sell: 14.9293
       }]
     };
   }
@@ -53214,7 +53221,13 @@ var render = function() {
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
-      _vm._m(1)
+      _vm._m(1),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")])
     ],
     1
   )
@@ -53256,11 +53269,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", [
-              _vm._v(
-                "\n                    Subscribe to receive freebies, news & promos directly in your inbox\n                "
-              )
-            ]),
+            _c("div"),
             _vm._v(" "),
             _c("p", [_vm._v(" ")]),
             _vm._v(" "),
@@ -55837,12 +55846,14 @@ var render = function() {
                     [
                       _c("div", { staticClass: "full-width center-align" }, [
                         _c("strong", { staticClass: "flow-text" }, [
-                          _c("i", { staticClass: "material-icons red-text" }, [
-                            _vm._v("call_received")
-                          ]),
+                          _c(
+                            "i",
+                            { staticClass: "material-icons red-text hide" },
+                            [_vm._v("call_received")]
+                          ),
                           _vm._v(
                             "\n                                " +
-                              _vm._s(currency.sell) +
+                              _vm._s(currency.buy) +
                               "\n                            "
                           )
                         ])
@@ -55860,7 +55871,7 @@ var render = function() {
                         _c("strong", { staticClass: "flow-text" }, [
                           _c(
                             "i",
-                            { staticClass: "material-icons green-text" },
+                            { staticClass: "material-icons green-text hide" },
                             [_vm._v("call_made")]
                           ),
                           _vm._v(
@@ -55885,6 +55896,10 @@ var render = function() {
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
       _vm._m(4),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),

@@ -26,7 +26,7 @@
                     </div>
 
                     <div>
-                        Subscribe to receive freebies, news & promos directly in your inbox
+<!--                        Subscribe to receive freebies, news & promos directly in your inbox-->
                     </div>
 
                     <p>&nbsp;</p>
@@ -55,6 +55,11 @@
                 </div>
             </div>
         </div>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
     </div>
 </template>
 

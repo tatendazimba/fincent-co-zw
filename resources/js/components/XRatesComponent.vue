@@ -57,15 +57,15 @@
                     <div class="col s5 no-pad center-align valign-wrapper">
                         <div class="full-width center-align">
                             <strong class="flow-text">
-                                <i class="material-icons red-text">call_received</i>
-                                {{ currency.sell }}
+                                <i class="material-icons red-text hide">call_received</i>
+                                {{ currency.buy }}
                             </strong>
                         </div>
                     </div>
                     <div class="col s5 no-pad center-align valign-wrapper">
                         <div class="full-width center-align">
                             <strong class="flow-text">
-                                <i class="material-icons green-text">call_made</i>
+                                <i class="material-icons green-text hide">call_made</i>
                                 {{ currency.sell }}
                             </strong>
                         </div>
@@ -108,6 +108,8 @@
 
         <p>&nbsp;</p>
         <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
 
     </div>
 </template>
@@ -120,23 +122,23 @@
                 currencies: [
                     {
                         name: "USD",
-                        buy: 12.4,
-                        sell: 12.4,
+                        buy: 13.167558,
+                        sell: 14.2648545,
                     },
                     {
                         name: "BWP",
-                        buy: 12.4,
-                        sell: 12.4,
+                        buy: 1.216023981,
+                        sell: 1.317359313,
                     },
                     {
                         name: "EUR",
-                        buy: 12.4,
-                        sell: 12.4,
+                        buy: 14.60018831,
+                        sell: 15.81687067,
                     },
                     {
                         name: "ZAR",
-                        buy: 12.4,
-                        sell: 12.4,
+                        buy: 14.1961,
+                        sell: 14.9293,
                     },
                 ]
             }

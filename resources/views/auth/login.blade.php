@@ -70,13 +70,13 @@
                                 </div>
 
 
-                                @if (Route::has('password.request'))
-                                    <div class="col s12 top-padding">
-                                        <a class="grey-text small-text" href="{{ route('password.request') }}">
-                                            <u>{{ __('Forgot Your Password?') }}</u>
-                                        </a>
-                                    </div>
-                                @endif
+{{--                                @if (Route::has('password.request'))--}}
+{{--                                    <div class="col s12 top-padding">--}}
+{{--                                        <a class="grey-text small-text" href="{{ route('password.request') }}">--}}
+{{--                                            <u>{{ __('Forgot Your Password?') }}</u>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                @endif--}}
                             </form>
                         </div>
                     </div>
