@@ -15,14 +15,12 @@ interface PostsInterface
 {
     public function index();
     public function heroes();
-    public function discover();
-    public function featured();
-    public function howTos();
-    public function guides();
-    public function faqs();
-    public function find($name);
-    public function faqTags();
-    public function faqWithTag($tag);
+    public function sale();
+    public function new();
+    public function shop();
+    public function blogs();
+    public function shopWithTag($tag);
+    public function shopTags();
 
     public function store($request);
     public function destroy(Post $post);

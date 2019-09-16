@@ -14,9 +14,11 @@ class StoryController extends Controller
         $this->posts = $posts;
     }
 
-    public function __invoke(Post $post)
+    public function __invoke(Post $story)
     {
-        $heroes = $this->posts->heroes();
+        $post = Post::with("images")->find($story->id);
+
+
         $featured = $this->posts->featured();
         $categories = $this->posts->featuredCategories();
         $shopTags = $this->posts->shopTags();

@@ -26,11 +26,14 @@ Vue.component('hero-component', require('./components/HeroComponent.vue').defaul
 Vue.component('trading-hero-component', require('./components/TradingHeroComponent.vue').default);
 Vue.component('xrates-hero-component', require('./components/XRatesHeroComponent').default);
 Vue.component('micro-hero-component', require('./components/MicroHeroComponent').default);
+Vue.component('members-hero-component', require('./components/MembersHeroComponent').default);
 
 Vue.component('divisions-component', require('./components/DivisionsComponent').default);
 Vue.component('intro-component', require('./components/IntroComponent').default);
 Vue.component('newsletter-component', require('./components/NewsletterComponent').default);
 Vue.component('contact-component', require('./components/ContactComponent').default);
+
+Vue.component('member-content-component', require('./components/MemberContentComponent').default);
 
 Vue.component('member-component', require('./components/MemberComponent').default);
 Vue.component('team-member-component', require('./components/TeamMemberComponent').default);

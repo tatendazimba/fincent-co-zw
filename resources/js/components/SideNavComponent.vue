@@ -50,10 +50,19 @@
 
             <li class="center-align valign-wrapper">
                 <div class="full-width">
-                    <button class="white outline btn-large" style="width: auto;">
-                        Exchange Rate
-                    </button>
+                    <a href="/exclusive/members" class="white outline btn-large" style="width: auto;">
+                        Member Area
+                    </a>
                 </div>
+            </li>
+            <li class="">
+                <a class="white-text" v-on:click.prevent="logout()" href="/logout">
+                    <u>LOGOUT</u>
+                </a>
+
+                <form ref="logout-form" id="logout-form" action="/logout" method="POST" style="display: none;">
+                    <input type="hidden" name="_token" :value="csrf">
+                </form>
             </li>
         </ul>
     </div>
@@ -65,6 +74,11 @@
 
     export default {
         name: "SideNavComponent",
+        data() {
+            return {
+                csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+            }
+        },
         mounted() {
             document.addEventListener('DOMContentLoaded', function() {
                 M.Sidenav.init(document.querySelectorAll('.sidenav'), {
@@ -74,6 +88,11 @@
                 M.Sidenav.getInstance(document.getElementById("slide-out"));
 
             });
+        },
+        methods: {
+            logout: function() {
+                this.$refs["logout-form"].submit();
+            }
         }
     }
 </script>

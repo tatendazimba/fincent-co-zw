@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Composers\SidebarComposer;
 use App\Http\Controllers\Interfaces\AgentInterface;
 use App\Http\Controllers\Interfaces\CustomerInterface;
 use App\Http\Controllers\Interfaces\PostsInterface;
@@ -13,6 +14,7 @@ use App\Http\Controllers\Repositories\PostsRepository;
 use App\Http\Controllers\Repositories\RegisterRepository;
 use App\Http\Controllers\Repositories\TagRepository;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,6 +36,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        View::share("colours", ["cyan lighten-3", "teal lighten-3", "orange lighten-3", "indigo lighten-3"]);
+
         $this->app->bind(PostsInterface::class, PostsRepository::class);
         $this->app->bind(TagInterface::class, TagRepository::class);
         $this->app->bind(CustomerInterface::class, CustomerRepository::class);
@@ -50,6 +55,8 @@ class AppServiceProvider extends ServiceProvider
                 ]
             ]);
         });
+
+        View::composer('*', SidebarComposer::class);
 
     }
 }

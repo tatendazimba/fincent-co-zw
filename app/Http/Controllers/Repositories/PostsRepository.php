@@ -36,50 +36,98 @@ class PostsRepository implements PostsInterface
     public function find($name)
     {
         $posts = Post::whereHas('tags', function ($query) use ($name) {
-            $query->where([
-                ['name', '=', $name]
-            ]);
-        })
+                $query->where([
+                    ['name', '=', $name]
+                ]);
+            })
             ->with("tags")->paginate();
 
         return $posts;
     }
 
-    public function faqTags()
+    public function popular()
     {
-        $value = "FAQ";
-
-        $posts = Post::whereHas('tags', function ($query) use ($value) {
-            $query->where('name', '=', $value);
-        })->with("tags")->get();
-
-        $tags = [];
-
-        foreach ($posts as $post) {
-            foreach ($post->tags()->get() as $tag) {
-
-                if (in_array($tag->name, $tags)) {
-                    continue;
-                }
-
-                $tags[] = $tag;
-            }
-        }
-
-        return (new Collection($tags))->unique();
-
+        return $this->posts->orderBy("id", "desc")->limit(5)->get();
     }
 
-    public function faqWithTag($tag)
+    public function popularProducts()
     {
+        return $this->posts->orderBy("id", "desc")->limit(5)->get();
+    }
+
+    public function destroy(Post $post)
+    {
+        return $post->delete();
+    }
+
+    public function store($request)
+    {
+        $post = new Post();
+        $post->fill($request);
+        $post->save();
+
+        // TODO log
+
+        return $post;
+    }
+
+    public function heroes()
+    {
+        $posts = $this->tags->where("name", "Hero")->first()->posts()->orderBy("id", "desc")->get();
+
+        return $posts;
+    }
+
+    public function featuredCategories()
+    {
+        $shopTags = $this->shopTags();
+
+        $tags = $this->tags->whereNotIn("name", ["Hero", "Inspiration", "New", "Sales & Offers", "Shop"])->has("posts", ">=", "1")->get();
+
+        $featuredTags = $shopTags->intersect($tags);
+
+        return $featuredTags;
+    }
+
+    public function shopCategories()
+    {
+
         $posts = Post::whereHas('tags', function ($query) {
             $query->where([
-                ['name', '=', "FAQ"]
-            ]);
-        })
-            ->whereHas("tags", function ($query) use ($tag){
+                    ['name', '=', "Shop"]
+                ]);
+            })
+            ->whereNotIn("name", [
+                "Hero",
+                "Inspiration",
+                "New",
+                "Sales & Offers"
+            ])
+            ->with("tags")->get();
+
+        return $posts;
+    }
+
+    public function sale()
+    {
+        $posts = $this->tags->where("name", "Sales & Offers")->get();
+
+        return $posts;
+    }
+
+    public function new()
+    {
+        $posts = $this->tags->where("name", "New Arrivals")->get();
+
+        return $posts;
+    }
+
+    public function shop()
+    {
+
+        $posts = Post::whereHas("tags", function ($query){
                 $query->where([
-                    ['name', '=', $tag]
+                    ['name', '=', "Shop"]
                 ]);
             })
             ->with("tags")->orderBy("id", "desc")->get();
@@ -87,15 +135,41 @@ class PostsRepository implements PostsInterface
         return $posts;
     }
 
-
-    public function popular()
+    public function blogs()
     {
-        return $this->posts->orderBy("id", "desc")->limit(5)->get();
+
+        $posts = Post::whereHas("tags", function ($query){
+                $query->where([
+                    ['name', '=', "Blog"]
+                ]);
+            })
+            ->with("tags")->orderBy("id", "desc")->paginate();
+
+        return $posts;
     }
 
-    public function heroes()
+    public function makeovers()
     {
-        $posts = $this->tags->where("name", "Hero")->first()->posts()->orderBy("id", "desc")->get();
+
+        $posts = Post::whereHas("tags", function ($query){
+            $query->where([
+                ['name', '=', "Makeover"]
+            ]);
+        })
+            ->with("tags")->orderBy("id", "desc")->get();
+
+        return $posts;
+    }
+
+    public function gallery()
+    {
+
+        $posts = Post::whereHas("tags", function ($query){
+            $query->where([
+                ['name', '=', "Dolls"]
+            ]);
+        })
+            ->with("tags")->orderBy("id", "desc")->get();
 
         return $posts;
     }
@@ -113,50 +187,102 @@ class PostsRepository implements PostsInterface
         return $posts;
     }
 
-    public function store($request)
+    public function decors()
     {
-        $post = new Post();
-        $post->fill($request);
-        $post->save();
 
-        // TODO log
-
-        return $post;
-    }
-
-    public function destroy(Post $post)
-    {
-        return $post->delete();
-    }
-
-    public function discover()
-    {
-        return $this->query("Discover");
-    }
-
-    public function howTos()
-    {
-        return $this->query("How To");
-    }
-
-    public function guides()
-    {
-        return $this->query("Guide");
-    }
-
-    public function faqs()
-    {
-        return $this->query("FAQ");
-    }
-
-    public function query($tag)
-    {
-        $posts = Post::whereHas("tags", function ($query) use ($tag) {
-            $query->where([
-                ['name', '=', $tag]
-            ]);
-        })->with("tags")->get();
+        $posts = Post::whereHas("tags", function ($query){
+                $query->where([
+                    ['name', '=', "Decor Tips"]
+                ]);
+            })
+            ->with("tags")->orderBy("id", "desc")->get();
 
         return $posts;
+    }
+
+    public function shopWithTag($tag)
+    {
+        $posts = Post::whereHas('tags', function ($query) {
+                $query->where([
+                    ['name', '=', "Members"]
+                ]);
+            })
+            ->whereHas("tags", function ($query) use ($tag){
+                $query->where([
+                    ['name', '=', $tag]
+                ]);
+            })
+            ->with("tags")->orderBy("id", "desc")->get();
+
+        return $posts;
+    }
+
+    public function galleryWithTag($tag)
+    {
+        $posts = Post::whereHas('tags', function ($query) {
+            $query->where([
+                ['name', '=', "Gallery"]
+            ]);
+        })
+            ->whereHas("tags", function ($query) use ($tag){
+                $query->where([
+                    ['name', '=', $tag]
+                ]);
+            })
+            ->with("tags")->orderBy("id", "desc")->get();
+
+        return $posts;
+    }
+
+    public function shopTags()
+    {
+        $value = "Members";
+
+        $posts = Post::whereHas('tags', function ($query) use ($value) {
+            $query->where('name', '=', $value);
+        })->with("tags")->get();
+
+        $tags = [];
+
+        foreach($posts as $post) {
+            foreach($post->tags()->get() as $tag) {
+
+                if (in_array($tag->name, $tags)) {
+                    continue;
+                }
+
+                $tags[] = $tag;
+            }
+        }
+
+        //TODO make new and sale go to top of list
+
+        return (new Collection($tags))->unique();
+    }
+
+    public function galleryTags()
+    {
+        $value = "Gallery";
+
+        $posts = Post::whereHas('tags', function ($query) use ($value) {
+            $query->where('name', '=', $value);
+        })->with("tags")->get();
+
+        $tags = [];
+
+        foreach($posts as $post) {
+            foreach($post->tags()->get() as $tag) {
+
+                if (in_array($tag->name, $tags)) {
+                    continue;
+                }
+
+                $tags[] = $tag;
+            }
+        }
+
+        //TODO make new and sale go to top of list
+
+        return (new Collection($tags))->unique();
     }
 }

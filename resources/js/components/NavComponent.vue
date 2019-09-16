@@ -28,8 +28,8 @@
                         </a>
                     </li>
                     <li class="valign-wrapper">
-                        <a href="" class="white outline btn-large">
-                            Exchange Rate
+                        <a href="/exclusive/members" class="white outline btn-large">
+                            Member Area
                         </a>
                     </li>
                 </ul>

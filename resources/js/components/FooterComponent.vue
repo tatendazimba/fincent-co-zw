@@ -75,7 +75,8 @@
                                     <p class="">
                                         <span>Fincent Headquarters</span>
                                     </p>
-                                    <p>8th Floor, ZB Life Towers</p>
+                                    <p>8th Floor</p>
+                                    <p>ZB Life Towers</p>
                                     <p>77 Jason Moyo</p>
                                     <p>Harare, Zimbawe</p>
                                 </div>

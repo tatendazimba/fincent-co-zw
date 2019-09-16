@@ -8,10 +8,10 @@
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
 
-                        <h2 class="no-margin white-text">Subscribe to Our Newsletter</h2>
+                        <h2 class="no-margin white-text">Access Exclusive Research</h2>
 
                         <h5 class="no-margin white-text thin primary-text">
-                            Get our latest research about Zimbabwean markets.
+                            Get our latest research & insights about Zimbabwean markets.
                         </h5>
 
                         <p>&nbsp;</p>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="col s12 m4 valign-wrapper">
                     <div class="full-width">
-                        <a href="/register" class="primary btn-large full-width" type="submit">Subscribe Today</a>
+                        <a href="/register" class="primary btn-large full-width" type="submit">Become A Member</a>
                     </div>
                 </div>
             </div>
