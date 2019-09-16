@@ -103,8 +103,8 @@
                                         <button type="submit" class="btn-large black">
                                             Register
                                         </button>
-
                                         <br>
+                                        <a href="/login">Already have an account?</a>
                                     </div>
                                 </div>
 
