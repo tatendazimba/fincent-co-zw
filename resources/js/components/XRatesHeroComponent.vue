@@ -4,7 +4,7 @@
         <div class="hoverable" style="">
             <div class="no-margin valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/city/post-office.jpg') no-repeat center center; background-size: cover; height: 900px;">
                 <div id="" class="flex row container">
-                    <div class="col s12 m6">
+                    <div class="col s12">
                         <h1 class="white-text animated slideInLeft">
                             <span>Bureau De Change</span>
                         </h1>
@@ -25,55 +25,55 @@
 
                     </div>
 
-                    <div class="col s12 m6 valign-wrapper">
-                        <div class="white full-width">
+<!--                    <div class="col s12 m6 valign-wrapper">-->
+<!--                        <div class="white full-width">-->
 
-                            <form class="container">
+<!--                            <form class="container">-->
 
-                                <p>&nbsp;</p>
+<!--                                <p>&nbsp;</p>-->
 
-                                <h4 class="secondary-text">Exchange Calculator</h4>
+<!--                                <h4 class="secondary-text">Exchange Calculator</h4>-->
 
-                                <div class="col s8 no-pad">
-                                    <label>FROM</label>
-                                    <input type="text" placeholder="Amount">
-                                </div>
+<!--                                <div class="col s8 no-pad">-->
+<!--                                    <label>FROM</label>-->
+<!--                                    <input type="text" placeholder="Amount">-->
+<!--                                </div>-->
 
-                                <div class="col s4 no-pad">
-                                    <label>FROM</label>
-                                    <select class="browser-default">
-                                        <option value="">Select Currency</option>
-                                        <option v-for="currency in currencies" :value="currency">{{ currency.name }}</option>
-                                    </select>
-                                </div>
+<!--                                <div class="col s4 no-pad">-->
+<!--                                    <label>FROM</label>-->
+<!--                                    <select class="browser-default">-->
+<!--                                        <option value="">Select Currency</option>-->
+<!--                                        <option v-for="currency in currencies" :value="currency">{{ currency.name }}</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
 
-                                <p>&nbsp;</p>
+<!--                                <p>&nbsp;</p>-->
 
-                                <div class="col s8 no-pad">
-                                    <label>TO</label>
-                                    <input type="text" placeholder="Amount">
-                                </div>
+<!--                                <div class="col s8 no-pad">-->
+<!--                                    <label>TO</label>-->
+<!--                                    <input type="text" placeholder="Amount">-->
+<!--                                </div>-->
 
-                                <div class="col s4 no-pad">
-                                    <label>FROM</label>
-                                    <select class="browser-default">
-                                        <option value="">Select Currency</option>
-                                        <option v-for="currency in currencies" :value="currency">{{ currency.name }}</option>
-                                    </select>
-                                </div>
+<!--                                <div class="col s4 no-pad">-->
+<!--                                    <label>FROM</label>-->
+<!--                                    <select class="browser-default">-->
+<!--                                        <option value="">Select Currency</option>-->
+<!--                                        <option v-for="currency in currencies" :value="currency">{{ currency.name }}</option>-->
+<!--                                    </select>-->
+<!--                                </div>-->
 
-                                <p>&nbsp;</p>
+<!--                                <p>&nbsp;</p>-->
 
-                                <div class="col s12 no-pad">
-                                    <button class="primary btn-large">Calculate</button>
-                                </div>
+<!--                                <div class="col s12 no-pad">-->
+<!--                                    <button class="primary btn-large">Calculate</button>-->
+<!--                                </div>-->
 
-                                <p>&nbsp;</p>
+<!--                                <p>&nbsp;</p>-->
 
-                            </form>
+<!--                            </form>-->
 
-                        </div>
-                    </div>
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

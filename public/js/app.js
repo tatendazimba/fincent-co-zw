@@ -56011,103 +56011,7 @@ var render = function() {
   return _c(
     "div",
     { staticStyle: { overflow: "visible" } },
-    [
-      _c("nav-component"),
-      _vm._v(" "),
-      _c("div", { staticClass: "hoverable" }, [
-        _c(
-          "div",
-          {
-            staticClass: "no-margin valign-wrapper",
-            staticStyle: {
-              background:
-                "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/city/post-office.jpg') no-repeat center center",
-              "background-size": "cover",
-              height: "900px"
-            }
-          },
-          [
-            _c(
-              "div",
-              { staticClass: "flex row container", attrs: { id: "" } },
-              [
-                _vm._m(0),
-                _vm._v(" "),
-                _c("div", { staticClass: "col s12 m6 valign-wrapper" }, [
-                  _c("div", { staticClass: "white full-width" }, [
-                    _c("form", { staticClass: "container" }, [
-                      _c("p", [_vm._v(" ")]),
-                      _vm._v(" "),
-                      _c("h4", { staticClass: "secondary-text" }, [
-                        _vm._v("Exchange Calculator")
-                      ]),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col s4 no-pad" }, [
-                        _c("label", [_vm._v("FROM")]),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          { staticClass: "browser-default" },
-                          [
-                            _c("option", { attrs: { value: "" } }, [
-                              _vm._v("Select Currency")
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.currencies, function(currency) {
-                              return _c(
-                                "option",
-                                { domProps: { value: currency } },
-                                [_vm._v(_vm._s(currency.name))]
-                              )
-                            })
-                          ],
-                          2
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v(" ")]),
-                      _vm._v(" "),
-                      _vm._m(2),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col s4 no-pad" }, [
-                        _c("label", [_vm._v("FROM")]),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          { staticClass: "browser-default" },
-                          [
-                            _c("option", { attrs: { value: "" } }, [
-                              _vm._v("Select Currency")
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.currencies, function(currency) {
-                              return _c(
-                                "option",
-                                { domProps: { value: currency } },
-                                [_vm._v(_vm._s(currency.name))]
-                              )
-                            })
-                          ],
-                          2
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v(" ")]),
-                      _vm._v(" "),
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _c("p", [_vm._v(" ")])
-                    ])
-                  ])
-                ])
-              ]
-            )
-          ]
-        )
-      ])
-    ],
+    [_c("nav-component"), _vm._v(" "), _vm._m(0)],
     1
   )
 }
@@ -56116,57 +56020,47 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col s12 m6" }, [
-      _c("h1", { staticClass: "white-text animated slideInLeft" }, [
-        _c("span", [_vm._v("Bureau De Change")])
-      ]),
-      _vm._v(" "),
-      _c("p", [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("div", {
-        staticClass: "divide secondary animated slideInLeft",
-        staticStyle: { width: "15%" }
-      }),
-      _vm._v(" "),
-      _c("p", [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("h4", { staticClass: "white-text thin uppercase" }, [
-        _c("span", [
-          _vm._v(
-            "\n                            Enjoy the Best Rates.\n                        "
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("p", [_vm._v(" ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col s8 no-pad" }, [
-      _c("label", [_vm._v("FROM")]),
-      _vm._v(" "),
-      _c("input", { attrs: { type: "text", placeholder: "Amount" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col s8 no-pad" }, [
-      _c("label", [_vm._v("TO")]),
-      _vm._v(" "),
-      _c("input", { attrs: { type: "text", placeholder: "Amount" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col s12 no-pad" }, [
-      _c("button", { staticClass: "primary btn-large" }, [_vm._v("Calculate")])
+    return _c("div", { staticClass: "hoverable" }, [
+      _c(
+        "div",
+        {
+          staticClass: "no-margin valign-wrapper",
+          staticStyle: {
+            background:
+              "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/city/post-office.jpg') no-repeat center center",
+            "background-size": "cover",
+            height: "900px"
+          }
+        },
+        [
+          _c("div", { staticClass: "flex row container", attrs: { id: "" } }, [
+            _c("div", { staticClass: "col s12" }, [
+              _c("h1", { staticClass: "white-text animated slideInLeft" }, [
+                _c("span", [_vm._v("Bureau De Change")])
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "divide secondary animated slideInLeft",
+                staticStyle: { width: "15%" }
+              }),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("h4", { staticClass: "white-text thin uppercase" }, [
+                _c("span", [
+                  _vm._v(
+                    "\n                                Enjoy the Best Rates.\n                            "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")])
+            ])
+          ])
+        ]
+      )
     ])
   }
 ]
