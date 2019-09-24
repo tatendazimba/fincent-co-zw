@@ -2047,7 +2047,7 @@ __webpack_require__.r(__webpack_exports__);
       transactionType: "",
       rates: [],
       customers: [],
-      purposes: ["Cross Border", "DSTV", "Medical Bill", "School Fees", "Travel Allowance", "Business Travel", "Other", "Other"],
+      purposes: ["Cross Border", "DSTV", "Medical Bill", "School Fees", "Travel Allowance", "Business Travel", "Other"],
       purpose: "",
       currencies: [],
       amount: "0.00",
@@ -2084,9 +2084,10 @@ __webpack_require__.r(__webpack_exports__);
       this.error = "";
       var self = this;
       axios.post(_config__WEBPACK_IMPORTED_MODULE_0__["BASE_URL"] + "transaction", payload).then(function (response) {
-        console.log("response: ", response);
-
-        if (response.data.code === "00") {} else {
+        if (response.data.code === "00") {
+          window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
+          window.location = '/admin/reports' + response.data.results[0].id;
+        } else {
           _this.error = response.data.friendly;
         }
       })["catch"](function (error) {

@@ -89,7 +89,12 @@ class TransactionController extends Controller
 
             Log::info("TRANSACTION SAVE PAYLOAD ::: " . json_encode($args));
 
-            Transaction::create($args);
+            $transaction = new Transaction($args);
+            $transaction->save();
+            $transaction->refresh();
+
+            $response->results = [$transaction];
+
         } catch (\Exception $exception) {
             $response->code = "01";
             $response->description = $exception->getMessage();

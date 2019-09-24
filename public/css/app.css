@@ -10628,6 +10628,11 @@ label {
     background-color: #f4f2f3 !important;
 }
 
+.lighten-1 {
+    background: #93bae1 !important;
+    color: #003162 !important;
+}
+
 .poscloud {
   background: #763568;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ED2A5A, #763568);  /* Chrome 10-25, Safari 5.1-6 */

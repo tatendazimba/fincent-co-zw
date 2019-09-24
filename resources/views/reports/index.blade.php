@@ -47,7 +47,9 @@
                                         <img src="/images/flags/{{ $transaction->_to }}.svg" style="height: 32px;">
                                     </td>
                                     <td>
-                                        <strong>{{ $transaction->id }}</strong>
+                                        <strong>
+                                            <a href="{{ route('pdf.receipt', $transaction->id) }}">{{ $transaction->id }}</a>
+                                        </strong>
                                     </td>
                                     <td>{{ $transaction->created_at }}</td>
                                     <td class="lighten-1 right-align">{{ $transaction->from_amount }}</td>

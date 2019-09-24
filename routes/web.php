@@ -35,7 +35,7 @@ Route::middleware(["auth"])->prefix('admin')->group(function(){
     Route::resource("stories", ADMIN\StoryController::class);
     Route::resource("tags", ADMIN\TagController::class);
     Route::resource("images", ADMIN\ImageController::class);
-    Route::get("pdf/receipt/", "ADMIN\ReportsController@generatePdf")->name("pdf.receipt");
+    Route::get("pdf/receipt/{id}", "ADMIN\ReportsController@generatePdf")->name("pdf.receipt");
 
 
     Route::post("/add/tag/{story}/{tag}", ADMIN\AddTagController::class)->name("add.tag");

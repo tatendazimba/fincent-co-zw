@@ -1,12 +1,12 @@
-@extends("layouts.panel");
+@extends("layouts.panel")
 
 @section('content')
     @include("partials.nav-admin")
     @include("partials.sidebar")
 
-    <main class="">
+    <main class="" style="height: auto;">
 
-        <div class="flex row">
+        <div class="">
             <calculate-component></calculate-component>
         </div>
 

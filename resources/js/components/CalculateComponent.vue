@@ -148,7 +148,6 @@
                     "Travel Allowance",
                     "Business Travel",
                     "Other",
-                    "Other",
                 ],
                 purpose: "",
                 currencies: [],
@@ -190,10 +189,9 @@
                 axios.post(BASE_URL + "transaction", payload)
                     .then((response) => {
 
-                        console.log("response: ", response);
-
                         if (response.data.code === "00") {
-
+                            window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
+                            window.location = '/admin/reports' + response.data.results[0].id;
                         } else {
                             this.error = response.data.friendly;
                         }
