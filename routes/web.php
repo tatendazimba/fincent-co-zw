@@ -27,12 +27,16 @@ Route::get('/corporate-services', 'CorporateController@index')->name("corporate.
 Route::get('/exclusive/members/{tag?}', "BlogsController@index")->name("members.index");
 
 Route::middleware(["auth"])->prefix('admin')->group(function(){
+    Route::get('/reports', "ADMIN\ReportsController@index")->name("reports.index");
     Route::resource("currencies", ADMIN\CurrencyController::class);
     Route::resource("rates", ADMIN\RateController::class);
+    Route::resource("transactions", ADMIN\TransactionController::class);
     Route::resource("content", ADMIN\StoryController::class);
     Route::resource("stories", ADMIN\StoryController::class);
     Route::resource("tags", ADMIN\TagController::class);
     Route::resource("images", ADMIN\ImageController::class);
+    Route::get("pdf/receipt/", "ADMIN\ReportsController@generatePdf")->name("pdf.receipt");
+
 
     Route::post("/add/tag/{story}/{tag}", ADMIN\AddTagController::class)->name("add.tag");
     Route::post("/remove/tag/{story}/{tag}", ADMIN\DeleteTagController::class)->name("remove.tag");

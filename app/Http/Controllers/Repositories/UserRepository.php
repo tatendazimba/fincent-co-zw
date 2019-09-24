@@ -19,6 +19,6 @@ class UserRepository implements UserInterface
 
     public function index()
     {
-        return $this->users->paginate();
+        return $this->users->all();
     }
 }

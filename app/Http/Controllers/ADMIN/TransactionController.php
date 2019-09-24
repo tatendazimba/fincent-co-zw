@@ -5,11 +5,14 @@ namespace App\Http\Controllers\ADMIN;
 use App\Currency;
 use App\Rate;
 use App\ResponseWrapper;
+use App\Transaction;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
-class RateController extends Controller
+class TransactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,10 +22,9 @@ class RateController extends Controller
     public function index()
     {
         $currencies = Currency::paginate();
-        $rates = Rate::orderBy("id", "desc")
-            ->paginate();
+        $transactions = Transaction::paginate();
 
-        return view("rates.index", compact("currencies", "rates"));
+        return view("transactions.index", compact("currencies", "transactions"));
     }
 
     public function indexApi()
@@ -30,14 +32,10 @@ class RateController extends Controller
         $response = new ResponseWrapper("00", "SUCCESS", "SUCCESS");
 
         try {
-
-            $rates = Rate::select("id", "_from", "_to", "buy", "sell", "updated_at")
-                ->orderBy("id", "desc")
-                ->get()
-                ->unique(function ($item) {
-                    return $item['_from'].$item['_to'];
-                })
-                ->values()->all();
+            $rates = Rate::select(DB::raw('ANY_VALUE(id) as id, _from, _to, ANY_VALUE(updated_at) as date, ANY_VALUE(buy) as buy, ANY_VALUE(sell) as sell'))
+                ->orderBy("id", "asc")
+                ->groupBy('_from', '_to')
+                ->get();
 
             $response->results = $rates;
 
@@ -57,7 +55,10 @@ class RateController extends Controller
      */
     public function create()
     {
-        //
+        $currencies = Currency::paginate();
+        $transactions = Transaction::paginate();
+
+        return view("transactions.index", compact("currencies", "transactions"));
     }
 
     /**
@@ -68,15 +69,36 @@ class RateController extends Controller
      */
     public function store(Request $request)
     {
-        Rate::create([
-            "_to" => $request->input("to"),
-            "_from" => $request->input("code"),
-            "buy" => $request->input("buy"),
-            "sell" => $request->input("sell"),
-            "user" => auth()->user()->email,
-        ]);
+        Log::info("TRANSACTION SAVE REQUEST ::: " . json_encode($request->all()));
 
-       return back();
+        $response = new ResponseWrapper("00", "SUCEESS", "SUCCESS");
+        try {
+
+            $args = [
+                "_to" => $request->input("to"),
+                "_from" => $request->input("from"),
+                "rate" => $request->input("rate"),
+                "from_amount" => $request->input("from_amount"),
+                "to_amount" => $request->input("to_amount"),
+                "type" => $request->input("type"),
+                "status" => "COMPLETE",
+                "rate_id" => $request->input("rate_id"),
+                "user" => "admin@fincent.co.zw",
+                "purpose" => $request->input("purpose"),
+            ];
+
+            Log::info("TRANSACTION SAVE PAYLOAD ::: " . json_encode($args));
+
+            Transaction::create($args);
+        } catch (\Exception $exception) {
+            $response->code = "01";
+            $response->description = $exception->getMessage();
+            $response->friendly = "Failed to save transaction";
+        }
+
+        Log::info("TRANSACTION SAVE RESPONSE ::: " . json_encode($response->toArray()));
+
+        return response()->json($response);
     }
 
     /**

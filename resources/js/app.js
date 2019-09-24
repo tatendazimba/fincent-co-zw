@@ -53,6 +53,9 @@ Vue.component('why-trade-component', require('./components/WhyTradeComponent').d
 
 Vue.component('loans-component', require('./components/LoansComponent').default);
 
+Vue.component('calculate-component', require('./components/CalculateComponent').default);
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -18,6 +18,10 @@ class CreateTagsTable extends Migration
             $table->string("name")->unique();
             $table->string("description")->nullable();
             $table->timestamps();
+
+            $table->string("user");
+
+            $table->foreign('user')->references('email')->on('users');
         });
     }
 

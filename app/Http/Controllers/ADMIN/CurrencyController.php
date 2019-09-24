@@ -127,7 +127,8 @@ class CurrencyController extends Controller
             'VEF' => 'Venezuela Bolivar',
             'VND' => 'Viet Nam Dong',
             'YER' => 'Yemen Rial',
-            'ZWD' => 'Zimbabwe Dollar'
+            'ZWL CASH' => 'Zimbabwe Dollar Cash',
+            'ZWL RTGS' => 'Zimbabwe Dollar RTGS',
         );
     }
 
@@ -163,6 +164,7 @@ class CurrencyController extends Controller
            "code" => $request->input("code"),
            "description" => $this->currencyList[$request->input("code")],
            "status" => "ACTIVE",
+           "user" => auth()->user()->email,
         ]);
 
          return back();

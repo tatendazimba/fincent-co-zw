@@ -8,11 +8,13 @@ use App\Http\Controllers\Interfaces\CustomerInterface;
 use App\Http\Controllers\Interfaces\PostsInterface;
 use App\Http\Controllers\Interfaces\RegisterInterface;
 use App\Http\Controllers\Interfaces\TagInterface;
+use App\Http\Controllers\Interfaces\UserInterface;
 use App\Http\Controllers\Repositories\AgentApiRepository;
 use App\Http\Controllers\Repositories\CustomerRepository;
 use App\Http\Controllers\Repositories\PostsRepository;
 use App\Http\Controllers\Repositories\RegisterRepository;
 use App\Http\Controllers\Repositories\TagRepository;
+use App\Http\Controllers\Repositories\UserRepository;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -44,6 +46,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(CustomerInterface::class, CustomerRepository::class);
         $this->app->bind(AgentInterface::class, AgentApiRepository::class);
         $this->app->bind(RegisterInterface::class, RegisterRepository::class);
+        $this->app->bind(UserInterface::class, UserRepository::class);
 
         $this->app->bind(Client::class, function ($app) {
             return new Client([

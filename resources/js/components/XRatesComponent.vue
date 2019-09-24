@@ -15,85 +15,50 @@
             </div>
         </div>
 
-        <div class="row container bordered">
-            <div class="col s12 no-pad">
-                <div class="mobile-flex flex row no-margin primary" style="border-bottom: 1px solid #cacbcd;">
-                    <div class="col s1">
-                        <img class="full-width" :src="'/images/flags/ZWL.svg'">
-                    </div>
-                    <div class="col s1 no-pad valign-wrapper">
-                        <div class="full-width center-align">
-                            <strong class="flow-text">
-                                ZWL
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="col s5 no-pad center-align valign-wrapper">
-                        <div class="full-width center-align">
-                            <strong class="flow-text">
-                                BUY
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="col s5 no-pad center-align valign-wrapper">
-                        <div class="full-width center-align">
-                            <strong class="flow-text">
-                                SELL
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-                <div v-for="currency in currencies" class="mobile-flex flex row no-margin" style="border-bottom: 1px solid #cacbcd;">
-                    <div class="col s1">
-                        <img class="full-width" :src="'/images/flags/' + currency.name + '.svg'">
-                    </div>
-                    <div class="col s1 no-pad valign-wrapper">
-                        <div class="full-width center-align">
-                            <strong class="flow-text">
-                                {{ currency.name }}
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="col s5 no-pad center-align valign-wrapper">
-                        <div class="full-width center-align">
-                            <strong class="flow-text">
-                                <i class="material-icons red-text hide">call_received</i>
-                                {{ currency.buy }}
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="col s5 no-pad center-align valign-wrapper">
-                        <div class="full-width center-align">
-                            <strong class="flow-text">
-                                <i class="material-icons green-text hide">call_made</i>
-                                {{ currency.sell }}
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row container">
 
-<!--            <div class="col s12 m7 valign-wrapper">-->
-<!--                <div class="rounded white with-margin with-padding full-width">-->
-<!--                    <h2>EURO - USD</h2>-->
-<!--                    <h4 class="inline-block">-->
-<!--                        1.11433-->
-<!--                        <i class="material-icons red-text">call_received</i>-->
-<!--                    </h4>-->
-<!--                    <strong>-->
-<!--                        -0.000000434-->
-<!--                    </strong>-->
+            <p>&nbsp;</p>
 
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                    <p>&nbsp;</p>-->
-<!--                </div>-->
-<!--            </div>-->
+            <table class=" highlight primary-font">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="">
+                            <strong class="flow-text">FROM</strong>
+                        </th>
+                        <th class="">
+                            <strong class="flow-text">TO</strong>
+                        </th>
+                        <th class="grey right-align">
+                            <strong class="flow-text">BUY</strong>
+                        </th>
+                        <th class="grey right-align">
+                            <strong class="flow-text">SELL</strong>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="currency in currencies" class="flow-text primary-font">
+                        <td>
+                            <img class="" :src="'/images/flags/' + currency._from + '.svg'" style="height: 48px;">
+
+                            <img class="" :src="'/images/flags/' + currency._to + '.svg'" style="height: 48px;">
+                        </td>
+                        <td>
+                            <span  class="flow-text grey-text">{{ currency._from}}</span>
+                        </td>
+                        <td>
+                            <span  class="flow-text grey-text">{{ currency._to }}</span>
+                        </td>
+                        <td class="grey right-align">
+                            <span class="flow-text primary-text">{{ currency.buy }}</span>
+                        </td>
+                        <td class="grey right-align ">
+                            <span class="flow-text primary-text">{{ currency.sell }}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <p>&nbsp;</p>
@@ -115,32 +80,51 @@
 </template>
 
 <script>
+    import {BASE_URL} from "../config";
+
     export default {
         name: "XRatesComponent",
         data: function () {
             return {
-                currencies: [
-                    {
-                        name: "USD",
-                        buy: 13.167558,
-                        sell: 14.2648545,
-                    },
-                    {
-                        name: "BWP",
-                        buy: 1.216023981,
-                        sell: 1.317359313,
-                    },
-                    {
-                        name: "EUR",
-                        buy: 14.60018831,
-                        sell: 15.81687067,
-                    },
-                    {
-                        name: "ZAR",
-                        buy: 14.1961,
-                        sell: 14.9293,
-                    },
-                ]
+                loading: false,
+                error: "",
+                currencies: []
+            }
+        },
+        mounted() {
+            this.getRates();
+        },
+        methods: {
+            getRates: function () {
+
+                this.loading = true;
+                this.error = "";
+
+                const self = this;
+
+                axios.get(BASE_URL + "xrates")
+                    .then((response) => {
+
+                        console.log("response: ", response);
+
+                        if (response.data.code === "00") {
+                            this.currencies = response.data.results;
+                        } else {
+                            this.error = response.data.friendly;
+                        }
+                    })
+                    .catch((error) => {
+                        if (error.response.data.errors) {
+                            Object.keys(error.response.data.errors).forEach((value) => {
+                                this.error += (error.response.data.errors[value] + "\n");
+                            })
+                        }
+
+                        this.error = this.error ? this.error : "Oops. Something went wrong. Please try again";
+                    })
+                    .finally((_) => {
+                        this.loading = false;
+                    });
             }
         }
     }

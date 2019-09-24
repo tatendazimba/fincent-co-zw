@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers\ADMIN;
 
-use App\Currency;
-use App\Rate;
-use App\ResponseWrapper;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Interfaces\UserInterface;
+use App\ResponseWrapper;
+use App\User;
+use Illuminate\Http\Request;
 
-class RateController extends Controller
+class UserController extends Controller
 {
+    protected $usersRepo;
+
+    public function __construct(UserInterface $usersRepo)
+    {
+        $this->usersRepo = $usersRepo;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -18,33 +23,16 @@ class RateController extends Controller
      */
     public function index()
     {
-        $currencies = Currency::paginate();
-        $rates = Rate::orderBy("id", "desc")
-            ->paginate();
 
-        return view("rates.index", compact("currencies", "rates"));
-    }
-
-    public function indexApi()
-    {
         $response = new ResponseWrapper("00", "SUCCESS", "SUCCESS");
 
         try {
-
-            $rates = Rate::select("id", "_from", "_to", "buy", "sell", "updated_at")
-                ->orderBy("id", "desc")
-                ->get()
-                ->unique(function ($item) {
-                    return $item['_from'].$item['_to'];
-                })
-                ->values()->all();
-
-            $response->results = $rates;
-
+            $users = $this->usersRepo->index();
+            $response->results = $users;
         } catch (\Exception $exception) {
             $response->code = "01";
             $response->description = $exception->getMessage();
-            $response->friendly = "Failed to fetch rates. Please try again.";
+            $response->friendly = "Failed to fetch customers";
         }
 
         return response()->json($response);
@@ -68,15 +56,7 @@ class RateController extends Controller
      */
     public function store(Request $request)
     {
-        Rate::create([
-            "_to" => $request->input("to"),
-            "_from" => $request->input("code"),
-            "buy" => $request->input("buy"),
-            "sell" => $request->input("sell"),
-            "user" => auth()->user()->email,
-        ]);
-
-       return back();
+        //
     }
 
     /**
@@ -93,12 +73,12 @@ class RateController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
-        //
+        return view("users.edit", compact("user"));
     }
 
     /**

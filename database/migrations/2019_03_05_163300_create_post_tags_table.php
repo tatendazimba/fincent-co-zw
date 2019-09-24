@@ -18,6 +18,10 @@ class CreatePostTagsTable extends Migration
             $table->bigInteger("post_id");
             $table->bigInteger("tag_id");
             $table->timestamps();
+
+            $table->string("user");
+
+            $table->foreign('user')->references('email')->on('users');
         });
     }
 

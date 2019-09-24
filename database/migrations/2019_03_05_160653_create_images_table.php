@@ -19,6 +19,10 @@ class CreateImagesTable extends Migration
             $table->string("caption")->nullable();
             $table->bigInteger("post_id");
             $table->timestamps();
+
+            $table->string("user");
+
+            $table->foreign('user')->references('email')->on('users');
         });
     }
 

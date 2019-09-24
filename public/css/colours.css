@@ -86,10 +86,6 @@
     color: #FDED11 !important;
 }
 
-.grey {
-    background: #fafafa !important;
-}
-
 .grey-text {
     color: #72738e !important;
 }
@@ -121,4 +117,9 @@
 
 .pinkish {
     background-color: #f4f2f3 !important;
+}
+
+.lighten-1 {
+    background: #93bae1 !important;
+    color: #003162 !important;
 }

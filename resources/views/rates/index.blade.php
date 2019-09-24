@@ -10,8 +10,8 @@
 
         <div class="row">
             <div class="col s12">
-                <h4>Currencies</h4>
-                <p>Manage Supported Currencies</p>
+                <h4>Trading Rates</h4>
+                <p>Manage exchange rates.</p>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
 
                             <div class="col s3">
                                 <label for="code">Currency Code</label>
-                                <select class="browser-default" id="code" name="code">
+                                <select class="browser-default" id="code" name="code" required>
                                     <option value="">Select Currency</option>
                                     @foreach($currencies as $currency)
                                         <option value="{{ $currency->code }}">{{ $currency->code }} {{ $currency->description }}</option>
@@ -47,8 +47,13 @@
                             </div>
 
                             <div class="col s3">
-                                <label for="code">CURRENCY</label>
-                                <input type="text" value="ZWL" readonly>
+                                <label for="to">CURRENCY</label>
+                                <select class="browser-default" id="to" name="to" required>
+                                    <option value="">Select Currency</option>
+                                    @foreach($currencies as $currency)
+                                        <option value="{{ $currency->code }}">{{ $currency->code }} {{ $currency->description }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="col s6">
@@ -65,11 +70,12 @@
                         <thead>
                         <tr>
                             <th>ID</th>
+                            <th></th>
                             <th>CURRENCY</th>
                             <th>BUY</th>
                             <th>SELL</th>
+                            <th>TO</th>
                             <th>Published On</th>
-                            <th>Last Edited</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -79,10 +85,18 @@
                                 <td>
                                     <strong>{{ $rate->id }}</strong>
                                 </td>
-                                <td>{{ $rate->from }}</td>
+                                <td>
+                                    <img src="/images/flags/{{$rate->_from}}.svg" style="height: 48px;">
+                                    <img src="/images/flags/{{$rate->_to}}.svg" style="height: 48px;">
+                                </td>
+                                <td>
+                                    <strong>{{ $rate->_from }}</strong>
+                                </td>
                                 <td>{{ $rate->buy }}</td>
                                 <td>{{ $rate->sell }}</td>
-                                <td>{{ $rate->created_at }}</td>
+                                <td>
+                                    <strong>{{ $rate->_to }}</strong>
+                                </td>
                                 <td>{{ $rate->updated_at }}</td>
                             </tr>
                         @endforeach

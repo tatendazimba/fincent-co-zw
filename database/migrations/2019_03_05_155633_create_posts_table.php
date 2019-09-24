@@ -18,6 +18,11 @@ class CreatePostsTable extends Migration
             $table->string("title");
             $table->text("content")->nullable();
             $table->timestamps();
+
+            $table->string("user");
+
+            $table->foreign('user')->references('email')->on('users');
+
         });
     }
 

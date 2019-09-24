@@ -17,10 +17,10 @@
 
         <p>&nbsp;</p>
 
-        <a class="" href="{{ route('stories.create') }}">
+        <a class="" href="{{ route('transactions.create') }}">
             <div class="container">
                 <button class="btn-large btn right-align btn-large white black-text full-width">
-                    New Post
+                    New Transaction
                 </button>
             </div>
         </a>
@@ -31,12 +31,51 @@
 
     <div class="container">
         <ul class="uppercase collapsible transparent">
+
+            <p>&nbsp;</p>
+
+            <h5 class="secondary-text">
+                BUREAU DE CHANGE
+            </h5>
+
+            <p>&nbsp;</p>
+
+            <li class="">
+                <a href="{{ route('currencies.index') }}" class="collapsible-header valign-wrapper white-text">
+                    Currencies
+                </a>
+            </li><li class="">
+                <a href="{{ route('rates.index') }}" class="collapsible-header valign-wrapper white-text">
+                    Rates
+                </a>
+            </li>
+            <li class="">
+                <a href="{{ route('reports.index') }}" class="collapsible-header valign-wrapper white-text">
+                    Reports
+                </a>
+            </li>
+
+            <p>&nbsp;</p>
+
+            <h5 class="secondary-text">
+                CONTENT
+            </h5>
+
+            <p>&nbsp;</p>
+
             <li class="">
                 <a class="collapsible-header valign-wrapper white-text">
                     Posts
                 </a>
 
                 <div class="collapsible-body transparent">
+
+                    <div class="">
+                        <a class="white-text" href="{{ route('stories.create') }}">
+                            Add New
+                        </a>
+                    </div>
+
                     @foreach($allTags as $tag)
                         <div class="">
                             <a href="{{ route('stories.per', $tag) }}" class="full-width capitalise white-text">
@@ -52,25 +91,6 @@
                     </div>
 
                 </div>
-            </li>
-            <li class="">
-                <a href="{{ route('currencies.index') }}" class="collapsible-header valign-wrapper white-text">
-                    Currencies
-                </a>
-            </li><li class="">
-                <a href="{{ route('rates.index') }}" class="collapsible-header valign-wrapper white-text">
-                    Rates
-                </a>
-            </li>
-            <li class="">
-                <a class="collapsible-header valign-wrapper white-text">
-                    Transactions
-                </a>
-            </li>
-            <li class="">
-                <a class="collapsible-header valign-wrapper white-text">
-                    Reports
-                </a>
             </li>
         </ul>
     </div>

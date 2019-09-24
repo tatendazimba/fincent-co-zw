@@ -20,7 +20,6 @@
 
     <!-- Styles -->
 
-    <link href="{{ asset('css/fonts/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles-panel.css') }}" rel="stylesheet">
 
@@ -28,7 +27,15 @@
 </head>
 <body>
 
-    @yield('content')
+    <div id="app">
+        @yield('content')
+    </div>
+
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>;
+    </script>
 
     <script src="{{ asset('js/app.js') }}"></script>
 
