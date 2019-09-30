@@ -17,11 +17,13 @@
 
                         <h4 class="white-text thin uppercase">
                             <span>
-                                PayDay Loans
-                                <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
                                 Script-Based Credit Instruments
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Cash-Backed Lending
+                                PayDay Loans
+
+                                <br>
+
+                                Currency-Backed Lending
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
                                 Structured Credit Products
                             </span>

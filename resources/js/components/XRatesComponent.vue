@@ -29,10 +29,10 @@
                         <th class="">
                             <strong class="flow-text">TO</strong>
                         </th>
-                        <th class="grey right-align">
+                        <th class="grey lighten-2 right-align">
                             <strong class="flow-text">BUY</strong>
                         </th>
-                        <th class="grey right-align">
+                        <th class="grey lighten-2 right-align">
                             <strong class="flow-text">SELL</strong>
                         </th>
                     </tr>
@@ -50,10 +50,10 @@
                         <td>
                             <span  class="flow-text grey-text">{{ currency._to }}</span>
                         </td>
-                        <td class="grey right-align">
+                        <td class="grey lighten-2 right-align">
                             <span class="flow-text primary-text">{{ currency.buy }}</span>
                         </td>
-                        <td class="grey right-align ">
+                        <td class="grey lighten-2 right-align ">
                             <span class="flow-text primary-text">{{ currency.sell }}</span>
                         </td>
                     </tr>

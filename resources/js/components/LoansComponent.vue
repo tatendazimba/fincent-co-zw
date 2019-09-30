@@ -4,24 +4,33 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
+
+        <div class="container">
+            <img src="/images/logos-dark/micro-finance.svg" style="height: 64px;">
+            <h2 class="">Fincent Finance</h2>
+
+            <p class="">
+                We offer micro credit products to clients who wish to finance a funding gap through payday loans, script backed credit instruments, cash backed lending and structure credit products. Our subsidiary Fincent Finance is a registered credit-only Microfinance Institution (MFI) offering unsecured and secured credit products to individuals and SMEs.
+            </p>
+        </div>
+
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
 
-        <div class="flex row">
-            <div class="col s12 m3 l2">
-                <div class="container">
+        <div class="flex row container">
+            <div class="col s12 m3 l2 no-pad">
+                <div class="">
 
-                    <img src="/images/icon.svg" style="height: 32px;">
                     <h4 class="no-margin secondary-font secondary-text">
-                        <strong>Loan Products</strong>
+                        <strong>Loans</strong>
                     </h4>
-                    <p class="justified">
+                    <p class="right-margin">
                         We offer micro credit products to clients who wish to finance a funding gap.
                     </p>
                 </div>
             </div>
-            <div v-for="category in categories.slice(0, 1)" class="col s12 m4 l4 shadow valign-wrapper">
+            <div v-for="category in categories.slice(0, 1)" class="col s12 m4 l4 no-pad shadow valign-wrapper">
                 <div class="full-height"  v-bind:style="{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, .12), rgba(42, 35, 76, .735)), url(' + category.url + ')  no-repeat center center', backgroundSize: 'cover', backgroundColor: '#cacbcd' }" style="position: relative; background-size: cover; height: 400px;">
                     <div class="container">
 

@@ -18,18 +18,22 @@
                             <p>&nbsp;</p>
 
                             <div class="">
-                                <div class="grey inline-block" style="border: 2px solid white; padding: 0px; height: 56px; padding: 10px 32px; border-radius: 32px;">
-                                    <img src="/svg/social/facebook.svg" style="height: 32px;">
+                                <div class="transparent inline-block" style="border: 2px solid white; padding: 0px; height: 56px; padding: 10px 32px; border-radius: 32px;">
+                                    <a href="https://www.facebook.com/fincentcapital/">
+                                        <img src="/svg/social/facebook.svg" style="height: 32px;">
+                                    </a>
 
                                     &nbsp;
                                     &nbsp;
-
-                                    <img src="/svg/social/whatsapp.svg" style="height: 32px;">
+                                    <a href="https://twitter.com/fincentcapital">
+                                        <img src="/svg/social/twitter.svg" style="height: 32px;">
+                                    </a>
 
                                     &nbsp;
                                     &nbsp;
-
-                                    <img src="/svg/social/instagram.svg" style="height: 32px;">
+                                    <a href="https://www.linkedin.com/in/fincent-capital-615b68194/">
+                                        <img src="/svg/social/linkedin.svg" style="height: 32px;">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -51,17 +55,17 @@
                                         <a class="white-text" href="/micro-finance">Micro Finance</a>
                                     </p>
                                     <p>
-                                        <a class="white-text" href="/corporate-services">Corporate Services</a>
+                                        <a class="white-text" href="/corporate-services">Corporate Advisory</a>
                                     </p>
                                     <p>
                                         <a class="white-text" href="/bureau-de-change">Bureau De Change</a>
                                     </p>
-<!--                                    <p>-->
-<!--                                        <a class="white-text" href="/leadership">Leadership</a>-->
-<!--                                    </p>-->
-<!--                                    <p>-->
-<!--                                        <a class="white-text" href="/leadership">About Us</a>-->
-<!--                                    </p>-->
+                                    <p>
+                                        <a class="white-text" href="/leadership">Leadership</a>
+                                    </p>
+                                    <p>
+                                        <a class="white-text" href="/about">About Us</a>
+                                    </p>
                                     <p>
                                         <a class="white-text" href="/contact">Contact Us</a>
                                     </p>

@@ -94,7 +94,7 @@
                         url: "/exchange",
                     },
                     {
-                        name: "Corporate Services",
+                        name: "Corporate Advisory",
                         image: "images/stock/business-people.jpg",
                         url: "/corporate-services",
                     },

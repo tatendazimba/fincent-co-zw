@@ -20,6 +20,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::redirect('/home', '/exclusive/members');
 Route::get('/contact', 'ContactController@edit');
 Route::get('/team', 'TeamController@index');
+Route::get('/leadership', 'TeamController@index');
+Route::get('/about', AboutController::class);
 Route::get('/trading', 'TradingController@index')->name("trading.index");
 Route::get('/exchange', 'ExchangeController@index')->name("exchange.index");
 Route::get('/micro-finance', 'MicrofinanceController@index')->name("microfinance.index");
@@ -29,6 +31,7 @@ Route::get('/exclusive/members/{tag?}', "BlogsController@index")->name("members.
 Route::middleware(["auth"])->prefix('admin')->group(function(){
     Route::get('/reports', "ADMIN\ReportsController@index")->name("reports.index");
     Route::resource("currencies", ADMIN\CurrencyController::class);
+    Route::resource("customers", ADMIN\CustomerController::class);
     Route::resource("rates", ADMIN\RateController::class);
     Route::resource("transactions", ADMIN\TransactionController::class);
     Route::resource("content", ADMIN\StoryController::class);

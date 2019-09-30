@@ -24,7 +24,7 @@
             </li>
             <li class="">
                 <a href="/corporate-services" class="cursor-click valign-wrapper white-text">
-                    CORPORATE SERVICES
+                    CORPORATE ADVISORY
                 </a>
             </li>
             <li class="">
@@ -32,16 +32,16 @@
                     BUREAU DE CHANGE
                 </a>
             </li>
-<!--            <li class="">-->
-<!--                <a href="/leadership" class="cursor-click valign-wrapper white-text">-->
-<!--                    LEADERSHIP-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li class="">-->
-<!--                <a href="/about" class="cursor-click valign-wrapper white-text">-->
-<!--                    ABOUT US-->
-<!--                </a>-->
-<!--            </li>-->
+            <li class="">
+                <a href="/leadership" class="cursor-click valign-wrapper white-text">
+                    LEADERSHIP
+                </a>
+            </li>
+            <li class="">
+                <a href="/about" class="cursor-click valign-wrapper white-text">
+                    ABOUT US
+                </a>
+            </li>
             <li class="">
                 <a href="/contact" class="cursor-click valign-wrapper white-text">
                     CONTACT US
@@ -55,15 +55,15 @@
                     </a>
                 </div>
             </li>
-            <li class="">
-                <a class="white-text" v-on:click.prevent="logout()" href="/logout">
-                    <u>LOGOUT</u>
-                </a>
+<!--            <li class="">-->
+<!--                <a class="white-text" v-on:click.prevent="logout()" href="/logout">-->
+<!--                    <u>LOGOUT</u>-->
+<!--                </a>-->
 
-                <form ref="logout-form" id="logout-form" action="/logout" method="POST" style="display: none;">
-                    <input type="hidden" name="_token" :value="csrf">
-                </form>
-            </li>
+<!--                <form ref="logout-form" id="logout-form" action="/logout" method="POST" style="display: none;">-->
+<!--                    <input type="hidden" name="_token" :value="csrf">-->
+<!--                </form>-->
+<!--            </li>-->
         </ul>
     </div>
 </template>

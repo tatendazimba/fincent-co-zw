@@ -164,6 +164,7 @@
         },
         mounted() {
             this.getRates();
+            this.getCustomers();
         },
         methods: {
             processTransaction: function() {
@@ -191,7 +192,7 @@
 
                         if (response.data.code === "00") {
                             window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
-                            window.location = '/admin/reports' + response.data.results[0].id;
+                            window.location = '/admin/reports';
                         } else {
                             this.error = response.data.friendly;
                         }
@@ -270,6 +271,28 @@
                         //     })
                         // }
 
+                        this.error = this.error ? this.error : "Oops. Something went wrong. Please try again";
+                    })
+                    .finally((_) => {
+                        this.loading = false;
+                    });
+            },
+            getCustomers: function () {
+
+                this.loading = true;
+                this.error = "";
+
+                const self = this;
+
+                axios.get(BASE_URL + "customers")
+                    .then((response) => {
+                        if (response.data.code === "00") {
+                            this.customers = response.data.results;
+                        } else {
+                            this.error = response.data.friendly;
+                        }
+                    })
+                    .catch((error) => {
                         this.error = this.error ? this.error : "Oops. Something went wrong. Please try again";
                     })
                     .finally((_) => {

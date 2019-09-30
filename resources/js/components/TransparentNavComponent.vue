@@ -3,9 +3,7 @@
         <nav class="transparent container">
             <div class="navbar-wrapper overflow-visible">
 
-                <a href="/" class="brand-logo valign-wrapper full-height left" style="opacity: .9498;">
-                    <img class="ignore" src="/images/fincent-orange-white.svg" style="height: 64px !important; padding: 0 20px;">
-                </a>
+                <logo-component></logo-component>
 
                 <a href="#" data-target="slide-out" class="sidenav-trigger black-text valign-wrapper full-height right" style="">
                     <img src="/svg/icons/menu.svg" style="height: 64px;">
@@ -47,6 +45,12 @@
 
     export default {
         name: "TransparentNavComponent",
+        data: function(){
+            return {
+                route: "",
+                image: "",
+            }
+        },
         mounted() {
             document.addEventListener('DOMContentLoaded', function() {
                 M.Sidenav.init(document.querySelectorAll('.sidenav'), {
@@ -56,6 +60,23 @@
                 M.Sidenav.getInstance(document.getElementById("slide-out"));
 
             });
+        },
+        mounted() {
+            const route = window.location.pathname;
+
+            console.log("route: ", route);
+
+            if (route === "/")
+                this.image = "capital.svg";
+
+            if (route === "/")
+                this.image = "capital.svg";
+
+            if (route === "/micro-finance")
+                this.image = "micro-finance.svg";
+
+            if (route === "/micro-finance")
+                this.image = "micro-finance.svg";
         }
     }
 </script>

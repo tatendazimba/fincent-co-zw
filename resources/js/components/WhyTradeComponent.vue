@@ -6,24 +6,37 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
 
+            <div class="container">
+                <img src="/images/logos-dark/securities.svg" style="height: 64px;">
+                <h2 class="primary-text">Stockbroking & Research</h2>
+
+                <p class="">
+                    Our subsidiary Fincent Securities is a Securities & Exchange Commission (SEC) registered stockbroking firm. We offer stockbroking services to clients who wish to trade on the Zimbabwe Stock Exchange and the Alternative Investment Markets. At Fincent we have over 20 years of combined trading experience on the local Zimbabwean markets picking the securities which earn our clients good returns both in the short and long term; depending on client needs and risk appetite. We can execute successful and profitable trades in:
+                    listed equity,
+                    treasury bills,
+                    bonds and
+                    derivative instruments.
+
+                </p>
+            </div>
+
+            <p>&nbsp;</p>
+
             <div class="row container" style="">
 
-                <h2 class="no-margin">Why Trade With</h2>
-                <h2 class="secondary-text no-margin">
-                    <strong>Fincent</strong>
-                </h2>
+                <h3 class="primary-text">Why Trade With Us?</h3>
 
                 <p>&nbsp;</p>
 
                 <div v-for="reason in reasons" class="col s12">
                     <div class="flex row">
-                        <div class="col s12 m5">
+                        <div class="col s12 m5 no-pad">
                             <h5>
-                                <span>{{ reason.title }}</span>
+                                <strong class="uppercase primary-font secondary-text">{{ reason.title }}</strong>
                             </h5>
                         </div>
-                        <div class="col s12 m7">
-                            <p class="justified">
+                        <div class="col s12 m7 no-pad">
+                            <p class="">
                                 {{ reason.description     }}
                             </p>
                         </div>

@@ -17,8 +17,8 @@ class CreateCustomersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('surname');
-            $table->string('id_number', 32);
-            $table->string('mobile')->nullable();
+            $table->string('id_number', 32)->unique();
+            $table->string('mobile')->unique();
             $table->string('address')->nullable();
             $table->string('position')->nullable();
             $table->string('company')->nullable();

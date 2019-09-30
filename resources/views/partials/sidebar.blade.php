@@ -44,10 +44,30 @@
                 <a href="{{ route('currencies.index') }}" class="collapsible-header valign-wrapper white-text">
                     Currencies
                 </a>
-            </li><li class="">
+            </li>
+            <li class="">
                 <a href="{{ route('rates.index') }}" class="collapsible-header valign-wrapper white-text">
                     Rates
                 </a>
+            </li>
+            <li class="">
+                <a class="collapsible-header valign-wrapper white-text">
+                    Customers
+                </a>
+
+                <div class="collapsible-body transparent">
+                    <div class="">
+                        <a class="white-text" href="{{ route('customers.create') }}">
+                            Add New
+                        </a>
+                    </div>
+
+                    <div class="">
+                        <a class="white-text" href="{{ route('customers.index') }}">
+                            View All
+                        </a>
+                    </div>
+                </div>
             </li>
             <li class="">
                 <a href="{{ route('reports.index') }}" class="collapsible-header valign-wrapper white-text">
@@ -69,7 +89,6 @@
                 </a>
 
                 <div class="collapsible-body transparent">
-
                     <div class="">
                         <a class="white-text" href="{{ route('stories.create') }}">
                             Add New
@@ -89,7 +108,6 @@
                             View All Tags
                         </a>
                     </div>
-
                 </div>
             </li>
         </ul>

@@ -6,7 +6,7 @@
                 <div id="" class="row container">
                     <div class="col s12 m8">
                         <h1 class="white-text animated slideInLeft jumbo-text">
-                            <span>Making Sense of Finance.</span>
+                            <span>Creating Wealth. Together.</span>
                         </h1>
 
                         <p>&nbsp;</p>
@@ -16,7 +16,7 @@
                         <p>&nbsp;</p>
 
                         <h5 class="white-text thin justified">
-                                Fincent Capital is a diversified one-stop financial services group adopting technology to drive innovative provider of research, stockbroking, micro-finance, bureau de change and corporate finance services.
+                            Fincent Capital is a diversified one-stop financial services group adopting technology to drive innovative provision of research, stockbroking, micro-finance, bureau de change and corporate advisory.
                         </h5>
 
                         <p>&nbsp;</p>

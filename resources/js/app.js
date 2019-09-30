@@ -35,10 +35,14 @@ Vue.component('contact-component', require('./components/ContactComponent').defa
 
 Vue.component('member-content-component', require('./components/MemberContentComponent').default);
 
+Vue.component('logo-component', require('./components/LogoComponent').default);
+
 Vue.component('member-component', require('./components/MemberComponent').default);
 Vue.component('team-member-component', require('./components/TeamMemberComponent').default);
 
 Vue.component('blog-component', require('./components/BlogComponent').default);
+
+Vue.component('about-component', require('./components/AboutUsComponent').default);
 
 Vue.component('nav-component', require('./components/NavComponent').default);
 Vue.component('transparent-nav-component', require('./components/TransparentNavComponent').default);

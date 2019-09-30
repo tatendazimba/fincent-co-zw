@@ -3,9 +3,7 @@
         <nav class="transparent">
             <div class="transparent container navbar-wrapper overflow-visible">
 
-                <a href="/" class="brand-logo valign-wrapper full-height left" style="opacity: .9498;">
-                    <img class="ignore" src="/images/fincent-orange-white.svg" style="height: 64px !important; padding: 0 20px;">
-                </a>
+                <logo-component></logo-component>
 
                 <a href="#" data-target="slide-out" class="sidenav-trigger black-text valign-wrapper full-height right" style="">
                     <img src="/svg/icons/menu.svg" style="height: 64px;">
