@@ -9,7 +9,27 @@
 
         <div class="flex row container">
             <div class="col s12 no-pad">
-                <div style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center; background-size: cover; height: 400px;">
+                <div class="valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center; background-size: cover; height: 400px;">
+                    <div class="container white-text">
+                        <h5 class="white-text">
+                            <span>Fincent Capital</span>
+                        </h5>
+                        <p>8th Floor, ZB Life Towers</p>
+                        <p>77 Jason Moyo</p>
+                        <p>Harare, Zimbawe</p>
+
+                        <p>&nbsp;</p>
+
+                        <p>
+                            <strong class="primary-font white-text">PHONE: </strong>
+                            <strong class="white primary-font primary-text">&nbsp; +263 (242) 255 321-4 &nbsp;</strong>
+                        </p>
+
+                        <p>
+                            <strong class="primary-font white-text">EMAIL: </strong>
+                            <strong class="white primary-font primary-text">&nbsp; info@fincent.co.zw &nbsp;</strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2360,6 +2360,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ContactComponent"
 });
@@ -54475,14 +54495,57 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex row container" }, [
       _c("div", { staticClass: "col s12 no-pad" }, [
-        _c("div", {
-          staticStyle: {
-            background:
-              "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center",
-            "background-size": "cover",
-            height: "400px"
-          }
-        })
+        _c(
+          "div",
+          {
+            staticClass: "valign-wrapper",
+            staticStyle: {
+              background:
+                "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/stock/professional.jpg') no-repeat center center",
+              "background-size": "cover",
+              height: "400px"
+            }
+          },
+          [
+            _c("div", { staticClass: "container white-text" }, [
+              _c("h5", { staticClass: "white-text" }, [
+                _c("span", [_vm._v("Fincent Capital")])
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("8th Floor, ZB Life Towers")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("77 Jason Moyo")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Harare, Zimbawe")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [
+                _c("strong", { staticClass: "primary-font white-text" }, [
+                  _vm._v("PHONE: ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "strong",
+                  { staticClass: "white primary-font primary-text" },
+                  [_vm._v("  +263 (242) 255 321-4  ")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _c("strong", { staticClass: "primary-font white-text" }, [
+                  _vm._v("EMAIL: ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "strong",
+                  { staticClass: "white primary-font primary-text" },
+                  [_vm._v("  info@fincent.co.zw  ")]
+                )
+              ])
+            ])
+          ]
+        )
       ])
     ])
   },
@@ -54836,6 +54899,7 @@ var staticRenderFns = [
                         "a",
                         {
                           attrs: {
+                            target: "_blank",
                             href: "https://www.facebook.com/fincentcapital/"
                           }
                         },
@@ -54852,7 +54916,10 @@ var staticRenderFns = [
                       _c(
                         "a",
                         {
-                          attrs: { href: "https://twitter.com/fincentcapital" }
+                          attrs: {
+                            target: "_blank",
+                            href: "https://twitter.com/fincentcapital"
+                          }
                         },
                         [
                           _c("img", {
@@ -54868,6 +54935,7 @@ var staticRenderFns = [
                         "a",
                         {
                           attrs: {
+                            target: "_blank",
                             href:
                               "https://www.linkedin.com/in/fincent-capital-615b68194/"
                           }

@@ -19,19 +19,19 @@
 
                             <div class="">
                                 <div class="transparent inline-block" style="border: 2px solid white; padding: 0px; height: 56px; padding: 10px 32px; border-radius: 32px;">
-                                    <a href="https://www.facebook.com/fincentcapital/">
+                                    <a target="_blank" href="https://www.facebook.com/fincentcapital/">
                                         <img src="/svg/social/facebook.svg" style="height: 32px;">
                                     </a>
 
                                     &nbsp;
                                     &nbsp;
-                                    <a href="https://twitter.com/fincentcapital">
+                                    <a target="_blank" href="https://twitter.com/fincentcapital">
                                         <img src="/svg/social/twitter.svg" style="height: 32px;">
                                     </a>
 
                                     &nbsp;
                                     &nbsp;
-                                    <a href="https://www.linkedin.com/in/fincent-capital-615b68194/">
+                                    <a target="_blank" href="https://www.linkedin.com/in/fincent-capital-615b68194/">
                                         <img src="/svg/social/linkedin.svg" style="height: 32px;">
                                     </a>
                                 </div>
