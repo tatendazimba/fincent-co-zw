@@ -12348,6 +12348,14 @@
         </div>
         <div class="col s6">
             <h5>CUSTOMER</h5>
+            <p>
+                {{ $transaction->customer ? $transaction->customer->surname : "" }} {{ $transaction->customer ? $transaction->customer->name : "" }} <br>
+                {{ $transaction->customer ? $transaction->customer->mobile : "" }}<br>
+                {{ $transaction->customer ? $transaction->customer->id_number : "" }}<br>
+                 <br>
+                 <br>
+                 <br>
+            </p>
         </div>
     </div>
 

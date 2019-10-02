@@ -12,7 +12,7 @@
                         <p>&nbsp;</p>
 
                         <h1 class="white-text animated zoomIn no-margin">
-                            <span>Exclusive Member Content</span>
+                            <span>Exclusive Client Content</span>
                         </h1>
 
                         <p>&nbsp;</p>

@@ -21,13 +21,13 @@
                         <p>&nbsp;</p>
 
                         <p>
-                            <strong class="primary-font white-text">PHONE: </strong>
-                            <strong class="white primary-font primary-text">&nbsp; +263 (242) 255 321-4 &nbsp;</strong>
+                            <span class="primary-font white-text">PHONE: </span>
+                            <span class="white-text">&nbsp; +263 (242) 255 321-4 &nbsp;</span>
                         </p>
 
                         <p>
-                            <strong class="primary-font white-text">EMAIL: </strong>
-                            <strong class="white primary-font primary-text">&nbsp; info@fincent.co.zw &nbsp;</strong>
+                            <span class="primary-font white-text">EMAIL: </span>
+                            <span class="white-text">&nbsp; info@fincent.co.zw &nbsp;</span>
                         </p>
                     </div>
                 </div>
@@ -43,10 +43,6 @@
 
                     <div class="container secondary-text">
                         <h3 class="primary-text">Get In Touch With Our Friendly Customer Care.</h3>
-                    </div>
-
-                    <div>
-<!--                        Subscribe to receive freebies, news & promos directly in your inbox-->
                     </div>
 
                     <p>&nbsp;</p>

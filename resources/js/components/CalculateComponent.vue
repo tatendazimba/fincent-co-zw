@@ -73,9 +73,9 @@
 
                         <h5 class="secondary-text">CUSTOMER</h5>
                         <div class="col s12 jumbo">
-                            <select id="customer" class="browser-default" v-model="customer">
+                            <select id="customer" class="browser-default" v-model="customer" required>
                                 <option value="">Select</option>
-                                <option v-for="customer of customers" :value="customer">{{ customer.mobile }} {{ customer.surname }} {{ customer.name }} {{ customer.id_number }} {{ customer.address }} {{ customer.company }}</option>
+                                <option v-for="customer of customers" :value="customer">{{ customer.surname }} {{ customer.name }} {{ customer.mobile }} {{ customer.id_number }} {{ customer.address }} {{ customer.company }}</option>
                             </select>
                         </div>
 
@@ -180,6 +180,7 @@
                     purpose: this.purpose,
                     type: this.transactionType,
                     rate_id: this.search().id,
+                    customer_id: this.customer.id
                 };
 
                 this.loading = true;
@@ -192,7 +193,7 @@
 
                         if (response.data.code === "00") {
                             window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
-                            window.location = '/admin/reports';
+                            // window.location = '/admin/reports';
                         } else {
                             this.error = response.data.friendly;
                         }

@@ -29,9 +29,11 @@
 
                 <p>&nbsp;</p>
 
-                <p class="thin center-align">
+                <p class="thin justified">
                     <span>
-                        Fincent Capital’s totem is the African Elephant.
+                        <h5 class="primary-font center-align">
+                            <strong>Fincent Capital’s totem is the African Elephant.</strong>
+                        </h5>
                         <br>
                         The African Elephant is the continent’s largest living animal which thrives in the harshest of the African Kalahari Desert, the Savannah the tropical jungles of Central Africa. The Elephant is the strongest land animal by brute strength and can uproot a tree with one tug; homogenous with Fincent Capital’s brawniness in the field of research, deal execution and understanding the complex matrices of macro and micro economics in Africa. The Elephant’s versatility to adapt to different conditions across the continent is apposite to Fincent Capital’s ability to attune to the fast-evolving African economy. The Elephant’s intimate knowledge of the African landscape and capability to smell hidden and far-away sources of life-saving water during dry seasons is synonymous to Fincent Capital’s command of the African financial markets and Fincent’s ability to scope out unique profitable opportunities on the world most challenging continent.
                     </span>

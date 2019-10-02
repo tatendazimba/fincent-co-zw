@@ -1100,6 +1100,7 @@ input, select {
     color: black;
     padding: 0 5px !important;
     border-radius: 0 !important;
+    box-sizing: border-box !important;
 }
 
 textarea::-webkit-input-placeholder, input::-webkit-input-placeholder { /* Edge */

@@ -85,6 +85,7 @@ class TransactionController extends Controller
                 "rate_id" => $request->input("rate_id"),
                 "user" => "admin@fincent.co.zw",
                 "purpose" => $request->input("purpose"),
+                "customer_id" => $request->input("customer_id"),
             ];
 
             Log::info("TRANSACTION SAVE PAYLOAD ::: " . json_encode($args));

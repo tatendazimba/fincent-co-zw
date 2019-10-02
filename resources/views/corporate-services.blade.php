@@ -2,8 +2,7 @@
 
 @section('content')
 <div class="">
-    <micro-hero-component></micro-hero-component>
-    <loans-component></loans-component>
-    <newsletter-component></newsletter-component>
+    <corporate-hero-component></corporate-hero-component>
+    <corporate-component></corporate-component>
 </div>
 @endsection

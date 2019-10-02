@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="col s6 white-text">
 
-                                    <h5 class="white-text">OFFICES</h5>
+                                    <h5 class="white-text">CONTACT</h5>
 
                                     <p>&nbsp;</p>
 
@@ -83,6 +83,13 @@
                                     <p>ZB Life Towers</p>
                                     <p>77 Jason Moyo</p>
                                     <p>Harare, Zimbawe</p>
+                                    <p>&nbsp;</p>
+                                    <p>
+                                        <span class="secondary-text">PHONE:</span> <strong>+263 (242) 255 321-4</strong>
+                                    </p>
+                                    <p>
+                                        <span class="secondary-text">EMAIL:</span> <strong>info@fincent.co.zw</strong>
+                                    </p>
                                 </div>
                             </div>
                         </div>

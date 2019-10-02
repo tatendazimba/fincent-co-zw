@@ -28,7 +28,7 @@ class ReportsController extends Controller
         ];
 
         $currencies = Currency::paginate();
-        $transaction = Transaction::find($id);
+        $transaction = Transaction::with("customer")->find($id);
 
         $pdf = SnappyPdf::loadView("reports.receipt", compact("transaction", "customer"));
 

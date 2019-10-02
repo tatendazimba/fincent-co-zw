@@ -25,8 +25,10 @@
                 this.image = "micro-finance.svg";
             else if (route === "/trading")
                 this.image = "securities.svg";
-            else if (route === "/exchange")
+            else if (route === "/bureau-de-change")
                 this.image = "bureau-de-change.svg";
+            else if (route === "/corporate-services")
+                this.image = "advisory.svg";
             else
                 this.image = "capital.svg";
         }

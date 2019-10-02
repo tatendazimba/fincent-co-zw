@@ -27,7 +27,7 @@
                             </strong>
                         </h2>
 
-                        <h5 class="justified secondary-font white-text">
+                        <h5 class="secondary-font white-text">
                             With over 20 years of combined trading experience on the local Zimbabwean markets picking the securities which earn our clients good returns both in the short and long term, we offer stockbroking services to clients who wish to trade on the Zimbabwe Stock Exchange and the Alternative Investment Markets.
                         </h5>
 

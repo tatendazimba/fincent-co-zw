@@ -84,7 +84,7 @@
                                         <label for="id_number" class="required">{{ __('ID Number') }}</label>
 
                                         <div class="col-md-6">
-                                            <input id="id_number" type="text" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" name="id_number" required>
+                                            <input id="id_number" type="text" class="form-control{{ $errors->has('id_number') ? ' is-invalid' : '' }}" name="id_number" value="{{ old('id_number') }}" required>
 
                                             @if ($errors->has('id_number'))
                                                 <span class="invalid-feedback" role="alert">
@@ -98,7 +98,7 @@
                                         <label for="mobile" class="required">{{ __('Mobile Number') }}</label>
 
                                         <div class="col-md-6">
-                                            <input id="mobile" type="text" class="form-control{{ $errors->has('mobile') ? ' is-invalid' : '' }}" name="mobile" required>
+                                            <input id="mobile" type="text" class="form-control{{ $errors->has('mobile') ? ' is-invalid' : '' }}" value="{{ old('mobile') }}" name="mobile" required>
 
                                             @if ($errors->has('mobile'))
                                                 <span class="invalid-feedback" role="alert">

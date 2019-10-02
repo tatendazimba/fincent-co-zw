@@ -37,6 +37,9 @@ Vue.component('member-content-component', require('./components/MemberContentCom
 
 Vue.component('logo-component', require('./components/LogoComponent').default);
 
+Vue.component('corporate-hero-component', require('./components/CorporateHeroComponent').default);
+Vue.component('corporate-component', require('./components/CorporateComponent').default);
+
 Vue.component('member-component', require('./components/MemberComponent').default);
 Vue.component('team-member-component', require('./components/TeamMemberComponent').default);
 
