@@ -10,4 +10,9 @@ class ExchangeController extends Controller
     {
         return view("exchange");
     }
+
+    public function rates()
+    {
+        return view("rates.board");
+    }
 }

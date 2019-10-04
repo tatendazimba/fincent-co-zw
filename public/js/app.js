@@ -3603,34 +3603,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "TeamMemberComponent",
+  props: {
+    leader: {
+      required: true,
+      type: String
+    }
+  },
   data: function data() {
     return {
       member: {},
-      executives: [{
-        url: "/images/leadership/ranga-makwata.jpg",
-        name: "Ranga Makwata",
-        position: "Executive Director – Research & Operations",
-        qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-        description: "Ranga is highly experienced investment professional who has held several posts in the investment industry working for a pension fund, a stock broking firm, asset managers and investment banks. He has strong aptitude for fundamental analysis including valuations of both listed and unlisted companies using financial models, technical and economic analysis. He also has experience in portfolio management and corporate advisory. Ranga has written several opinion pieces and financial markets commentaries for many business newspapers and magazines. He was for nearly a decade the leading compiler/panelist of annual business magazines namely the Banks & Banking Survey and the Quoted Companies Survey which are published by the Zimbabwe Independent. Ranga is a co-author of an economics book entitled Zimbabwe Post Independence Economic Polices: A Critical Review.\n" + "\n" + "He holds B.Com Finance honours and MBA (cum laude) degrees from NUST and is CFA charter holder. Ranga is a member of the CFA Institute (USA), CFA Society of South Africa and the South African Institute of Financial Markets (SAIFM). He is a founding trustee and Treasurer of the Investment Professionals Association of Zimbabwe (IPAZ). He is a volunteer for CFA Institute and has been involved in many of the Institute’s global assignments including exam grading. He is also a director of Zfn Capital, a company than he has run for more than six year."
-      }, {
-        url: "/images/leadership/rufaro-zengeni.jpg",
-        name: "Rufaro Zengeni",
-        position: "Executive Director - Sales and Trading",
-        qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-        description: "Rufaro is an accountant by training who served his articles with Ernst & Young between   1999 and 2002 and has gone on to work for several organisations at senior managerial levels in a career spanning over 15 years. He is an avid writer with interests in global financial markets and is a keen follower of the growing impact of technology in businesses. He writes for the highly popular “In My View” column for Zfn and also writes for the Quoted Companies Survey and Banks and Banking Survey Magazines published by the Zimbabwe Independent annually. He holds a Bachelor of Accounting Sciences from the University of South Africa. He is a registered stockbroker and a member of the Zimbabwe Stock Exchange."
-      }, {
-        url: "/images/leadership/pearson-madara.jpg",
-        name: "Pearson Madara",
-        position: "Chief Finance Officer",
-        qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-        description: "Pearson Madara is a seasoned Accountant who trained with EY in its Audit department and qualified as an ACCA member with four best student honors prices. After qualifying in 2010, Pearson started an accounting practice focusing mainly on assisting companies with their management advisory needs, accounting, financial reporting and tax portfolios. By working with a vast client base in different sectors of the economy, Pearson has gained key competences in the local tax & business laws, application and interpretation of International Financial Reporting Standards (IFRS) and International Standards on Auditing (ISAs). The knowledge, skills and business network built over the years are invaluable for businesses operating in the challenging and ever evolving Southern African market."
-      }, {
-        url: "/images/leadership/gamu-pasi.jpg",
-        name: "Gamu Pasi",
-        position: "Associate",
-        qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-        description: "Gamu has a Business Studies honours degree from the University of Zimbabwe and an Executive Certificate in Investments and Portfolio Management from the same institution. He has 9 years working experience in stockbroking (both back and front offices) and is the finance and admin officer at Zfn where he has been since 2012. He is currently studying for the Financial Risk Manager Certificate with the Global Association of Risk Professionals."
-      }]
+      executives: {
+        "ranga-makwata": {
+          url: "/images/leadership/ranga-makwata.jpg",
+          name: "Ranga Makwata",
+          position: "Executive Director – Research & Operations",
+          qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
+          description: "Ranga is highly experienced investment professional who has held several posts in the investment industry working for a pension fund, a stock broking firm, asset managers and investment banks. He has strong aptitude for fundamental analysis including valuations of both listed and unlisted companies using financial models, technical and economic analysis. He also has experience in portfolio management and corporate advisory. Ranga has written several opinion pieces and financial markets commentaries for many business newspapers and magazines. He was for nearly a decade the leading compiler/panelist of annual business magazines namely the Banks & Banking Survey and the Quoted Companies Survey which are published by the Zimbabwe Independent. Ranga is a co-author of an economics book entitled Zimbabwe Post Independence Economic Polices: A Critical Review.\n" + "\n" + "He holds B.Com Finance honours and MBA (cum laude) degrees from NUST and is CFA charter holder. Ranga is a member of the CFA Institute (USA), CFA Society of South Africa and the South African Institute of Financial Markets (SAIFM). He is a founding trustee and Treasurer of the Investment Professionals Association of Zimbabwe (IPAZ). He is a volunteer for CFA Institute and has been involved in many of the Institute’s global assignments including exam grading. He is also a director of Zfn Capital, a company than he has run for more than six year."
+        },
+        "rufaro-zengeni": {
+          url: "/images/leadership/rufaro-zengeni.jpg",
+          name: "Rufaro Zengeni",
+          position: "Executive Director - Sales and Trading",
+          qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
+          description: "Rufaro is an accountant by training who served his articles with Ernst & Young between   1999 and 2002 and has gone on to work for several organisations at senior managerial levels in a career spanning over 15 years. He is an avid writer with interests in global financial markets and is a keen follower of the growing impact of technology in businesses. He writes for the highly popular “In My View” column for Zfn and also writes for the Quoted Companies Survey and Banks and Banking Survey Magazines published by the Zimbabwe Independent annually. He holds a Bachelor of Accounting Sciences from the University of South Africa. He is a registered stockbroker and a member of the Zimbabwe Stock Exchange."
+        },
+        "pearson-madara": {
+          url: "/images/leadership/pearson-madara.jpg",
+          name: "Pearson Madara",
+          position: "Chief Finance Officer",
+          qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
+          description: "Pearson Madara is a seasoned Accountant who trained with EY in its Audit department and qualified as an ACCA member with four best student honors prices. After qualifying in 2010, Pearson started an accounting practice focusing mainly on assisting companies with their management advisory needs, accounting, financial reporting and tax portfolios. By working with a vast client base in different sectors of the economy, Pearson has gained key competences in the local tax & business laws, application and interpretation of International Financial Reporting Standards (IFRS) and International Standards on Auditing (ISAs). The knowledge, skills and business network built over the years are invaluable for businesses operating in the challenging and ever evolving Southern African market."
+        },
+        "gamu-pasi": {
+          url: "/images/leadership/gamu-pasi.jpg",
+          name: "Gamu Pasi",
+          position: "Associate",
+          qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
+          description: "Gamu has a Business Studies honours degree from the University of Zimbabwe and an Executive Certificate in Investments and Portfolio Management from the same institution. He has 9 years working experience in stockbroking (both back and front offices) and is the finance and admin officer at Zfn where he has been since 2012. He is currently studying for the Financial Risk Manager Certificate with the Global Association of Risk Professionals."
+        }
+      }
     };
   },
   methods: {
@@ -3639,7 +3650,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
-    this.selectMember(0);
+    this.selectMember(this.leader);
   }
 });
 
@@ -4055,7 +4066,7 @@ __webpack_require__.r(__webpack_exports__);
     this.getRates();
     setInterval(function (_) {
       _this.getRates();
-    }, 5000);
+    }, 15000);
   },
   methods: {
     getRates: function getRates() {
@@ -57685,7 +57696,10 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("span", { staticClass: "grey-text uppercase primary-font" }, [
-          _vm._v("Last updated " + _vm._s(_vm.currencies[0].updated_at))
+          _vm._v("Last updated "),
+          _c("span", { staticClass: "primary-text" }, [
+            _vm._v(_vm._s(_vm.currencies[0].updated_at))
+          ])
         ])
       ]),
       _vm._v(" "),

@@ -59,7 +59,7 @@
                     </tr>
                 </tbody>
             </table>
-            <span class="grey-text uppercase primary-font">Last updated {{ currencies[0].updated_at }}</span>
+            <span class="grey-text uppercase primary-font">Last updated <span class="primary-text">{{ currencies[0].updated_at }}</span></span>
         </div>
 
         <p>&nbsp;</p>
@@ -97,7 +97,7 @@
 
             setInterval(_ => {
                 this.getRates();
-            }, 5000);
+            }, 15000);
         },
         methods: {
             getRates: function () {
