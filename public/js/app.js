@@ -3601,6 +3601,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "TeamMemberComponent",
   props: {
@@ -56962,43 +56963,6 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
-        {
-          staticClass: "flex row primary-gradient",
-          staticStyle: { position: "relative" }
-        },
-        _vm._l(_vm.executives, function(executive, index) {
-          return _c("div", { staticClass: "col s12 m3 no-pad" }, [
-            _c("div", {
-              staticClass: "member",
-              staticStyle: {
-                background:
-                  "linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center",
-                "background-size": "cover",
-                height: "400px"
-              },
-              style: {
-                background:
-                  "linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(" +
-                  executive.url +
-                  ")  no-repeat center center",
-                backgroundSize: "cover",
-                backgroundColor: "#cacbcd"
-              },
-              on: {
-                click: function($event) {
-                  return _vm.selectMember(index)
-                }
-              }
-            })
-          ])
-        }),
-        0
-      ),
-      _vm._v(" "),
-      _c("p", [_vm._v(" ")]),
-      _vm._v(" "),
-      _c(
-        "div",
         { staticClass: "flex row", staticStyle: { position: "relative" } },
         [
           _c("div", { staticClass: "col s12 m6 no-pad" }, [
@@ -57007,15 +56971,15 @@ var render = function() {
               staticStyle: {
                 background:
                   "linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center",
-                "background-size": "cover",
-                height: "400px"
+                "background-size": "contain",
+                "min-height": "500px"
               },
               style: {
                 background:
                   "linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(" +
                   _vm.member.url +
-                  ")  no-repeat center center",
-                backgroundSize: "cover",
+                  ")  no-repeat top center",
+                backgroundSize: "auto",
                 backgroundColor: "#cacbcd"
               }
             })
@@ -57078,6 +57042,43 @@ var render = function() {
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "flex row primary-gradient",
+          staticStyle: { position: "relative" }
+        },
+        _vm._l(_vm.executives, function(executive, index) {
+          return _c("div", { staticClass: "col s6 m3 no-pad" }, [
+            _c("div", {
+              staticClass: "member",
+              staticStyle: {
+                background:
+                  "linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center",
+                "background-size": "cover",
+                height: "400px"
+              },
+              style: {
+                background:
+                  "linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(" +
+                  executive.url +
+                  ")  no-repeat center center",
+                backgroundSize: "cover",
+                backgroundColor: "#cacbcd"
+              },
+              on: {
+                click: function($event) {
+                  return _vm.selectMember(index)
+                }
+              }
+            })
+          ])
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
@@ -57101,7 +57102,7 @@ var staticRenderFns = [
             staticClass: "center-align valign-wrapper",
             staticStyle: {
               background:
-                "linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat top right",
+                "linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat center center",
               "background-size": "cover",
               height: "600px"
             }

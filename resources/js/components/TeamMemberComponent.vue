@@ -2,7 +2,7 @@
     <div class="transparent">
         <div class="row">
             <div class="col s12 no-pad">
-                <div class="center-align valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat top right; background-size: cover; height: 600px;">
+                <div class="center-align valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat center center ; background-size: cover; height: 600px;">
                     <div class="container">
                         <h5 class="no-margin white-text">
                             <strong>TEAM</strong>
@@ -23,18 +23,10 @@
         <p>&nbsp;</p>
 
         <div class="container">
-            <div class="flex row primary-gradient" style="position: relative;">
-                <div v-for="(executive, index) of executives" class="col s12 m3 no-pad">
-                    <div class="member" @click="selectMember(index)" v-bind:style="{ background: 'linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(' + executive.url + ')  no-repeat center center', backgroundSize: 'cover', backgroundColor: '#cacbcd' }" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center; background-size: cover; height: 400px;">
-                    </div>
-                </div>
-            </div>
-
-            <p>&nbsp;</p>
 
             <div class="flex row" style="position: relative;">
                 <div class="col s12 m6 no-pad">
-                    <div class="full-height" v-bind:style="{ background: 'linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(' + member.url + ')  no-repeat center center', backgroundSize: 'cover', backgroundColor: '#cacbcd' }" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center; background-size: cover; height: 400px;">
+                    <div class="full-height" v-bind:style="{ background: 'linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(' + member.url + ')  no-repeat top center', backgroundSize: 'auto', backgroundColor: '#cacbcd' }" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center; background-size: contain; min-height: 500px;">
                     </div>
                 </div>
                 <div class="col s12 m6 no-pad" v-bind:style="{ background: 'linear-gradient(to bottom, rgba(23, 23, 69, .8825), rgba(23, 23, 69, .9725)), url(' + member.url + ')  no-repeat center center', backgroundSize: 'cover', backgroundColor: '#cacbcd' }" style="background: linear-gradient(rgba(23, 23, 69, .8825), rgba(23, 23, 69, .9725)), url('/images/side.png') no-repeat center center; background-size: cover; height: 600px; overflow-y: auto;">
@@ -57,6 +49,15 @@
 
                         <p>&nbsp;</p>
 
+                    </div>
+                </div>
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div class="flex row primary-gradient" style="position: relative;">
+                <div v-for="(executive, index) of executives" class="col s6 m3 no-pad">
+                    <div class="member" @click="selectMember(index)" v-bind:style="{ background: 'linear-gradient(to bottom, rgba(243, 110, 33, .12), rgba(42, 35, 76, .35)), url(' + executive.url + ')  no-repeat center center', backgroundSize: 'cover', backgroundColor: '#cacbcd' }" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/user.png') no-repeat center center; background-size: cover; height: 400px;">
                     </div>
                 </div>
             </div>
