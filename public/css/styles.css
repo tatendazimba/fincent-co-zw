@@ -964,29 +964,8 @@ nav ul li.active {
         display: block !important;
     }
 
-    .col {
-        margin-bottom: 20px;
-    }
-}
-
-/*FLEX*/
-
-.flex {
-    display: flex !important;
-}
-
-@media (max-width: 600px) {
-
-    .flex {
-        display: block !important;
-    }
-
     .mobile-flex {
         display: flex !important;
-    }
-
-    .col {
-        margin-bottom: 20px;
     }
 }
 

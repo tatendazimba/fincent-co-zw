@@ -7,7 +7,7 @@
                     <div class="col s12">
 
                         <h1 class="white-text animated slideInLeft jumbo-text">
-                            <span>Restructuring<br>In a Fast World.</span>
+                            <span>Restructure<br>In a Fast World.</span>
                         </h1>
 
                         <p>&nbsp;</p>

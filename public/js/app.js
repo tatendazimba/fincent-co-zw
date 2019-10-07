@@ -2297,6 +2297,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config */ "./resources/js/config.js");
 //
 //
 //
@@ -2378,8 +2379,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "ContactComponent"
+  name: "ContactComponent",
+  data: function data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+      response: "",
+      loading: false,
+      error: false
+    };
+  },
+  methods: {
+    sendEmail: function sendEmail() {
+      var _this = this;
+
+      this.loading = true;
+      this.error = false;
+      this.response = "";
+      var self = this;
+      axios.post(_config__WEBPACK_IMPORTED_MODULE_0__["BASE_URL"] + "email", {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      }).then(function (response) {
+        if (response.data.code === "00") {
+          _this.response = response.data.description;
+          _this.name = "";
+          _this.email = "";
+          _this.message = "";
+        } else {
+          _this.error = false;
+          _this.response = response.data.description;
+        }
+      })["catch"](function (error) {
+        _this.error = error.response.data.message;
+      })["finally"](function (_) {
+        _this.loading = false;
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -3527,6 +3575,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -54744,7 +54793,161 @@ var render = function() {
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
-      _vm._m(1),
+      _c("div", { staticClass: "flex row container" }, [
+        _c("div", { staticClass: "col s12 valign-wrapper no-pad" }, [
+          _c(
+            "form",
+            {
+              staticClass: "center-align container",
+              staticStyle: { position: "relative" },
+              attrs: { action: "", method: "" },
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.sendEmail()
+                }
+              }
+            },
+            [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col s6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.name,
+                        expression: "name"
+                      }
+                    ],
+                    staticClass: "full-width center-align",
+                    attrs: { type: "text", placeholder: "NAME", required: "" },
+                    domProps: { value: _vm.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.name = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col s6" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.email,
+                        expression: "email"
+                      }
+                    ],
+                    staticClass: "full-width center-align",
+                    attrs: {
+                      type: "email",
+                      placeholder: "EMAIL",
+                      required: ""
+                    },
+                    domProps: { value: _vm.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.email = $event.target.value
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex row" }, [
+                _c("div", { staticClass: "col s12" }, [
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.message,
+                        expression: "message"
+                      }
+                    ],
+                    staticClass: "bordered full-width center-align",
+                    staticStyle: { height: "200px" },
+                    attrs: {
+                      type: "text",
+                      placeholder: "MESSAGE",
+                      required: ""
+                    },
+                    domProps: { value: _vm.message },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.message = $event.target.value
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col s12" }, [
+                  _c("div", { staticClass: "container" }, [
+                    _c("div", [
+                      _c("strong", [
+                        _c(
+                          "span",
+                          {
+                            directives: [
+                              {
+                                name: "show",
+                                rawName: "v-show",
+                                value: _vm.error,
+                                expression: "error"
+                              }
+                            ]
+                          },
+                          [_vm._v("ERROR: ")]
+                        ),
+                        _vm._v(
+                          " " +
+                            _vm._s(_vm.response) +
+                            "\n                                "
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "secondary btn-large full-width",
+                        attrs: { type: "submit", disabled: _vm.loading }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                " +
+                            _vm._s(
+                              _vm.loading ? "Sending..." : "Send Message"
+                            ) +
+                            "\n                            "
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
@@ -54816,65 +55019,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex row container" }, [
-      _c("div", { staticClass: "col s12 valign-wrapper no-pad" }, [
-        _c(
-          "div",
-          {
-            staticClass: "center-align container",
-            staticStyle: { position: "relative" }
-          },
-          [
-            _c("div", { staticClass: "container secondary-text" }, [
-              _c("h3", { staticClass: "primary-text" }, [
-                _vm._v("Get In Touch With Our Friendly Customer Care.")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v(" ")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col s6" }, [
-                _c("input", {
-                  staticClass: "full-width center-align",
-                  attrs: { type: "text", placeholder: "NAME" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col s6" }, [
-                _c("input", {
-                  staticClass: "full-width center-align",
-                  attrs: { type: "text", placeholder: "EMAIL" }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex row" }, [
-              _c("div", { staticClass: "col s12" }, [
-                _c("textarea", {
-                  staticClass: "bordered full-width center-align",
-                  staticStyle: { height: "200px" },
-                  attrs: { type: "text", placeholder: "MESSAGE" }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col s12" }, [
-                _c("div", { staticClass: "container" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "secondary btn-large full-width",
-                      attrs: { type: "submit" }
-                    },
-                    [_vm._v("SEND MESSAGE")]
-                  )
-                ])
-              ])
-            ])
-          ]
-        )
+    return _c("div", { staticClass: "container secondary-text" }, [
+      _c("h3", { staticClass: "primary-text" }, [
+        _vm._v("Get In Touch With Our Friendly Customer Care.")
       ])
     ])
   }
@@ -55060,7 +55207,7 @@ var staticRenderFns = [
                 { staticClass: "white-text animated slideInLeft jumbo-text" },
                 [
                   _c("span", [
-                    _vm._v("Restructuring"),
+                    _vm._v("Restructure"),
                     _c("br"),
                     _vm._v("In a Fast World.")
                   ])
@@ -56955,6 +57102,8 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("p", [_vm._v(" ")]),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "profile" } }),
     _vm._v(" "),
     _c("p", [_vm._v(" ")]),
     _vm._v(" "),
@@ -72593,8 +72742,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AUTHORIZATION", function() { return AUTHORIZATION; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "POLL_FREQUENCY", function() { return POLL_FREQUENCY; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handleErrors", function() { return handleErrors; });
-var BASE_URL = "/api/"; // export const BASE_URL = "http://dev.duce-app.com/api/";
-
+var BASE_URL = "/api/";
 var USER_ID = localStorage.getItem("userId") ? localStorage.getItem("userId") : null;
 var TOKEN = localStorage.getItem("token") ? localStorage.getItem("token") : null;
 var AVATAR = localStorage.getItem("avatar") ? localStorage.getItem("avatar") : null;

@@ -21,4 +21,5 @@ Route::middleware([])->group(function() {
     Route::get('/xrates', 'ADMIN\RateController@indexApi');
     Route::get('/customers', 'ADMIN\CustomerController@all');
     Route::post('/transaction', 'ADMIN\TransactionController@store');
+    Route::post('/email', SendEmailController::class);
 });

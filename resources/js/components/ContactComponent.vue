@@ -39,7 +39,7 @@
 
         <div class="flex row container">
             <div class="col s12 valign-wrapper no-pad">
-                <div class="center-align container" style="position: relative;">
+                <form v-on:submit.prevent="sendEmail()" action="" method="" class="center-align container" style="position: relative;">
 
                     <div class="container secondary-text">
                         <h3 class="primary-text">Get In Touch With Our Friendly Customer Care.</h3>
@@ -49,26 +49,33 @@
 
                     <div class="row">
                         <div class="col s6">
-                            <input class="full-width center-align" type="text" placeholder="NAME">
+                            <input class="full-width center-align" type="text" v-model="name" placeholder="NAME" required>
                         </div>
                         <div class="col s6">
-                            <input class="full-width center-align" type="text" placeholder="EMAIL">
+                            <input class="full-width center-align" type="email" v-model="email" placeholder="EMAIL" required>
                         </div>
                     </div>
 
                     <div class="flex row">
                         <div class="col s12">
-                            <textarea class="bordered full-width center-align" type="text" placeholder="MESSAGE" style="height: 200px;"></textarea>
+                            <textarea class="bordered full-width center-align" type="text" v-model="message" placeholder="MESSAGE" style="height: 200px;" required></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col s12">
                             <div class="container">
-                                <button class="secondary btn-large full-width" type="submit">SEND MESSAGE</button>
+                                <div>
+                                    <strong>
+                                        <span v-show="error">ERROR: </span> {{ response }}
+                                    </strong>
+                                </div>
+                                <button class="secondary btn-large full-width" type="submit" :disabled="loading">
+                                    {{ loading ? 'Sending...' : 'Send Message' }}
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -80,8 +87,53 @@
 </template>
 
 <script>
+    import {BASE_URL} from "../config";
+
     export default {
-        name: "ContactComponent"
+        name: "ContactComponent",
+        data() {
+            return {
+                name: "",
+                email: "",
+                message: "",
+                response: "",
+                loading: false,
+                error: false,
+            }
+        },
+        methods: {
+            sendEmail: function() {
+                this.loading = true;
+                this.error = false;
+                this.response = "";
+
+                const self = this;
+
+                axios.post(BASE_URL + "email", {
+                        name: this.name,
+                        email: this.email,
+                        message: this.message,
+                    })
+                    .then((response) => {
+
+                        if (response.data.code === "00") {
+                            this.response = response.data.description;
+                            this.name = "";
+                            this.email = "";
+                            this.message = "";
+                        } else {
+                            this.error = false;
+                            this.response = response.data.description;
+                        }
+                    })
+                    .catch((error) => {
+                        this.error = error.response.data.message;
+                    })
+                    .finally((_) => {
+                        this.loading = false;
+                    });
+            }
+        }
     }
 </script>
 
