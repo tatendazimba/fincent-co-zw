@@ -2,7 +2,7 @@
     <div class="transparent">
         <div class="row">
             <div class="col s12 no-pad">
-                <div class="center-align valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat center center ; background-size: cover; height: 600px;">
+                <div class="center-align valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat top center ; background-size: cover; height: 600px;">
                     <div class="container">
                         <h5 class="no-margin white-text">
                             <strong>TEAM</strong>
@@ -38,15 +38,14 @@
                                 <strong class="secondary-font">{{ member.name }}</strong>
                             </h2>
                             <h5 class="primary-font white-text no-margin">{{ member.position }}</h5>
+                            <span class="white-text small-text">{{ member.qualifications }}</span>
 
                             <br>
                         </div>
 
                         <p>&nbsp;</p>
 
-                        <div class="white-text justified">
-                            {{ member.description }}
-                        </div>
+                        <div class="white-text justified" v-html="member.description"></div>
 
                         <p>&nbsp;</p>
 
@@ -87,40 +86,39 @@
             return {
                 member: {},
                 executives: {
-                    "ranga-makwata" :
+                    "ndodana-mguquka" :
                         {
-                            url: "/images/leadership/ranga-makwata.jpg",
-                            name: "Ranga Makwata",
-                            position: "Executive Director – Research & Operations",
-                            qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-                            description: "Ranga is highly experienced investment professional who has held several posts in the investment industry working for a pension fund, a stock broking firm, asset managers and investment banks. He has strong aptitude for fundamental analysis including valuations of both listed and unlisted companies using financial models, technical and economic analysis. He also has experience in portfolio management and corporate advisory. Ranga has written several opinion pieces and financial markets commentaries for many business newspapers and magazines. He was for nearly a decade the leading compiler/panelist of annual business magazines namely the Banks & Banking Survey and the Quoted Companies Survey which are published by the Zimbabwe Independent. Ranga is a co-author of an economics book entitled Zimbabwe Post Independence Economic Polices: A Critical Review.\n" +
-                                "\n" +
-                                "He holds B.Com Finance honours and MBA (cum laude) degrees from NUST and is CFA charter holder. Ranga is a member of the CFA Institute (USA), CFA Society of South Africa and the South African Institute of Financial Markets (SAIFM). He is a founding trustee and Treasurer of the Investment Professionals Association of Zimbabwe (IPAZ). He is a volunteer for CFA Institute and has been involved in many of the Institute’s global assignments including exam grading. He is also a director of Zfn Capital, a company than he has run for more than six year.",
+                            url: "/images/leadership/ndodana-mguquka.jpg",
+                            name: "Ndodana Mguquka",
+                            position: "Principal Stockbroker",
+                            qualifications: "",
+                            description: "Ndodana is a licensed securities dealear and member of the Zimbabwe Stock Exchange (ZSE) and former Chairman of the ZSE. Previously he worked for NDH Equities and Sagit Stock Brokers, one of the older stock broking firms in Zimbabwe. He later founded New Africa Securities (Pvt.) Ltd and led the company to be the biggest and best run securities firm in the country attracting clients from emerging and European markets. He is a member of the Securities Institute London (UK), the South African Institute of Financial Markets. He is also a member of the Institute of Bankers South Africa. Ndodana is highly regarded in the stock broking fraternity. His strength lies in networking and deal striking ability. Ndodana brings a wealth of other experience to the firm having been intimately involved in various privatization deals, notably the Zimre Privatisation, Dairiboard and CFI listings while at Sagit and the Trust, Astra industries and Barbican listings white at NDH. Ndodana also advised Truworths on their capital restructuring. At New Africa Securities he led the takeover of First Mutual and CFX, and was the sponsoring broker for Finhold / Intermarket merger transaction among other transactions. \n",
                         },
                     "rufaro-zengeni" :
                         {
                             url: "/images/leadership/rufaro-zengeni.jpg",
                             name: "Rufaro Zengeni",
                             position: "Executive Director - Sales and Trading",
-                            qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-                            description: "Rufaro is an accountant by training who served his articles with Ernst & Young between   1999 and 2002 and has gone on to work for several organisations at senior managerial levels in a career spanning over 15 years. He is an avid writer with interests in global financial markets and is a keen follower of the growing impact of technology in businesses. He writes for the highly popular “In My View” column for Zfn and also writes for the Quoted Companies Survey and Banks and Banking Survey Magazines published by the Zimbabwe Independent annually. He holds a Bachelor of Accounting Sciences from the University of South Africa. He is a registered stockbroker and a member of the Zimbabwe Stock Exchange.",
+                            qualifications: "B. Compt (Hons) (UNISA) (Partner)",
+                            description: "Rufaro is an accountant by training who served his articles with Ernst & Young between   1999 and 2002 and has gone on to work for several organisations at senior managerial levels in a career spanning over 15 years. He is an avid writer with interests in global financial markets and is a keen follower of the growing impact of technology in businesses. He has written for and participated as a panelist for the Quoted Companies Survey and Banks & Banking Survey Magazines published by the Zimbabwe Independent. He holds a Bachelor of Accounting Sciences from the University of South Africa and is a licensed securities dealer and a member of the Zimbabwe Stock Exchange. Rufaro is also a partner and director of Zfn, Zimbabwe’s indispensable financial newsletter. He is the co-founder of Fincent Capital. \n",
+                        },
+                    "ranga-makwata" :
+                        {
+                            url: "/images/leadership/ranga-makwata.jpg",
+                            name: "Ranga Makwata",
+                            position: "Executive Director – Research & Operations",
+                            qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA (Partner)",
+                            description: "Ranga is highly experienced investment professional who has held several posts in the investment industry working for a pension fund, a stock broking firm, asset managers and investment banks. He has strong aptitude for fundamental analysis including valuations of both listed and unlisted companies using financial models, technical and economic analysis. He also has experience in portfolio management and corporate advisory. Ranga has written several opinion pieces and financial markets commentaries for many business newspapers and magazines. He was for nearly a decade the leading compiler/panelist of annual business magazines namely the Banks & Banking Survey and the Quoted Companies Survey which are published by the Zimbabwe Independent. Ranga is a co-author of an economics book entitled <strong>Zimbabwe Post Independence Economic Polices: A Critical Review</strong>strong>. <br><br>" +
+                                "He holds B.Com Finance honours and MBA (cum laude) degrees from NUST and is CFA charterholder. Ranga is a member of the CFA Institute (USA), CFA Society of South Africa and the South African Institute of Financial Markets (SAIFM). He is a founding trustee and Treasurer of the Investment Professionals Association of Zimbabwe (IPAZ). He is also a partner and director of Zfn, Zimbabwe’s indispensable financial newsletter. He is the co-founder of Fincent Capital. \n",
                         },
                     "pearson-madara" :
                         {
                             url: "/images/leadership/pearson-madara.jpg",
                             name: "Pearson Madara",
                             position: "Chief Finance Officer",
-                            qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-                            description: "Pearson Madara is a seasoned Accountant who trained with EY in its Audit department and qualified as an ACCA member with four best student honors prices. After qualifying in 2010, Pearson started an accounting practice focusing mainly on assisting companies with their management advisory needs, accounting, financial reporting and tax portfolios. By working with a vast client base in different sectors of the economy, Pearson has gained key competences in the local tax & business laws, application and interpretation of International Financial Reporting Standards (IFRS) and International Standards on Auditing (ISAs). The knowledge, skills and business network built over the years are invaluable for businesses operating in the challenging and ever evolving Southern African market.",
+                            qualifications: "FCCA",
+                            description: "Pearson Madara is a seasoned Accountant who trained with EY in its Audit department and qualified as an ACCA member with four best student honors prices. After qualifying in 2010, Pearson started an accounting practice focusing mainly on assisting companies with their management advisory needs, accounting, financial reporting and tax portfolios. By working with a vast client base in different sectors of the economy, Pearson has gained key competences in the local tax & business laws, application and interpretation of International Financial Reporting Standards (IFRS) and International Standards on Auditing (ISAs). The knowledge, skills and business network built over the years are invaluable for businesses operating in the challenging and ever evolving Southern African market.\n",
                         },
-                    "gamu-pasi" :
-                        {
-                            url: "/images/leadership/gamu-pasi.jpg",
-                            name: "Gamu Pasi",
-                            position: "Associate",
-                            qualifications: "B. Com (Finance) Hons, MBA (NUST), MIFM, CFA",
-                            description: "Gamu has a Business Studies honours degree from the University of Zimbabwe and an Executive Certificate in Investments and Portfolio Management from the same institution. He has 9 years working experience in stockbroking (both back and front offices) and is the finance and admin officer at Zfn where he has been since 2012. He is currently studying for the Financial Risk Manager Certificate with the Global Association of Risk Professionals.",
-                        }
                 }
             }
         },
