@@ -39,6 +39,7 @@ Route::middleware(["auth"])->prefix('admin')->group(function(){
     Route::resource("rates", ADMIN\RateController::class);
     Route::resource("transactions", ADMIN\TransactionController::class);
     Route::resource("content", ADMIN\StoryController::class);
+    Route::redirect("content", "transactions");
     Route::resource("stories", ADMIN\StoryController::class);
     Route::resource("tags", ADMIN\TagController::class);
     Route::resource("images", ADMIN\ImageController::class);
