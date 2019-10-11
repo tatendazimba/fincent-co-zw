@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TeamController extends Controller
 {
-    public function index($leader = "ranga-makwata") {
+    public function index($leader = "ndodana-mguquka") {
         return view("team.index", compact("leader"));
     }
 }

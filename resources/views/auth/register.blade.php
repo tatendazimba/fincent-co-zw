@@ -2,8 +2,12 @@
 
 @section('content')
 
-    <main class="full-height no-margin no-pad" style="background-color: #f3f4f5;">
-        <div class="container full-height valign-wrapper">
+    <main class="full-height no-margin no-pad" style="background-color: #f3f4f5; overflow-y: auto;">
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <div class="container">
             <div class="row">
                 <div class="col s12 m8 offset-m2 white">
                     <div class="card">
@@ -99,12 +103,15 @@
 
                                     @include("partials.linebreak")
 
-                                    <div class="">
-                                        <button type="submit" class="btn-large black">
+                                    <div class="flex">
+                                        <button type="submit" class="btn-large primary">
                                             Register
                                         </button>
-                                        <br>
-                                        <a href="/login">Already have an account?</a>
+
+                                        <div class="valign-wrapper left-small-padding">
+                                            &nbsp;Already have an account?
+                                            <a class="primary-text" href="/login">&nbsp;Login</a>
+                                        </div>
                                     </div>
                                 </div>
 

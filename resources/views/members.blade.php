@@ -6,7 +6,21 @@
 
     <div style="background: linear-gradient(rgba(255, 255, 255, .95), rgba(255, 255, 255, .75)), url('/images/people/woman.jpg') no-repeat center center fixed; background-size: cover;">
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
+
+        <p class="container">
+            @if (auth()->user())
+                <a class="primary-font black-text right" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                    <span class="grey-text"> {{ __('LOGOUT') }}</span> <u class="capitalise">{{ auth()->user()->name }}</u>
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            @endif
+
+        </p>
         <p>&nbsp;</p>
 
         <div class="row container">

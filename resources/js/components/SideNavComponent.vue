@@ -55,15 +55,6 @@
                     </a>
                 </div>
             </li>
-<!--            <li class="">-->
-<!--                <a class="white-text" v-on:click.prevent="logout()" href="/logout">-->
-<!--                    <u>LOGOUT</u>-->
-<!--                </a>-->
-
-<!--                <form ref="logout-form" id="logout-form" action="/logout" method="POST" style="display: none;">-->
-<!--                    <input type="hidden" name="_token" :value="csrf">-->
-<!--                </form>-->
-<!--            </li>-->
         </ul>
     </div>
 </template>

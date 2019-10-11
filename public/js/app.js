@@ -3534,15 +3534,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SideNavComponent",
@@ -56962,7 +56953,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/" }
               },
-              [_vm._v("\n                    HOME\n                ")]
+              [_vm._v("\n                HOME\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -56973,11 +56964,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/trading" }
               },
-              [
-                _vm._v(
-                  "\n                    SECURITIES TRADING\n                "
-                )
-              ]
+              [_vm._v("\n                SECURITIES TRADING\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -56988,7 +56975,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/micro-finance" }
               },
-              [_vm._v("\n                    MICROFINANCE\n                ")]
+              [_vm._v("\n                MICROFINANCE\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -56999,11 +56986,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/corporate-services" }
               },
-              [
-                _vm._v(
-                  "\n                    CORPORATE ADVISORY\n                "
-                )
-              ]
+              [_vm._v("\n                CORPORATE ADVISORY\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -57014,11 +56997,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/exchange" }
               },
-              [
-                _vm._v(
-                  "\n                    BUREAU DE CHANGE\n                "
-                )
-              ]
+              [_vm._v("\n                BUREAU DE CHANGE\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -57029,7 +57008,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/leadership" }
               },
-              [_vm._v("\n                    LEADERSHIP\n                ")]
+              [_vm._v("\n                LEADERSHIP\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -57040,7 +57019,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/about" }
               },
-              [_vm._v("\n                    ABOUT US\n                ")]
+              [_vm._v("\n                ABOUT US\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -57051,7 +57030,7 @@ var staticRenderFns = [
                 staticClass: "cursor-click valign-wrapper white-text",
                 attrs: { href: "/contact" }
               },
-              [_vm._v("\n                    CONTACT US\n                ")]
+              [_vm._v("\n                CONTACT US\n            ")]
             )
           ]),
           _vm._v(" "),
@@ -57064,11 +57043,7 @@ var staticRenderFns = [
                   staticStyle: { width: "auto" },
                   attrs: { href: "/exclusive/members" }
                 },
-                [
-                  _vm._v(
-                    "\n                        Member Area\n                    "
-                  )
-                ]
+                [_vm._v("\n                    Member Area\n                ")]
               )
             ])
           ])

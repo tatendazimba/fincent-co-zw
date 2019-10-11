@@ -1,8 +1,12 @@
 @extends('layouts.auth')
 
 @section('content')
-    <main class="full-height no-margin no-pad" style="background-color: #f3f4f5;">
-        <div class="container full-height valign-wrapper">
+    <main class="full-height no-margin no-pad" style="background-color: #f3f4f5;  overflow-y: auto;">
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <div class="container">
             <div class="row">
                 <div class="col s12 m8 offset-m2 white">
                     <div class="card">
@@ -51,13 +55,15 @@
 
                                     @include("partials.linebreak")
 
-                                    <div class="">
+                                    <div class="flex">
                                         <button type="submit" class="btn-large black">
                                             Login
                                         </button>
-                                        <br>
 
-                                        <a href="/register">Create An Account.</a>
+                                        <div class="valign-wrapper left-small-padding">
+                                            &nbsp;Don't have an account?
+                                            <a class="primary-text" href="/register">&nbsp;Sign Up</a>
+                                        </div>
                                     </div>
                                 </div>
 
