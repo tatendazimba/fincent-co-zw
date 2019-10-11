@@ -6,7 +6,6 @@ html, body, app-root, nav, main {
     font-family: "Barlow Condensed", sans-serif !important;
     background: linear-gradient(to right, #ffffff, #ffffff) !important;
     color: #000000 !important;
-    height: 100%;
 }
 
 main, .navbar-fixed {

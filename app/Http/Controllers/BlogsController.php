@@ -11,8 +11,8 @@ class BlogsController extends Controller
 
     public function __construct(PostsInterface $posts)
     {
-        if (auth()->user()->role === "ADMIN")
-            return redirect(route("transactions.index"));
+//        if (auth()->user()->role === "ADMIN")
+//            return redirect(route("transactions.index"));
 
         $this->posts = $posts;
     }

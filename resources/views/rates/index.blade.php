@@ -4,7 +4,7 @@
     @include("partials.nav-admin")
     @include("partials.sidebar")
 
-    <main class="full-height">
+    <main class="">
 
         @include("partials.linebreak")
 
