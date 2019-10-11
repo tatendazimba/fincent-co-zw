@@ -8,16 +8,12 @@
 
             <div class="container">
                 <img src="/images/logos-dark/securities.svg" style="height: 64px;">
-                <h2 class="primary-text">Stockbroking & Research</h2>
+                <h2 class="primary-text">Securities Trading</h2>
 
                 <p class="">
-                    Our subsidiary Fincent Securities is a Securities & Exchange Commission (SEC) registered stockbroking firm. We offer stockbroking services to clients who wish to trade on the Zimbabwe Stock Exchange and the Alternative Investment Markets. At Fincent we have over 20 years of combined trading experience on the local Zimbabwean markets picking the securities which earn our clients good returns both in the short and long term; depending on client needs and risk appetite. We can execute successful and profitable trades in:
-                    listed equity,
-                    treasury bills,
-                    bonds and
-                    derivative instruments.
-
+                    Our brokerage division execute transactions on behalf of our clients across the equity and fixed income markets in the country.
                 </p>
+
             </div>
 
             <p>&nbsp;</p>
@@ -36,7 +32,7 @@
                             </h5>
                         </div>
                         <div class="col s12 m7 no-pad">
-                            <p class="">
+                            <p class="justified">
                                 {{ reason.description     }}
                             </p>
                         </div>
@@ -61,13 +57,23 @@
             return {
                 reasons: [
                     {
-                        title: "Technology",
-                        description: "Our stockbroking unit has the best in-country research team which uses a technology driven research platform to predict stock movements and offer insightful tips to our clients.",
+                        title: "Equity Trading",
+                        description: "Fincent Securities (Pvt) Ltd provides local and foreign investors access to the listed stocks on the Zimbabwe Stock Exchange  (ZSE) and Alternative Trading Platform, FINSEC. Our equity operations are handled by highly qualified sales and trading teams. We buy and sell shares on your behalf on the ZSE. Our execution services are bespoke towards clients who:\n" +
+                            "require advice on the intrinsic worth of transactions from time to time,\n" +
+                            "require investment information on which to base their decision making.\n" +
+                            "We also offer guidance on the best way in which to work orders in the market particularly in relation to large transactions and illiquid counters. This service is important to a diverse range of clients including both local (institutional fund managers, parastatals, corporates) and foreign institutional investors as well as high net worth and retail clients.",
                     },
                     {
-                        title: "Research & Newsletters",
-                        description: "We also provide custom reports of specific sectors of the economy, specific counters or financial instruments that investors are looking at investing in. We have a database of financial data from 2009 which we can manipulate for detailed analysis of various scenarios, ratios and other reports upon request. We circulate daily bulletins to our clients on the activities in the financial markets and offer tips on stock pickings and profitable trades.",
+                        title: "Fixed Income",
+                        description: "The fixed income desk executes transactions on the fixed income markets on behalf of our clients trading for both corporate and government issues. Our team stands ready to offer our clientele the option of taking part in the primary issuance and secondary trading of the following:\n" +
+                            "      • Government bonds\n" +
+                            "      • Treasury bills (T-Bills)\n" +
+                            "      • Corporate bonds\n",
                     },
+                    {
+                        title: "Research",
+                        description: "At the core of our value proposition and the factor to separate us from others is research expertise. Research has to be independent, incisive and helpful to the client in investment decision making. Fincent Securities has a robust in-house research team which offers our clients access to a wealth of research, news and market information. Our team generates a suite of comprehensive reports to provide our clients with the basis needed to help shape their investment decisions. Our research encompasses all key blocks of analysis including macroeconomic, fundamental, and technical as well as quantitative analysis.",
+                    }
                 ]
             }
         }

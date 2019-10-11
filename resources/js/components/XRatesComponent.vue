@@ -11,7 +11,8 @@
                 <h5 class="no-margin primary-font secondary-text">
                     <strong>STAY UP TO DATE</strong>
                 </h5>
-                <h1 class="no-margin primary-text jumbo-text">EXCHANGE RATES</h1>
+                <h1 class="no-margin primary-text jumbo-text">EXCHANGE RATES </h1>
+                <h3 class="no-margin secondary-text inline-block">{{ new Date().toJSON().slice(0,10).replace(/-/g,'/') }}</h3>
             </div>
         </div>
 
@@ -51,15 +52,15 @@
                             <span  class="flow-text grey-text">{{ currency._to }}</span>
                         </td>
                         <td class="grey lighten-2 right-align">
-                            <span class="flow-text primary-text">{{ currency.buy }}</span>
+                            <span class="flow-text primary-text">{{ currency.buy.toFixed(3) }}</span>
                         </td>
                         <td class="grey lighten-2 right-align ">
-                            <span class="flow-text primary-text">{{ currency.sell }}</span>
+                            <span class="flow-text primary-text">{{ currency.sell.toFixed(3) }}</span>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <span class="grey-text uppercase primary-font">Last updated <span class="primary-text">{{ currencies[0].updated_at }}</span></span>
+            <span class="grey-text uppercase primary-font">Last updated <span class="primary-text">{{ currencies[0] ? currencies[0].updated_at : '' }}</span></span>
         </div>
 
         <p>&nbsp;</p>
@@ -89,7 +90,8 @@
             return {
                 loading: false,
                 error: "",
-                currencies: []
+                currencies: [],
+                rates: [],
             }
         },
         mounted() {
@@ -100,6 +102,11 @@
             }, 15000);
         },
         methods: {
+            sort: function() {
+            },
+            search: function(from, to) {
+                return this.currencies.find(rate => (rate._from === from && rate._to === to));
+            },
             getRates: function () {
 
                 this.loading = true;
@@ -110,10 +117,19 @@
                 axios.get(BASE_URL + "xrates")
                     .then((response) => {
 
-                        console.log("response: ", response);
-
                         if (response.data.code === "00") {
-                            this.currencies = response.data.results;
+                            const ordering = {}, sortOrder = ['USD','ZAR','GBP', 'EUR', "CNY"];
+
+                            {
+                                for (let i = 0; i < sortOrder.length; i++) {
+                                    ordering[sortOrder[i]] = i;
+                                }
+                            }
+
+                            this.currencies = response.data.results.sort( function(a, b) {
+                                return (ordering[a._from] - ordering[b._from]);
+                            });
+
                         } else {
                             this.error = response.data.friendly;
                         }

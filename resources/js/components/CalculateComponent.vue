@@ -192,8 +192,9 @@
                     .then((response) => {
 
                         if (response.data.code === "00") {
-                            window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
-                            // window.location = '/admin/reports';
+                            // window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
+                            const win = window.open('/admin/pdf/receipt/' + response.data.results[0].id, '_blank');
+                            window.location = '/admin/reports';
                         } else {
                             this.error = response.data.friendly;
                         }

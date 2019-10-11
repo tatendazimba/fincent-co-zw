@@ -26,11 +26,11 @@
                                 Learn More
                             </a>
 
-                            &nbsp;&nbsp;&nbsp;
+<!--                            &nbsp;&nbsp;&nbsp;-->
 
-                            <a href="#services" class="secondary btn-large left-small-margin">
-                                View Our Services
-                            </a>
+<!--                            <a href="#services" class="secondary btn-large left-small-margin">-->
+<!--                                View Our Services-->
+<!--                            </a>-->
                         </div>
                     </div>
                 </div>

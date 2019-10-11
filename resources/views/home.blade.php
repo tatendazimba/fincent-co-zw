@@ -6,7 +6,7 @@
     <divisions-component></divisions-component>
     <trading-component></trading-component>
     <xrate-component></xrate-component>
-    <blogs-component></blogs-component>
+{{--    <blogs-component></blogs-component>--}}
     <newsletter-component></newsletter-component>
 </div>
 @endsection

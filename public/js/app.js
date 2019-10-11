@@ -2189,7 +2189,9 @@ __webpack_require__.r(__webpack_exports__);
       var self = this;
       axios.post(_config__WEBPACK_IMPORTED_MODULE_0__["BASE_URL"] + "transaction", payload).then(function (response) {
         if (response.data.code === "00") {
-          window.location = '/admin/pdf/receipt/' + response.data.results[0].id; // window.location = '/admin/reports';
+          // window.location = '/admin/pdf/receipt/' + response.data.results[0].id;
+          var win = window.open('/admin/pdf/receipt/' + response.data.results[0].id, '_blank');
+          window.location = '/admin/reports';
         } else {
           _this.error = response.data.friendly;
         }
@@ -3986,20 +3988,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "WhyTradeComponent",
   data: function data() {
     return {
       reasons: [{
-        title: "Technology",
-        description: "Our stockbroking unit has the best in-country research team which uses a technology driven research platform to predict stock movements and offer insightful tips to our clients."
+        title: "Equity Trading",
+        description: "Fincent Securities (Pvt) Ltd provides local and foreign investors access to the listed stocks on the Zimbabwe Stock Exchange  (ZSE) and Alternative Trading Platform, FINSEC. Our equity operations are handled by highly qualified sales and trading teams. We buy and sell shares on your behalf on the ZSE. Our execution services are bespoke towards clients who:\n" + "require advice on the intrinsic worth of transactions from time to time,\n" + "require investment information on which to base their decision making.\n" + "We also offer guidance on the best way in which to work orders in the market particularly in relation to large transactions and illiquid counters. This service is important to a diverse range of clients including both local (institutional fund managers, parastatals, corporates) and foreign institutional investors as well as high net worth and retail clients."
       }, {
-        title: "Research & Newsletters",
-        description: "We also provide custom reports of specific sectors of the economy, specific counters or financial instruments that investors are looking at investing in. We have a database of financial data from 2009 which we can manipulate for detailed analysis of various scenarios, ratios and other reports upon request. We circulate daily bulletins to our clients on the activities in the financial markets and offer tips on stock pickings and profitable trades."
+        title: "Fixed Income",
+        description: "The fixed income desk executes transactions on the fixed income markets on behalf of our clients trading for both corporate and government issues. Our team stands ready to offer our clientele the option of taking part in the primary issuance and secondary trading of the following:\n" + "      • Government bonds\n" + "      • Treasury bills (T-Bills)\n" + "      • Corporate bonds\n"
+      }, {
+        title: "Research",
+        description: "At the core of our value proposition and the factor to separate us from others is research expertise. Research has to be independent, incisive and helpful to the client in investment decision making. Fincent Securities has a robust in-house research team which offers our clients access to a wealth of research, news and market information. Our team generates a suite of comprehensive reports to provide our clients with the basis needed to help shape their investment decisions. Our research encompasses all key blocks of analysis including macroeconomic, fundamental, and technical as well as quantitative analysis."
       }]
     };
   }
@@ -4099,6 +4100,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "XRatesComponent",
@@ -4106,7 +4108,8 @@ __webpack_require__.r(__webpack_exports__);
     return {
       loading: false,
       error: "",
-      currencies: []
+      currencies: [],
+      rates: []
     };
   },
   mounted: function mounted() {
@@ -4118,6 +4121,12 @@ __webpack_require__.r(__webpack_exports__);
     }, 15000);
   },
   methods: {
+    sort: function sort() {},
+    search: function search(from, to) {
+      return this.currencies.find(function (rate) {
+        return rate._from === from && rate._to === to;
+      });
+    },
     getRates: function getRates() {
       var _this2 = this;
 
@@ -4125,10 +4134,17 @@ __webpack_require__.r(__webpack_exports__);
       this.error = "";
       var self = this;
       axios.get(_config__WEBPACK_IMPORTED_MODULE_0__["BASE_URL"] + "xrates").then(function (response) {
-        console.log("response: ", response);
-
         if (response.data.code === "00") {
-          _this2.currencies = response.data.results;
+          var ordering = {},
+              sortOrder = ['USD', 'ZAR', 'GBP', 'EUR', "CNY"];
+          {
+            for (var i = 0; i < sortOrder.length; i++) {
+              ordering[sortOrder[i]] = i;
+            }
+          }
+          _this2.currencies = response.data.results.sort(function (a, b) {
+            return ordering[a._from] - ordering[b._from];
+          });
         } else {
           _this2.error = response.data.friendly;
         }
@@ -55810,7 +55826,7 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("h5", { staticClass: "white-text thin justified" }, [
                 _vm._v(
-                  "\n                        Fincent Capital is a diversified one-stop financial services group adopting technology to drive innovative provision of research, stockbroking, micro-finance, bureau de change and corporate advisory.\n                    "
+                  "\n                            Fincent Capital is a diversified one-stop financial services group adopting technology to drive innovative provision of research, stockbroking, micro-finance, bureau de change and corporate advisory.\n                        "
                 )
               ]),
               _vm._v(" "),
@@ -55825,22 +55841,7 @@ var staticRenderFns = [
                   },
                   [
                     _vm._v(
-                      "\n                            Learn More\n                        "
-                    )
-                  ]
-                ),
-                _vm._v(
-                  "\n\n                           \n\n                        "
-                ),
-                _c(
-                  "a",
-                  {
-                    staticClass: "secondary btn-large left-small-margin",
-                    attrs: { href: "#services" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                            View Our Services\n                        "
+                      "\n                                Learn More\n                            "
                     )
                   ]
                 )
@@ -57702,7 +57703,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col s12 m7 no-pad" }, [
-                    _c("p", {}, [
+                    _c("p", { staticClass: "justified" }, [
                       _vm._v(
                         "\n                            " +
                           _vm._s(reason.description) +
@@ -57741,13 +57742,11 @@ var staticRenderFns = [
         attrs: { src: "/images/logos-dark/securities.svg" }
       }),
       _vm._v(" "),
-      _c("h2", { staticClass: "primary-text" }, [
-        _vm._v("Stockbroking & Research")
-      ]),
+      _c("h2", { staticClass: "primary-text" }, [_vm._v("Securities Trading")]),
       _vm._v(" "),
       _c("p", {}, [
         _vm._v(
-          "\n                Our subsidiary Fincent Securities is a Securities & Exchange Commission (SEC) registered stockbroking firm. We offer stockbroking services to clients who wish to trade on the Zimbabwe Stock Exchange and the Alternative Investment Markets. At Fincent we have over 20 years of combined trading experience on the local Zimbabwean markets picking the securities which earn our clients good returns both in the short and long term; depending on client needs and risk appetite. We can execute successful and profitable trades in:\n                listed equity,\n                treasury bills,\n                bonds and\n                derivative instruments.\n\n            "
+          "\n                Our brokerage division execute transactions on behalf of our clients across the equity and fixed income markets in the country.\n            "
         )
       ])
     ])
@@ -57792,7 +57791,26 @@ var render = function() {
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "row container" }, [
+        _c("div", { staticClass: "col s12 no-pad" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("h1", { staticClass: "no-margin primary-text jumbo-text" }, [
+            _vm._v("EXCHANGE RATES ")
+          ]),
+          _vm._v(" "),
+          _c("h3", { staticClass: "no-margin secondary-text inline-block" }, [
+            _vm._v(
+              _vm._s(
+                new Date()
+                  .toJSON()
+                  .slice(0, 10)
+                  .replace(/-/g, "/")
+              )
+            )
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "row container" }, [
         _c("p", [_vm._v(" ")]),
@@ -57830,13 +57848,13 @@ var render = function() {
                 _vm._v(" "),
                 _c("td", { staticClass: "grey lighten-2 right-align" }, [
                   _c("span", { staticClass: "flow-text primary-text" }, [
-                    _vm._v(_vm._s(currency.buy))
+                    _vm._v(_vm._s(currency.buy.toFixed(3)))
                   ])
                 ]),
                 _vm._v(" "),
                 _c("td", { staticClass: "grey lighten-2 right-align " }, [
                   _c("span", { staticClass: "flow-text primary-text" }, [
-                    _vm._v(_vm._s(currency.sell))
+                    _vm._v(_vm._s(currency.sell.toFixed(3)))
                   ])
                 ])
               ])
@@ -57848,7 +57866,9 @@ var render = function() {
         _c("span", { staticClass: "grey-text uppercase primary-font" }, [
           _vm._v("Last updated "),
           _c("span", { staticClass: "primary-text" }, [
-            _vm._v(_vm._s(_vm.currencies[0].updated_at))
+            _vm._v(
+              _vm._s(_vm.currencies[0] ? _vm.currencies[0].updated_at : "")
+            )
           ])
         ])
       ]),
@@ -57874,16 +57894,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row container" }, [
-      _c("div", { staticClass: "col s12 no-pad" }, [
-        _c("h5", { staticClass: "no-margin primary-font secondary-text" }, [
-          _c("strong", [_vm._v("STAY UP TO DATE")])
-        ]),
-        _vm._v(" "),
-        _c("h1", { staticClass: "no-margin primary-text jumbo-text" }, [
-          _vm._v("EXCHANGE RATES")
-        ])
-      ])
+    return _c("h5", { staticClass: "no-margin primary-font secondary-text" }, [
+      _c("strong", [_vm._v("STAY UP TO DATE")])
     ])
   },
   function() {
