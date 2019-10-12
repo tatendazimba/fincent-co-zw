@@ -10,12 +10,27 @@
             <h2 class="">Corporate Advisory</h2>
 
             <p class="">
-                We offer corporate finance advisory services to clients participating in corporate restructuring exercises such as disposals or acquisitions of businesses, mergers, management buy-outs (MBOs), fundraising and other types of restructuring exercises.
+                Fincent Advisory Partners is an investment banking firm doing business for a diverse clientele including but not limited to government, municipalities, parastatals, pension funds and large to medium-sized public and private companies.
             </p>
+
+            <p>&nbsp;</p>
+
+            <div v-for="activity in activities" class="">
+                <div class="row">
+                    <div class="col s12 no-pad">
+                        <span>
+                            <strong class="uppercase primary-font secondary-text">{{ activity.title }}</strong>
+                        </span>
+                    </div>
+                    <div class="col s12 no-pad">
+                        <p class="justified" v-html="activity.description">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
@@ -62,14 +77,30 @@
         name: "CorporateComponent",
         data() {
             return {
-                categories: [
+                activities: [
                     {
-                        name: "Micro Finance",
-                        url: "images/people/watch.jpg",
+                        title: "​Capital raising",
+                        description: " Initial public offers, equity issues and private placements"
                     },
                     {
-                        name: "Bureau De Change",
-                        url: "images/people/two-women-man.jpg",
+                        title: "Corporate finance",
+                        description: "Mergers and acquisitions, disposals, leveraged transactions and management buy-outs and buy-ins"
+                    },
+                    {
+                        title: "Advisory services",
+                        description: "Restructuring, project evaluation and valuations"
+                    },
+                    {
+                        title: "Privatisation",
+                        description: "Acquisitor sourcing, transaction management and funding"
+                    },
+                    {
+                        title: "Debt issuance",
+                        description: "Debt issuance programmes, market-making and debt placement"
+                    },
+                    {
+                        title: "Debt restructuring",
+                        description: "Loan portfolio cost and risk reduction"
                     },
                 ]
             }

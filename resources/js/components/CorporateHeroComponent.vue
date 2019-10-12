@@ -7,7 +7,7 @@
                     <div class="col s12">
 
                         <h1 class="white-text animated slideInLeft jumbo-text">
-                            <span>Restructure<br>In a Fast World.</span>
+                            <span>Invest With The Leaders</span>
                         </h1>
 
                         <p>&nbsp;</p>
@@ -18,17 +18,21 @@
 
                         <h4 class="white-text thin uppercase">
                             <span>
-                                Disposals
+                                ​Capital Raising
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Acquisitions
+                                Corporate finance
 
                                 <br>
 
-                                Mergers
+                                Advisory services
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                MBO<span class="lowercase">s</span>
+                                Privatisation
                                 <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Fundraising
+                                Debt issuance
+
+                                <br>
+
+                                Debt restructuring
                             </span>
                         </h4>
 

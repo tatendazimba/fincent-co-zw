@@ -2502,16 +2502,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "CorporateComponent",
   data: function data() {
     return {
-      categories: [{
-        name: "Micro Finance",
-        url: "images/people/watch.jpg"
+      activities: [{
+        title: "​Capital raising",
+        description: " Initial public offers, equity issues and private placements"
       }, {
-        name: "Bureau De Change",
-        url: "images/people/two-women-man.jpg"
+        title: "Corporate finance",
+        description: "Mergers and acquisitions, disposals, leveraged transactions and management buy-outs and buy-ins"
+      }, {
+        title: "Advisory services",
+        description: "Restructuring, project evaluation and valuations"
+      }, {
+        title: "Privatisation",
+        description: "Acquisitor sourcing, transaction management and funding"
+      }, {
+        title: "Debt issuance",
+        description: "Debt issuance programmes, market-making and debt placement"
+      }, {
+        title: "Debt restructuring",
+        description: "Loan portfolio cost and risk reduction"
       }]
     };
   }
@@ -2528,6 +2555,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -55081,24 +55112,20 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "no-margin", staticStyle: { background: "#ebecee" } },
-      [
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container" }, [
+  return _c(
+    "div",
+    { staticClass: "no-margin", staticStyle: { background: "#ebecee" } },
+    [
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
           _c("img", {
             staticStyle: { height: "64px" },
             attrs: { src: "/images/logos-dark/advisory.svg" }
@@ -55108,82 +55135,112 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", {}, [
             _vm._v(
-              "\n            We offer corporate finance advisory services to clients participating in corporate restructuring exercises such as disposals or acquisitions of businesses, mergers, management buy-outs (MBOs), fundraising and other types of restructuring exercises.\n        "
+              "\n            Fincent Advisory Partners is an investment banking firm doing business for a diverse clientele including but not limited to government, municipalities, parastatals, pension funds and large to medium-sized public and private companies.\n        "
             )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c("p", [_vm._v(" ")]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "flex row no-margin",
-            staticStyle: {
-              background:
-                "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/totem/together.jpg') no-repeat top left",
-              "background-size": "cover"
-            }
-          },
-          [
-            _c("div", { staticClass: "col s12 m4 shadow valign-wrapper" }),
-            _vm._v(" "),
-            _c("div", { staticClass: "col s12 m8 shadow valign-wrapper" }, [
-              _c("div", { staticClass: "full-height" }, [
-                _c("div", { staticClass: "container" }, [
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "white-text" }, [
-                    _c("strong", [_vm._v("Creating Wealth. Together.")])
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "white-text" }, [
-                    _vm._v(
-                      "\n                        Please get in touch with our Executive Team for corporate finance advisory services.\n                    "
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v(" ")]),
+          _vm._v(" "),
+          _vm._l(_vm.activities, function(activity) {
+            return _c("div", {}, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col s12 no-pad" }, [
+                  _c("span", [
+                    _c(
+                      "strong",
+                      { staticClass: "uppercase primary-font secondary-text" },
+                      [_vm._v(_vm._s(activity.title))]
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn-large secondary",
-                      attrs: { href: "/leadership" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Contact Excutive Team\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(" ")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col s12 no-pad" }, [
+                  _c("p", {
+                    staticClass: "justified",
+                    domProps: { innerHTML: _vm._s(activity.description) }
+                  })
                 ])
               ])
             ])
-          ]
-        )
+          })
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "flex row no-margin",
+        staticStyle: {
+          background:
+            "linear-gradient(rgba(42, 35, 76, .5), rgba(42, 35, 76, .5)), url('/images/totem/together.jpg') no-repeat top left",
+          "background-size": "cover"
+        }
+      },
+      [
+        _c("div", { staticClass: "col s12 m4 shadow valign-wrapper" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col s12 m8 shadow valign-wrapper" }, [
+          _c("div", { staticClass: "full-height" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "white-text" }, [
+                _c("strong", [_vm._v("Creating Wealth. Together.")])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "white-text" }, [
+                _vm._v(
+                  "\n                        Please get in touch with our Executive Team for corporate finance advisory services.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "btn-large secondary",
+                  attrs: { href: "/leadership" }
+                },
+                [
+                  _vm._v(
+                    "\n                        Contact Excutive Team\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")]),
+              _vm._v(" "),
+              _c("p", [_vm._v(" ")])
+            ])
+          ])
+        ])
       ]
     )
   }
@@ -55239,13 +55296,7 @@ var staticRenderFns = [
               _c(
                 "h1",
                 { staticClass: "white-text animated slideInLeft jumbo-text" },
-                [
-                  _c("span", [
-                    _vm._v("Restructure"),
-                    _c("br"),
-                    _vm._v("In a Fast World.")
-                  ])
-                ]
+                [_c("span", [_vm._v("Invest With The Leaders")])]
               ),
               _vm._v(" "),
               _c("p", [_vm._v(" ")]),
@@ -55260,7 +55311,7 @@ var staticRenderFns = [
               _c("h4", { staticClass: "white-text thin uppercase" }, [
                 _c("span", [
                   _vm._v(
-                    "\n                            Disposals\n                            "
+                    "\n                            ​Capital Raising\n                            "
                   ),
                   _c("span", { staticClass: "thin" }, [
                     _c("i", { staticClass: "material-icons" }, [
@@ -55268,27 +55319,31 @@ var staticRenderFns = [
                     ])
                   ]),
                   _vm._v(
-                    "\n                            Acquisitions\n\n                            "
+                    "\n                            Corporate finance\n\n                            "
                   ),
                   _c("br"),
                   _vm._v(
-                    "\n\n                            Mergers\n                            "
+                    "\n\n                            Advisory services\n                            "
                   ),
                   _c("span", { staticClass: "thin" }, [
                     _c("i", { staticClass: "material-icons" }, [
                       _vm._v("fiber_manual_record")
                     ])
                   ]),
-                  _vm._v("\n                            MBO"),
-                  _c("span", { staticClass: "lowercase" }, [_vm._v("s")]),
-                  _vm._v(" "),
+                  _vm._v(
+                    "\n                            Privatisation\n                            "
+                  ),
                   _c("span", { staticClass: "thin" }, [
                     _c("i", { staticClass: "material-icons" }, [
                       _vm._v("fiber_manual_record")
                     ])
                   ]),
                   _vm._v(
-                    "\n                            Fundraising\n                        "
+                    "\n                            Debt issuance\n\n                            "
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "\n\n                            Debt restructuring\n                        "
                   )
                 ])
               ]),
