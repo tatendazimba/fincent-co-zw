@@ -3677,6 +3677,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "TeamMemberComponent",
   props: {
@@ -55226,7 +55257,7 @@ var staticRenderFns = [
                 },
                 [
                   _vm._v(
-                    "\n                        Contact Excutive Team\n                    "
+                    "\n                        Excutive Team\n                    "
                   )
                 ]
               ),
@@ -57291,6 +57322,46 @@ var render = function() {
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
+      _c("h3", { staticClass: "primary-text" }, [_vm._v("Our Team")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "justified" }, [
+        _vm._v(
+          "\n            Our team is important for delivering services to our customers alongside any technologies that we may deploy. We will not compromise on professionalism and dedication to serve the client with experience and expertise playing a key role in our recruitment. Training will be paramount to develop a uniform culture and to ensure every one of our team serve clients exceptionally well.\n        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "primary-text" }, [_vm._v("Governance")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "justified" }, [
+        _vm._v(
+          "\n            For us to create wealth for our clients and stakeholders we believe in having strong corporate governance structures as well as strict compliance with any regulation governing our activities.\n        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "primary-text" }, [_vm._v("Corporate Action")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "justified" }, [
+        _vm._v(
+          "\n            Our team has immense sponsoring broker experience and has been responsible for several corporate transactions in particular listing of several companies over the last 20 years. We have a compelling network of relationships across the capital markets landscape from listed companies to banks to institutional investors and high net worth individuals which we can leverage to execute corporate actions.\n        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "primary-text" }, [
+        _vm._v("Investor Relations Services")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "justified" }, [
+        _vm._v(
+          "\n            We know what institutional and high net worth investors require from listed companies by way of disclosures and interactions and thus are well placed to advise on investor relations issues. Fincent Securities is the ideal partner for listed companies to put their best foot forward with the community that determines their share price.\n        "
+        )
+      ]),
+      _vm._v(" "),
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
@@ -57319,12 +57390,12 @@ var staticRenderFns = [
           },
           [
             _c("div", { staticClass: "container" }, [
-              _c("h5", { staticClass: "no-margin white-text" }, [
-                _c("strong", [_vm._v("TEAM")])
+              _c("h5", { staticClass: "no-margin white-text uppercase" }, [
+                _c("strong", [_vm._v("Professionalism & Dedication")])
               ]),
               _vm._v(" "),
               _c("h2", { staticClass: "secondary-font white-text" }, [
-                _c("strong", [_vm._v("Meet the Executive Team")])
+                _c("strong", [_vm._v("Meet the Fincent Team")])
               ]),
               _vm._v(" "),
               _c("h5", { staticClass: "white-text secondary-font" }, [

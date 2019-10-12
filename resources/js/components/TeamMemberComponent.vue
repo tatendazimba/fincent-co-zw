@@ -4,11 +4,11 @@
             <div class="col s12 no-pad">
                 <div class="center-align valign-wrapper" style="background: linear-gradient(rgba(42, 35, 76, .25), rgba(42, 35, 76, .15)), url('/images/leadership/group.jpg') no-repeat top center ; background-size: cover; height: 600px;">
                     <div class="container">
-                        <h5 class="no-margin white-text">
-                            <strong>TEAM</strong>
+                        <h5 class="no-margin white-text uppercase">
+                            <strong>Professionalism & Dedication</strong>
                         </h5>
                         <h2 class="secondary-font white-text">
-                            <strong>Meet the Executive Team</strong>
+                            <strong>Meet the Fincent Team</strong>
                         </h2>
                         <h5 class="white-text secondary-font">
                             <span>Meet the team responsible for conducting Fincent business.</span>
@@ -64,6 +64,37 @@
 
             <p>&nbsp;</p>
             <p>&nbsp;</p>
+
+            <h3 class="primary-text">Our Team</h3>
+
+            <p class="justified">
+                Our team is important for delivering services to our customers alongside any technologies that we may deploy. We will not compromise on professionalism and dedication to serve the client with experience and expertise playing a key role in our recruitment. Training will be paramount to develop a uniform culture and to ensure every one of our team serve clients exceptionally well.
+            </p>
+
+            <p>&nbsp;</p>
+
+            <h3 class="primary-text">Governance</h3>
+
+            <p class="justified">
+                For us to create wealth for our clients and stakeholders we believe in having strong corporate governance structures as well as strict compliance with any regulation governing our activities.
+            </p>
+
+            <p>&nbsp;</p>
+
+            <h3 class="primary-text">Corporate Action</h3>
+
+            <p class="justified">
+                Our team has immense sponsoring broker experience and has been responsible for several corporate transactions in particular listing of several companies over the last 20 years. We have a compelling network of relationships across the capital markets landscape from listed companies to banks to institutional investors and high net worth individuals which we can leverage to execute corporate actions.
+            </p>
+
+            <p>&nbsp;</p>
+
+            <h3 class="primary-text">Investor Relations Services</h3>
+
+            <p class="justified">
+                We know what institutional and high net worth investors require from listed companies by way of disclosures and interactions and thus are well placed to advise on investor relations issues. Fincent Securities is the ideal partner for listed companies to put their best foot forward with the community that determines their share price.
+            </p>
+
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>

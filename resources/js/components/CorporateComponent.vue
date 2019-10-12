@@ -58,7 +58,7 @@
                         <p>&nbsp;</p>
 
                         <a class="btn-large secondary" href="/leadership">
-                            Contact Excutive Team
+                            Excutive Team
                         </a>
 
                         <p>&nbsp;</p>
