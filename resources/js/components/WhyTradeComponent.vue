@@ -7,12 +7,38 @@
             <p>&nbsp;</p>
 
             <div class="container">
-                <img src="/images/logos-dark/securities.svg" style="height: 64px;">
-                <h2 class="primary-text">Securities Trading</h2>
+                <div class="row">
+                    <div class="col s12 m8">
+                        <img src="/images/logos-dark/securities.svg" style="height: 64px;">
+                        <h2 class="primary-text">Securities Trading</h2>
 
-                <p class="">
-                    Our brokerage division execute transactions on behalf of our clients across the equity and fixed income markets in the country.
-                </p>
+                        <p class="right-padding">
+                            Our brokerage division execute transactions on behalf of our clients across the equity and fixed income markets in the country.
+                        </p>
+                    </div>
+                    <div class="col s12 m4">
+
+                        <p class="hide-on-med-and-up">&nbsp;</p>
+
+                        <div class="bordered with-padding">
+                            <div class="">
+                                <h4 class="primary-text no-margin">Account Opening Forms</h4>
+
+                                <p>
+                                    <a class="secondary-text primary-font uppercase" href="">
+                                        <i class='material-icons primary-text'>chevron_right</i>Individual Account
+                                    </a>
+                                </p>
+
+                                <p>
+                                    <a class="secondary-text primary-font uppercase" href="">
+                                        <i class='material-icons primary-text'>chevron_right</i>Corporate Account
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -20,7 +46,7 @@
 
             <div class="row container" style="">
 
-                <h3 class="primary-text">Why Trade With Us?</h3>
+                <h3 class="primary-text">Our services include:</h3>
 
                 <p>&nbsp;</p>
 
@@ -32,8 +58,7 @@
                             </h5>
                         </div>
                         <div class="col s12 m7 no-pad">
-                            <p class="justified">
-                                {{ reason.description     }}
+                            <p class="justified" v-html="reason.description">
                             </p>
                         </div>
                     </div>
@@ -58,21 +83,32 @@
                 reasons: [
                     {
                         title: "Equity Trading",
-                        description: "Fincent Securities (Pvt) Ltd provides local and foreign investors access to the listed stocks on the Zimbabwe Stock Exchange  (ZSE) and Alternative Trading Platform, FINSEC. Our equity operations are handled by highly qualified sales and trading teams. We buy and sell shares on your behalf on the ZSE. Our execution services are bespoke towards clients who:\n" +
-                            "require advice on the intrinsic worth of transactions from time to time,\n" +
-                            "require investment information on which to base their decision making.\n" +
-                            "We also offer guidance on the best way in which to work orders in the market particularly in relation to large transactions and illiquid counters. This service is important to a diverse range of clients including both local (institutional fund managers, parastatals, corporates) and foreign institutional investors as well as high net worth and retail clients.",
+                        description: "Fincent Securities (Pvt) Ltd provides local and foreign investors access to the listed stocks on the Zimbabwe Stock Exchange  (ZSE) and Alternative Trading Platform, FINSEC. Our equity operations are handled by highly qualified sales and trading teams. " +
+                            "<br><br>We buy and sell shares on your behalf on the ZSE. Our execution services are bespoke towards clients who:" +
+                            "<ul>" +
+                            "<li><i class='material-icons secondary-text'>chevron_right</i>Require advice on the intrinsic worth of transactions from time to time</li>" +
+                            "<li><i class='material-icons secondary-text'>chevron_right</i>Require investment information on which to base their decision making.</li><ul>" +
+                            "<br>We also offer guidance on the best way in which to work orders in the market particularly in relation to large transactions and illiquid counters. This service is important to a diverse range of clients including both local (institutional fund managers, parastatals, corporates) and foreign institutional investors as well as high net worth and retail clients.",
                     },
                     {
                         title: "Fixed Income",
                         description: "The fixed income desk executes transactions on the fixed income markets on behalf of our clients trading for both corporate and government issues. Our team stands ready to offer our clientele the option of taking part in the primary issuance and secondary trading of the following:\n" +
-                            "      • Government bonds\n" +
-                            "      • Treasury bills (T-Bills)\n" +
-                            "      • Corporate bonds\n",
+                            "<ul><li><i class='material-icons secondary-text'>chevron_right</i>Government bonds</li>" +
+                            "<li><i class='material-icons secondary-text'>chevron_right</i>Treasury bills (T-Bills)</li>" +
+                            "<li><i class='material-icons secondary-text'>chevron_right</i>Corporate bonds</li></ul>",
                     },
                     {
                         title: "Research",
-                        description: "At the core of our value proposition and the factor to separate us from others is research expertise. Research has to be independent, incisive and helpful to the client in investment decision making. Fincent Securities has a robust in-house research team which offers our clients access to a wealth of research, news and market information. Our team generates a suite of comprehensive reports to provide our clients with the basis needed to help shape their investment decisions. Our research encompasses all key blocks of analysis including macroeconomic, fundamental, and technical as well as quantitative analysis.",
+                        description: "At the core of our value proposition and the factor to separate us from others is research expertise. Research has to be independent, incisive and helpful to the client in investment decision making. Fincent Securities has a robust in-house research team which offers our clients access to a wealth of research, news and market information. Our team generates a suite of comprehensive reports to provide our clients with the basis needed to help shape their investment decisions. Our research encompasses all key blocks of analysis including macroeconomic, fundamental, and technical as well as quantitative analysis." +
+                            "<br><br>The research division provides:" +
+                            "<ul>" +
+                            "<li><strong class='primary-font uppercase secondary-text'>Technical trader</strong> - Besides covering a summary of equities and debt market activity with a focus on turnover and market breadth & depth, the report also covers important charts of the day. We believe that technical analysis is important for a trading strategy as well as timing entries and exits on the market.</li><br>" +
+                            "<li><strong class='primary-font uppercase secondary-text'>Taking Stock</strong> - This is a weekly piece highlighting prominent events affecting debt, equity markets and market fundamentals update.</li><br>" +
+                            "<li><strong class='primary-font uppercase secondary-text' class='primary-font uppercase'>Economics 360</strong> - This feature takes a 360 degree look at macroeconomic developments in the market including review of key reports from the national treasury, the central bank, different industry representative organisations and bodies such as Zimstats which releases key statistics in the market. This will not only cover the historic but also looks at the outlook for areas that could affect the capital markets.\n</li><br>" +
+                            "<li><strong class='primary-font uppercase secondary-text'>Equity Coverages</strong> - These reports seek to give forward looking views on select listed equities and their sectors, paying particular attention to fundamental analysis using contemporary tools as well as providing timely earnings updates.</li><br>" +
+                            "<li><strong class='primary-font uppercase secondary-text'>Fixed Income Coverages</strong> - These reports focus on key macroeconomic indicators’ impact on the debt market activity with a view to predict the direction of interest rates in future.</li><br>" +
+                            "<li><strong class='primary-font uppercase secondary-text'>Specialist reports</strong> - These are occasional pieces focusing on non-listed investment assets such as real estate. Under this segment our research team will also provide in-depth analysis pieces to help our clients in their investment decision making.</li><br>" +
+                            "</ul>",
                     }
                 ]
             }

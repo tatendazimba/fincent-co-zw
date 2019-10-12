@@ -6,7 +6,7 @@
                 <div id="" class="row container">
                     <div class="col s12">
                         <h1 class="white-text animated slideInLeft jumbo-text">
-                            <span>Over 20 Years Trading Experience.</span>
+                            <span>Over 20 Years Trading <span class="hide-on-small-only">Experience.</span></span>
                         </h1>
 
                         <p>&nbsp;</p>
