@@ -8,33 +8,51 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col s12 m8">
+                    <div class="col s12 m8 no-pad">
                         <img src="/images/logos-dark/securities.svg" style="height: 64px;">
                         <h2 class="primary-text">Securities Trading</h2>
 
-                        <p class="right-padding">
-                            Our brokerage division execute transactions on behalf of our clients across the equity and fixed income markets in the country.
-                        </p>
+                        <div class="justified">
+                            Our brokerage division executes transactions on behalf of our clients across the equity and fixed income markets in the country.
+
+                            <br><br>
+
+                            <h5 class="primary-font uppercase secondary-text no-margin">Our Philosophy</h5>
+
+                            <p class="justified">The market we play in is very volatile with each day bringing unique challenges mostly driven by policy inconsistence and unstable monetary developments giving rise to recurrent inflation and currency changes. To succeed we believe it is important for us to be proactive and actively seek ways to capitalise on the opportunities brought by the inefficiencies. Our philosophy is centred on anticipating changes and triggers for policy shifts from those in authority. We have an extensive network and traceable experience in research which we will leverage to provide our clients with timeous services. We have an advantage of being nimble and entrepreneurial in our approach meaning decision making will be quick while emphasising the need for us to continue to innovate and improve our processes.</p>
+
+                            Our traders will always execute trades in the best interests of our clients, in a price-sensitive and confidential manner.
+
+                            <p>&nbsp;</p>
+
+                            <h5 class="primary-font uppercase secondary-text no-margin">Client relationships</h5>
+
+                            <p class="justified">We exist to create wealth for our clients and all our stakeholders including our team, shareholders and community. Our relationships with our clients are underpinned by trust, and service excellence. We decode our clients’ unique needs into robust investment outcomes through world class securities trading services.</p>
+
+
+                        </div>
                     </div>
-                    <div class="col s12 m4">
+                    <div class="col s12 m4 no-pad">
 
                         <p class="hide-on-med-and-up">&nbsp;</p>
 
-                        <div class="bordered with-padding">
-                            <div class="">
-                                <h4 class="primary-text no-margin">Account Opening Forms</h4>
+                        <div class="container">
+                            <div class="bordered with-padding">
+                                <div class="">
+                                    <h4 class="primary-text no-margin">Account Opening Forms</h4>
 
-                                <p>
-                                    <a class="secondary-text primary-font uppercase" href="">
-                                        <i class='material-icons primary-text'>chevron_right</i>Individual Account
-                                    </a>
-                                </p>
+                                    <p>
+                                        <a class="secondary-text primary-font uppercase" href="">
+                                            <i class='material-icons primary-text'>chevron_right</i>Individual Account
+                                        </a>
+                                    </p>
 
-                                <p>
-                                    <a class="secondary-text primary-font uppercase" href="">
-                                        <i class='material-icons primary-text'>chevron_right</i>Corporate Account
-                                    </a>
-                                </p>
+                                    <p>
+                                        <a class="secondary-text primary-font uppercase" href="">
+                                            <i class='material-icons primary-text'>chevron_right</i>Corporate Account
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

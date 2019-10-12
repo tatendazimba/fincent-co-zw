@@ -4069,6 +4069,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "WhyTradeComponent",
   data: function data() {
@@ -57873,7 +57891,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col s12 m8" }, [
+        _c("div", { staticClass: "col s12 m8 no-pad" }, [
           _c("img", {
             staticStyle: { height: "64px" },
             attrs: { src: "/images/logos-dark/securities.svg" }
@@ -57883,56 +57901,92 @@ var staticRenderFns = [
             _vm._v("Securities Trading")
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "right-padding" }, [
+          _c("div", { staticClass: "justified" }, [
             _vm._v(
-              "\n                        Our brokerage division execute transactions on behalf of our clients across the equity and fixed income markets in the country.\n                    "
-            )
+              "\n                        Our brokerage division executes transactions on behalf of our clients across the equity and fixed income markets in the country.\n\n                        "
+            ),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "primary-font uppercase secondary-text no-margin"
+              },
+              [_vm._v("Our Philosophy")]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "justified" }, [
+              _vm._v(
+                "The market we play in is very volatile with each day bringing unique challenges mostly driven by policy inconsistence and unstable monetary developments giving rise to recurrent inflation and currency changes. To succeed we believe it is important for us to be proactive and actively seek ways to capitalise on the opportunities brought by the inefficiencies. Our philosophy is centred on anticipating changes and triggers for policy shifts from those in authority. We have an extensive network and traceable experience in research which we will leverage to provide our clients with timeous services. We have an advantage of being nimble and entrepreneurial in our approach meaning decision making will be quick while emphasising the need for us to continue to innovate and improve our processes."
+              )
+            ]),
+            _vm._v(
+              "\n\n                        Our traders will always execute trades in the best interests of our clients, in a price-sensitive and confidential manner.\n\n                        "
+            ),
+            _c("p", [_vm._v(" ")]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "primary-font uppercase secondary-text no-margin"
+              },
+              [_vm._v("Client relationships")]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "justified" }, [
+              _vm._v(
+                "We exist to create wealth for our clients and all our stakeholders including our team, shareholders and community. Our relationships with our clients are underpinned by trust, and service excellence. We decode our clients’ unique needs into robust investment outcomes through world class securities trading services."
+              )
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col s12 m4" }, [
+        _c("div", { staticClass: "col s12 m4 no-pad" }, [
           _c("p", { staticClass: "hide-on-med-and-up" }, [_vm._v(" ")]),
           _vm._v(" "),
-          _c("div", { staticClass: "bordered with-padding" }, [
-            _c("div", {}, [
-              _c("h4", { staticClass: "primary-text no-margin" }, [
-                _vm._v("Account Opening Forms")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "secondary-text primary-font uppercase",
-                    attrs: { href: "" }
-                  },
-                  [
-                    _c("i", { staticClass: "material-icons primary-text" }, [
-                      _vm._v("chevron_right")
-                    ]),
-                    _vm._v(
-                      "Individual Account\n                                "
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "secondary-text primary-font uppercase",
-                    attrs: { href: "" }
-                  },
-                  [
-                    _c("i", { staticClass: "material-icons primary-text" }, [
-                      _vm._v("chevron_right")
-                    ]),
-                    _vm._v(
-                      "Corporate Account\n                                "
-                    )
-                  ]
-                )
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "bordered with-padding" }, [
+              _c("div", {}, [
+                _c("h4", { staticClass: "primary-text no-margin" }, [
+                  _vm._v("Account Opening Forms")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "secondary-text primary-font uppercase",
+                      attrs: { href: "" }
+                    },
+                    [
+                      _c("i", { staticClass: "material-icons primary-text" }, [
+                        _vm._v("chevron_right")
+                      ]),
+                      _vm._v(
+                        "Individual Account\n                                    "
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "secondary-text primary-font uppercase",
+                      attrs: { href: "" }
+                    },
+                    [
+                      _c("i", { staticClass: "material-icons primary-text" }, [
+                        _vm._v("chevron_right")
+                      ]),
+                      _vm._v(
+                        "Corporate Account\n                                    "
+                      )
+                    ]
+                  )
+                ])
               ])
             ])
           ])
