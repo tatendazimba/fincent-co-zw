@@ -15,18 +15,18 @@
 
                         <p>&nbsp;</p>
 
-                        <h4 class="white-text thin uppercase">
-                            <span>
-                                Script-Based Credit Instruments
-                                <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                PayDay Loans
+                        <h4 class="white-text thin uppercase center-align">
+                            <div class="flex">
+                                <div class="">Payroll Deduction Loans</div>
+                                <div class="">
+                                    <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
+                                    SME Loans
+                                </div>
+                            </div>
 
-                                <br>
-
-                                Currency-Backed Lending
-                                <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                Structured Credit Products
-                            </span>
+                            <div class="flex">
+                                <div>Margin Lending</div>
+                            </div>
                         </h4>
 
                         <p>&nbsp;</p>

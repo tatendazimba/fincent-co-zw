@@ -3099,6 +3099,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "LoansComponent",
   data: function data() {
@@ -56148,7 +56158,7 @@ var render = function() {
           _vm._l(_vm.categories.slice(0, 1), function(category) {
             return _c(
               "div",
-              { staticClass: "col s12 m4 l4 no-pad shadow valign-wrapper" },
+              { staticClass: "col s12 m5 l6 no-pad shadow valign-wrapper" },
               [
                 _c(
                   "div",
@@ -56177,7 +56187,7 @@ var render = function() {
           _vm._l(_vm.categories.slice(1, 2), function(category) {
             return _c(
               "div",
-              { staticClass: "col s12 m5 l6 shadow valign-wrapper" },
+              { staticClass: "col s12 m4 l4 shadow valign-wrapper" },
               [
                 _c(
                   "div",
@@ -56233,9 +56243,9 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("h2", {}, [_vm._v("Fincent Finance")]),
       _vm._v(" "),
-      _c("p", {}, [
+      _c("p", { staticClass: "justified" }, [
         _vm._v(
-          "\n            We offer micro credit products to clients who wish to finance a funding gap through payday loans, script backed credit instruments, cash backed lending and structure credit products. Our subsidiary Fincent Finance is a registered credit-only Microfinance Institution (MFI) offering unsecured and secured credit products to individuals and SMEs.\n        "
+          "\n            Fincent Finance is a registered credit-only MFI offering unsecured and secured microfinance products. The company started trading in 2019.\n        "
         )
       ])
     ])
@@ -56262,20 +56272,59 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
+    return _c("div", { staticClass: "container white-text" }, [
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
-      _c("h3", { staticClass: "white-text" }, [
-        _c("strong", [_vm._v("PayDay Loans")])
+      _c("h3", [
+        _c("strong", { staticClass: "white-text" }, [
+          _vm._v("Payroll Deduction Loans")
+        ])
       ]),
       _vm._v(" "),
-      _c("p", { staticClass: "justifed white-text" }, [
+      _c("p", { staticClass: "justified" }, [
         _vm._v(
-          "\n                        Under this arrangement, Fincent signs a deduction at source agreement with employers particularly in the NGO and mining sector. Employees covered by such agreements can access 30 – 90 day loans from Fincent at competitive rates.\n                    "
+          "\n                        Under this arrangement, Fincent signs a Payroll Deduction Agreement with employers. Employees covered by such agreements can access 30 – 180 day loans from Fincent at competitive rates. The maximum loan amount depends on the net pay and maximum loan repayment limit agreed by both parties (generally 50% maximum repayment limit is applied). Loans are disbursed within 24 hours from application and clients receive their funds in their bank account or on Ecocash mobile money wallet. Loan can be topped-up or rolled over subject to clients meeting refinancing criteria.\n                    "
         )
       ]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
+      _vm._v(" "),
+      _c("h3", [
+        _c("strong", { staticClass: "white-text" }, [_vm._v("SME Loans")])
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "justified" }, [
+        _vm._v(
+          "\n                        Small to Medium Enterprises (SMEs) can access loans on the back of contractual agreements and cashflow positive business models. Key elements in small businesses’ ability to access these loans are:\n\n                    "
+        ),
+        _c("ul", [
+          _c("li", [
+            _c("i", { staticClass: "material-icons secondary-text" }, [
+              _vm._v("chevron_right")
+            ]),
+            _vm._v("Proven track record in the respective trades;")
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("i", { staticClass: "material-icons secondary-text" }, [
+              _vm._v("chevron_right")
+            ]),
+            _vm._v("Evidence of positive future cash flows;")
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("i", { staticClass: "material-icons secondary-text" }, [
+              _vm._v("chevron_right")
+            ]),
+            _vm._v(
+              "Good management practices such as bookkeeping, board meetings, etc."
+            )
+          ])
+        ]),
+        _vm._v(
+          "\n\n                    SMEs can access 30 – 365 day loans from Fincent at competitive industry rates.\n\n                    "
+        )
+      ]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")])
     ])
@@ -56287,25 +56336,15 @@ var staticRenderFns = [
     return _c("div", { staticClass: "container" }, [
       _c("p", [_vm._v(" ")]),
       _vm._v(" "),
-      _c("h3", [
-        _c("strong", {}, [_vm._v("Script Backed Credit Instruments")])
-      ]),
+      _c("h3", {}, [_c("strong", [_vm._v("Margin Lending")])]),
       _vm._v(" "),
       _c("p", { staticClass: "justified" }, [
         _vm._v(
-          "\n                        Fincent can extend a loan of up to 70% the value of your listed blue-chip equities portfolio. The script is held in trust during the tenure of the loan and at maturity the security holder has the option to repay the loan or sell the stock to Fincent at the full value of the script on the day of lending.\n                    "
+          "\n                        A margin loan is a credit product that lets clients borrow money to invest and borrows against shares, currency or other managed funds used as security. The amount a client can borrow is based on the client’s financial position as well as the allowable Loan to Value Ratio (LVR) of a clients’ existing portfolio, being shares, currency or other approved managed funds. A maximum LVR of 70% is allowable depending on the quality of the security. For use of currency as security only easily convertible currencies such as United States Dollars, British Pounds, Euros or South  African Rands etc are encouraged.\n                    "
         )
       ]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("h3", [_c("strong", {}, [_vm._v("Currency Backed Loans")])]),
-      _vm._v(" "),
-      _c("p", { staticClass: "justified" }, [
-        _vm._v(
-          "\n                        Fincent can extend a loan of up to 70% the value of your foreign currency especially United States Dollars, British Pounds or South African Rands. The currency is held in trust during the tenure of the loan and at maturity the security holder has the option to repay the loan or sell the currency to Fincent via Fincent Bureau De Change at the exchange rates applicable on maturity day.\n                    "
-        )
-      ]),
       _vm._v(" "),
       _c("p", [_vm._v(" ")])
     ])
@@ -56786,33 +56825,30 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("p", [_vm._v(" ")]),
               _vm._v(" "),
-              _c("h4", { staticClass: "white-text thin uppercase" }, [
-                _c("span", [
-                  _vm._v(
-                    "\n                            Script-Based Credit Instruments\n                            "
-                  ),
-                  _c("span", { staticClass: "thin" }, [
-                    _c("i", { staticClass: "material-icons" }, [
-                      _vm._v("fiber_manual_record")
+              _c(
+                "h4",
+                { staticClass: "white-text thin uppercase center-align" },
+                [
+                  _c("div", { staticClass: "flex" }, [
+                    _c("div", {}, [_vm._v("Payroll Deduction Loans")]),
+                    _vm._v(" "),
+                    _c("div", {}, [
+                      _c("span", { staticClass: "thin" }, [
+                        _c("i", { staticClass: "material-icons" }, [
+                          _vm._v("fiber_manual_record")
+                        ])
+                      ]),
+                      _vm._v(
+                        "\n                                SME Loans\n                            "
+                      )
                     ])
                   ]),
-                  _vm._v(
-                    "\n                            PayDay Loans\n\n                            "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    "\n\n                            Currency-Backed Lending\n                            "
-                  ),
-                  _c("span", { staticClass: "thin" }, [
-                    _c("i", { staticClass: "material-icons" }, [
-                      _vm._v("fiber_manual_record")
-                    ])
-                  ]),
-                  _vm._v(
-                    "\n                            Structured Credit Products\n                        "
-                  )
-                ])
-              ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex" }, [
+                    _c("div", [_vm._v("Margin Lending")])
+                  ])
+                ]
+              ),
               _vm._v(" "),
               _c("p", [_vm._v(" ")])
             ])
