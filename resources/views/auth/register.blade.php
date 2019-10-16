@@ -29,6 +29,14 @@
                         @include("partials.linebreak")
 
                         <div class="card-body">
+
+                            <div class="col s12">
+                                <h3 class="no-margin primary-text">Register</h3>
+                                <h4 class="no-margin">Access Exclusive Client Content.</h4>
+                            </div>
+
+                            <p>&nbsp;</p>
+
                             <form method="POST" action="{{ route('register') }}">
 
                                 @csrf

@@ -51,7 +51,7 @@
             <li class="center-align valign-wrapper">
                 <div class="full-width">
                     <a href="/exclusive/members" class="white outline btn-large" style="width: auto;">
-                        Member Area
+                        Client Area
                     </a>
                 </div>
             </li>

@@ -56984,7 +56984,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                        Member Area\n                    "
+                "\n                        Client Area\n                    "
               )
             ]
           )
@@ -57219,7 +57219,7 @@ var staticRenderFns = [
                   staticStyle: { width: "auto" },
                   attrs: { href: "/exclusive/members" }
                 },
-                [_vm._v("\n                    Member Area\n                ")]
+                [_vm._v("\n                    Client Area\n                ")]
               )
             ])
           ])

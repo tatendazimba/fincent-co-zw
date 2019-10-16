@@ -27,7 +27,7 @@
                     </li>
                     <li class="valign-wrapper">
                         <a href="/exclusive/members" class="white outline btn-large">
-                            Member Area
+                            Client Area
                         </a>
                     </li>
                 </ul>

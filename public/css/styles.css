@@ -887,6 +887,16 @@ nav ul li.active {
     z-index: -999 !important;
 }
 
+@media (max-width: 600px) {
+
+    .jumbo-text {
+        font-size: 4.5rem !important;
+        /*line-height: 2.5rem !important;*/
+        z-index: -999 !important;
+    }
+}
+
+
 .jumbo-text-overlapping {
     font-size: 9.5rem !important;
     line-height: 2.5rem !important;
