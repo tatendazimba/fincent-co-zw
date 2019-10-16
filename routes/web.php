@@ -30,7 +30,7 @@ Route::get('/micro-finance', 'MicrofinanceController@index')->name("microfinance
 Route::get('/corporate-services', 'CorporateController@index')->name("corporate.index");
 Route::get('/exclusive/members/{tag?}', "BlogsController@index")->name("members.index");
 
-Route::get("/free/content/{story}", StoryController::class)->name("exclusive.content.show");
+Route::get("/free/content/{story}", StoryController::class)->name("free.content.show");
 
 Route::middleware(["auth"])->prefix('admin')->group(function(){
     Route::get('/reports', "ADMIN\ReportsController@index")->name("reports.index");

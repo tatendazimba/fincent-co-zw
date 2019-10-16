@@ -54,35 +54,38 @@
                     <div class="flex row no-pad">
                         @foreach($shop as $i => $post)
                             <div class="col s12 m4 no-pad with-small-margin primary-font white">
-                                <a href="{{ route('exclusive.content.show', $post) }}" class="black-text">
+                                <div class="black-text">
                                     <div class="full-width" style="position:relative;">
                                         <div class="img-background square no-margin ignore" style="background-image: url('/uploads/{{ $post->images[0]->url }}'); -webkit-background-size: cover; background-size: cover;"></div>
                                     </div>
                                     <div class="top-small-padding secondary-font container" style="">
                                         <h5>
-                                            <span class="flow-text">{{ $post->title }}</span>
+                                            <span class="flow-text truncate">{{ $post->title }}</span>
                                         </h5>
 
                                         <br>
 
                                         <div class="truncate">
-                                            {{ $post->content }}
+                                            {{ substr($post->content, 0, 200) }}
                                         </div>
 
                                         <br>
 
-                                        <strong class="btn secondary">FULL ARTICLE</strong>
+                                        @if($post->tags->contains('name', 'Free'))
+                                            <a href="{{ route('fred.content.show', $post) }}">
+                                                <strong class="btn secondary">READ ARTICLE (FREE)</strong>
+                                            </a>
+                                        @else
+                                            <a href="{{ route('exclusive.content.show', $post) }}">
+                                                <strong class="btn secondary">FULL ARTICLE (EXCLUSIVE)</strong>
+                                            </a>
+                                        @endif
 
                                         <p>&nbsp;</p>
 
                                     </div>
-                                </a>
+                                </div>
                             </div>
-
-                            @if((($i+1) % 3) === 0 )
-                    </div>
-                    <div class="flex row no-pad">
-                        @endif
                         @endforeach
                     </div>
                 </div>

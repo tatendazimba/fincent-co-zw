@@ -1,6 +1,6 @@
 <template>
-    <a href="/" class="brand-logo valign-wrapper full-height left" style="opacity: .9498;">
-        <img class="ignore" :src="'/images/' + image" style="height: 64px !important; padding: 0 20px;">
+    <a href="/" class="brand-logo valign-wrapper full-height left" style="">
+        <img class="ignore" :src="'/images/' + image" style="height: 64px !important;">
     </a>
 </template>
 
@@ -16,8 +16,6 @@
         },
         mounted() {
             const route = window.location.pathname;
-
-            console.log("route: ", route);
 
             if (route === "/")
                 this.image = "capital.svg";

@@ -3151,7 +3151,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     var route = window.location.pathname;
-    console.log("route: ", route);
     if (route === "/") this.image = "capital.svg";else if (route === "/micro-finance") this.image = "micro-finance.svg";else if (route === "/trading") this.image = "securities.svg";else if (route === "/bureau-de-change") this.image = "bureau-de-change.svg";else if (route === "/corporate-services") this.image = "advisory.svg";else this.image = "capital.svg";
   }
 });
@@ -56471,13 +56470,12 @@ var render = function() {
     "a",
     {
       staticClass: "brand-logo valign-wrapper full-height left",
-      staticStyle: { opacity: ".9498" },
       attrs: { href: "/" }
     },
     [
       _c("img", {
         staticClass: "ignore",
-        staticStyle: { height: "64px !important", padding: "0 20px" },
+        staticStyle: { height: "64px !important" },
         attrs: { src: "/images/" + _vm.image }
       })
     ]
