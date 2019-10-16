@@ -9519,6 +9519,10 @@ nav {
     border: 1px solid #171745 !important;
 }
 
+.bordered-secondary {
+    border: 1px solid #f36e21 !important;
+}
+
 .border-bottom {
     border-bottom: 6px solid #f36e21;
 }

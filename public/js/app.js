@@ -4103,6 +4103,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "WhyTradeComponent",
   data: function data() {
@@ -57988,68 +58010,136 @@ var staticRenderFns = [
           _c("p", { staticClass: "hide-on-med-and-up" }, [_vm._v(" ")]),
           _vm._v(" "),
           _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "bordered with-padding" }, [
-              _c("div", {}, [
-                _c("h4", { staticClass: "primary-text no-margin" }, [
-                  _vm._v("Securities Trading Forms")
-                ]),
-                _vm._v(" "),
-                _c("p", [
+            _c("div", { staticClass: "bordered-secondary" }, [
+              _c("div", { staticClass: "secondary" }, [
+                _c("div", { staticClass: "container" }, [
                   _c(
-                    "a",
-                    {
-                      staticClass: "secondary-text primary-font uppercase",
-                      attrs: { target: "_blank", href: "/fincent-account.pdf" }
-                    },
-                    [
-                      _c("i", { staticClass: "material-icons primary-text" }, [
-                        _vm._v("chevron_right")
-                      ]),
-                      _vm._v(
-                        "Account Opening Form\n                                    "
-                      )
-                    ]
+                    "h5",
+                    { staticClass: "white-text center-align uppercase" },
+                    [_vm._v("Fincent Trading Forms")]
                   )
-                ]),
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "container" }, [
+                _c("p", [_vm._v(" ")]),
                 _vm._v(" "),
                 _c("p", [
                   _c(
                     "a",
                     {
-                      staticClass: "secondary-text primary-font uppercase",
-                      attrs: { target: "_blank", href: "/fincent-buy-form.pdf" }
-                    },
-                    [
-                      _c("i", { staticClass: "material-icons primary-text" }, [
-                        _vm._v("chevron_right")
-                      ]),
-                      _vm._v(
-                        "Buying Form\n                                    "
-                      )
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "secondary-text primary-font uppercase",
+                      staticClass: "primary-text primary-font uppercase",
                       attrs: {
                         target: "_blank",
-                        href: "/fincent-sell-form.pdf"
+                        href: "/fincent-account-opening-requirements.pdf"
                       }
                     },
                     [
-                      _c("i", { staticClass: "material-icons primary-text" }, [
-                        _vm._v("chevron_right")
-                      ]),
+                      _c(
+                        "i",
+                        { staticClass: "material-icons secondary-text" },
+                        [_vm._v("chevron_right")]
+                      ),
                       _vm._v(
-                        "Selling Form\n                                    "
+                        "Fincent Account Requirements\n                                    "
                       )
                     ]
                   )
-                ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "primary-text primary-font uppercase",
+                      attrs: {
+                        target: "_blank",
+                        href: "/fincent-fatca-personal-datails-form.pdf"
+                      }
+                    },
+                    [
+                      _c(
+                        "i",
+                        { staticClass: "material-icons secondary-text" },
+                        [_vm._v("chevron_right")]
+                      ),
+                      _vm._v(
+                        "Fincent FATCA Personal Details Form\n                                    "
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "primary-text primary-font uppercase",
+                      attrs: {
+                        target: "_blank",
+                        href: "/CSD1b-account-opening-form.pdf"
+                      }
+                    },
+                    [
+                      _c(
+                        "i",
+                        { staticClass: "material-icons secondary-text" },
+                        [_vm._v("chevron_right")]
+                      ),
+                      _vm._v(
+                        "CSD1b Account Opening Form\n                                    "
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "primary-text primary-font uppercase",
+                      attrs: {
+                        target: "_blank",
+                        href: "/fincent-mandate-form-individual.pdf"
+                      }
+                    },
+                    [
+                      _c(
+                        "i",
+                        { staticClass: "material-icons secondary-text" },
+                        [_vm._v("chevron_right")]
+                      ),
+                      _vm._v(
+                        "Fincent Mandate Form - Individual\n                                    "
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "primary-text primary-font uppercase",
+                      attrs: {
+                        target: "_blank",
+                        href: "/fincent-mandate-form-corporate.pdf"
+                      }
+                    },
+                    [
+                      _c(
+                        "i",
+                        { staticClass: "material-icons secondary-text" },
+                        [_vm._v("chevron_right")]
+                      ),
+                      _vm._v(
+                        "Fincent Mandate Form - Corporste\n                                    "
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v(" ")])
               ])
             ])
           ])

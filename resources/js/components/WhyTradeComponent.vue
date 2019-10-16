@@ -37,27 +37,49 @@
                         <p class="hide-on-med-and-up">&nbsp;</p>
 
                         <div class="container">
-                            <div class="bordered with-padding">
-                                <div class="">
-                                    <h4 class="primary-text no-margin">Securities Trading Forms</h4>
+                            <div class="bordered-secondary">
+                                <div class="secondary">
+                                    <div class="container">
+                                        <h5 class="white-text center-align uppercase">Fincent Trading Forms</h5>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+
+                                    <p>&nbsp;</p>
 
                                     <p>
-                                        <a target="_blank" class="secondary-text primary-font uppercase" href="/fincent-account.pdf">
-                                            <i class='material-icons primary-text'>chevron_right</i>Account Opening Form
+                                        <a target="_blank" class="primary-text primary-font uppercase" href="/fincent-account-opening-requirements.pdf">
+                                            <i class='material-icons secondary-text'>chevron_right</i>Fincent Account Requirements
                                         </a>
                                     </p>
 
                                     <p>
-                                        <a target="_blank" class="secondary-text primary-font uppercase" href="/fincent-buy-form.pdf">
-                                            <i class='material-icons primary-text'>chevron_right</i>Buying Form
+                                        <a target="_blank" class="primary-text primary-font uppercase" href="/fincent-fatca-personal-datails-form.pdf">
+                                            <i class='material-icons secondary-text'>chevron_right</i>Fincent FATCA Personal Details Form
                                         </a>
                                     </p>
 
                                     <p>
-                                        <a target="_blank" class="secondary-text primary-font uppercase" href="/fincent-sell-form.pdf">
-                                            <i class='material-icons primary-text'>chevron_right</i>Selling Form
+                                        <a target="_blank" class="primary-text primary-font uppercase" href="/CSD1b-account-opening-form.pdf">
+                                            <i class='material-icons secondary-text'>chevron_right</i>CSD1b Account Opening Form
                                         </a>
                                     </p>
+
+                                    <p>
+                                        <a target="_blank" class="primary-text primary-font uppercase" href="/fincent-mandate-form-individual.pdf">
+                                            <i class='material-icons secondary-text'>chevron_right</i>Fincent Mandate Form - Individual
+                                        </a>
+                                    </p>
+
+                                    <p>
+                                        <a target="_blank" class="primary-text primary-font uppercase" href="/fincent-mandate-form-corporate.pdf">
+                                            <i class='material-icons secondary-text'>chevron_right</i>Fincent Mandate Form - Corporste
+                                        </a>
+                                    </p>
+
+                                    <p>&nbsp;</p>
+
                                 </div>
                             </div>
                         </div>
