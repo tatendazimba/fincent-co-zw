@@ -39,17 +39,23 @@
                         <div class="container">
                             <div class="bordered with-padding">
                                 <div class="">
-                                    <h4 class="primary-text no-margin">Account Opening Forms</h4>
+                                    <h4 class="primary-text no-margin">Securities Trading Forms</h4>
 
                                     <p>
-                                        <a class="secondary-text primary-font uppercase" href="">
-                                            <i class='material-icons primary-text'>chevron_right</i>Individual Account
+                                        <a target="_blank" class="secondary-text primary-font uppercase" href="/fincent-account.pdf">
+                                            <i class='material-icons primary-text'>chevron_right</i>Account Opening Form
                                         </a>
                                     </p>
 
                                     <p>
-                                        <a class="secondary-text primary-font uppercase" href="">
-                                            <i class='material-icons primary-text'>chevron_right</i>Corporate Account
+                                        <a target="_blank" class="secondary-text primary-font uppercase" href="/fincent-buy-form.pdf">
+                                            <i class='material-icons primary-text'>chevron_right</i>Buying Form
+                                        </a>
+                                    </p>
+
+                                    <p>
+                                        <a target="_blank" class="secondary-text primary-font uppercase" href="/fincent-sell-form.pdf">
+                                            <i class='material-icons primary-text'>chevron_right</i>Selling Form
                                         </a>
                                     </p>
                                 </div>

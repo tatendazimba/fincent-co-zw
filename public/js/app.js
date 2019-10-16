@@ -4097,6 +4097,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "WhyTradeComponent",
   data: function data() {
@@ -57985,7 +57991,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "bordered with-padding" }, [
               _c("div", {}, [
                 _c("h4", { staticClass: "primary-text no-margin" }, [
-                  _vm._v("Account Opening Forms")
+                  _vm._v("Securities Trading Forms")
                 ]),
                 _vm._v(" "),
                 _c("p", [
@@ -57993,14 +57999,14 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass: "secondary-text primary-font uppercase",
-                      attrs: { href: "" }
+                      attrs: { target: "_blank", href: "/fincent-account.pdf" }
                     },
                     [
                       _c("i", { staticClass: "material-icons primary-text" }, [
                         _vm._v("chevron_right")
                       ]),
                       _vm._v(
-                        "Individual Account\n                                    "
+                        "Account Opening Form\n                                    "
                       )
                     ]
                   )
@@ -58011,14 +58017,35 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass: "secondary-text primary-font uppercase",
-                      attrs: { href: "" }
+                      attrs: { target: "_blank", href: "/fincent-buy-form.pdf" }
                     },
                     [
                       _c("i", { staticClass: "material-icons primary-text" }, [
                         _vm._v("chevron_right")
                       ]),
                       _vm._v(
-                        "Corporate Account\n                                    "
+                        "Buying Form\n                                    "
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "secondary-text primary-font uppercase",
+                      attrs: {
+                        target: "_blank",
+                        href: "/fincent-sell-form.pdf"
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "material-icons primary-text" }, [
+                        _vm._v("chevron_right")
+                      ]),
+                      _vm._v(
+                        "Selling Form\n                                    "
                       )
                     ]
                   )
