@@ -16,16 +16,12 @@
                         <p>&nbsp;</p>
 
                         <h4 class="white-text thin uppercase center-align">
-                            <div class="flex">
-                                <div class="">Payroll Deduction Loans</div>
-                                <div class="">
-                                    <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
-                                    SME Loans
-                                </div>
-                            </div>
-
-                            <div class="flex">
-                                <div>Margin Lending</div>
+                            <div class="">
+                                Payroll Deduction Loans
+                                <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
+                                SME Loans
+                                <span class="thin"><i class="material-icons">fiber_manual_record</i></span>
+                                Margin Lending
                             </div>
                         </h4>
 

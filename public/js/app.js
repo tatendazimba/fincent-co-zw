@@ -3391,10 +3391,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "TradingHeroComponent"
 });
@@ -56857,23 +56853,26 @@ var staticRenderFns = [
                 "h4",
                 { staticClass: "white-text thin uppercase center-align" },
                 [
-                  _c("div", { staticClass: "flex" }, [
-                    _c("div", {}, [_vm._v("Payroll Deduction Loans")]),
-                    _vm._v(" "),
-                    _c("div", {}, [
-                      _c("span", { staticClass: "thin" }, [
-                        _c("i", { staticClass: "material-icons" }, [
-                          _vm._v("fiber_manual_record")
-                        ])
-                      ]),
-                      _vm._v(
-                        "\n                                SME Loans\n                            "
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "flex" }, [
-                    _c("div", [_vm._v("Margin Lending")])
+                  _c("div", {}, [
+                    _vm._v(
+                      "\n                            Payroll Deduction Loans\n                            "
+                    ),
+                    _c("span", { staticClass: "thin" }, [
+                      _c("i", { staticClass: "material-icons" }, [
+                        _vm._v("fiber_manual_record")
+                      ])
+                    ]),
+                    _vm._v(
+                      "\n                            SME Loans\n                            "
+                    ),
+                    _c("span", { staticClass: "thin" }, [
+                      _c("i", { staticClass: "material-icons" }, [
+                        _vm._v("fiber_manual_record")
+                      ])
+                    ]),
+                    _vm._v(
+                      "\n                            Margin Lending\n                        "
+                    )
                   ])
                 ]
               ),
