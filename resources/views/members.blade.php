@@ -72,7 +72,7 @@
                                         <br>
 
                                         @if($post->tags->contains('name', 'Free'))
-                                            <a href="{{ route('fred.content.show', $post) }}">
+                                            <a href="{{ route('free.content.show', $post) }}">
                                                 <strong class="btn secondary">READ ARTICLE (FREE)</strong>
                                             </a>
                                         @else
