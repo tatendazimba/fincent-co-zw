@@ -1,5 +1,5 @@
 <template>
-    <div  style="background: linear-gradient(rgba(255, 255, 255, .981), rgba(255, 255, 255, .94395)), url('/images/icon.svg') no-repeat center center; background-size: cover;">
+    <div  style="display: none; background: linear-gradient(rgba(255, 255, 255, .981), rgba(255, 255, 255, .94395)), url('/images/icon.svg') no-repeat center center; background-size: cover;">
 
         <p>&nbsp;</p>
         <p>&nbsp;</p>

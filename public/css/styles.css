@@ -423,16 +423,21 @@ canvas {
 
 /*MODAL*/
 
-/*.modal {*/
-/*    right: unset;*/
-/*    left: 50%;*/
-/*    height: 70%;*/
-/*    width: auto !important;*/
-/*    border-radius: 5px;*/
-/*    will-change: top, opacity;*/
-/*    transform: translateX(-50%);*/
-/*}*/
+.modal {
+    background: transparent !important;
+    box-shadow: none !important;
+}
 
+
+/*DATE PICKER*/
+
+.datepicker-calendar-container {
+    background: #ffffff;
+}
+
+.datepicker-date-display {
+    background: #003162;
+}
 
 /*AVATAR*/
 

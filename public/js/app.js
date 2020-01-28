@@ -57843,7 +57843,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                        Member Area\n                    "
+                "\n                        Client Area\n                    "
               )
             ]
           )
@@ -70734,6 +70734,13 @@ Vue.component('calculate-component', __webpack_require__(/*! ./components/Calcul
 
 var app = new Vue({
   el: '#app'
+});
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.datepicker');
+  var instances = M.Datepicker.init(elems, {
+    autoClose: true,
+    format: "yyyy-mm-dd"
+  });
 });
 
 /***/ }),

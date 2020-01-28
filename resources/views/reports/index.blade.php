@@ -10,15 +10,30 @@
                     <h3 class="secondary-text">EXCHANGE REPORTS</h3>
 
                     <strong class="uppercase">Generate report for:</strong> <br>
-                    <button class="primary">Today</button>
-                    <button class="primary">Yesterday</button>
-                    <button class="primary">This Week</button>
-                    <button class="primary">Last Week</button>
-                    <button class="primary">This Month</button>
-                    <button class="primary">Last Month </button>
 
                 </div>
+
                 <p>&nbsp;</p>
+
+                <div class="col s12 m8">
+                    <form action="" method="GET">
+                        <div class="col s4">
+                            <div class="input-field">
+                                <input class="datepicker" type="text" name="startDate">
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field">
+                                <input class="datepicker" type="text" name="endDate">
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="input-field">
+                                <button type="submit" class="btn primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
                 <div class="white col s12">
                     <table>

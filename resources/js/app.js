@@ -72,3 +72,11 @@ Vue.component('calculate-component', require('./components/CalculateComponent').
 const app = new Vue({
     el: '#app'
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const elems = document.querySelectorAll('.datepicker');
+    const instances = M.Datepicker.init(elems, {
+        autoClose: true,
+        format: "yyyy-mm-dd",
+    });
+});
