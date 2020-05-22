@@ -79,11 +79,13 @@
                                     <p class="">
                                         <span>Fincent Headquarters</span>
                                     </p>
-                                    <p>8th Floor</p>
-                                    <p>ZB Life Towers</p>
-                                    <p>77 Jason Moyo</p>
+
+                                    <p>10 Londonderry Avenue </p>
+                                    <p>Eastlea</p>
                                     <p>Harare, Zimbawe</p>
+
                                     <p>&nbsp;</p>
+
                                     <p>
                                         <span class="secondary-text">PHONE:</span> <strong>+263 (242) 255 321-4</strong>
                                     </p>

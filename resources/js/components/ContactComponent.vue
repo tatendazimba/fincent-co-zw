@@ -14,9 +14,9 @@
                         <h5 class="white-text">
                             <span>Fincent Capital</span>
                         </h5>
-                        <p>8th Floor, ZB Life Towers</p>
-                        <p>77 Jason Moyo</p>
-                        <p>Harare, Zimbawe</p>
+                        <p>10 Londonderry Avenue</p>
+                        <p>Eastlea</p>
+                        <p>Harare, Zimbabwe</p>
 
                         <p>&nbsp;</p>
 
